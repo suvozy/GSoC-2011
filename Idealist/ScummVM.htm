@@ -1,0 +1,627 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta name="generator" content="MediaWiki 1.15.5">
+		<meta name="keywords" content="OpenTasks,OpenTasks/Audio/Accolade MIDI Parser,OpenTasks/Audio/Acorn Tracker Support,OpenTasks/Audio/Audio Output Selection,OpenTasks/Audio/MIDI Device Configuration,OpenTasks/Audio/XMIDI Parser,OpenTasks/Engine/Improve AGI,OpenTasks/Engine/Improve Sound Support in SCUMM,OpenTasks/Engine/Objectify CruisE,OpenTasks/Generic/Add Testing Framework Engines,OpenTasks/Generic/Add Testing Framework Subsystems">
+		<link rel="shortcut icon" href="http://wiki.scummvm.org/favicon.ico">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.scummvm.org/opensearch_desc.php" title="ScummVM :: Wiki (en)">
+		<link title="Creative Commons" type="application/rdf+xml" href="http://wiki.scummvm.org/index.php?title=OpenTasks&amp;action=creativecommons" rel="meta">
+		<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html">
+		<link rel="alternate" type="application/rss+xml" title="ScummVM :: Wiki RSS Feed" href="http://wiki.scummvm.org/index.php?title=Special:RecentChanges&amp;feed=rss">
+		<link rel="alternate" type="application/atom+xml" title="ScummVM :: Wiki Atom Feed" href="http://wiki.scummvm.org/index.php?title=Special:RecentChanges&amp;feed=atom">
+<title>OpenTasks - ScummVM :: Wiki</title>
+<link rel="stylesheet" href="ScummVM_files/menu.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="ScummVM_files/layout.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="ScummVM_files/chart.css" type="text/css" media="screen">
+		<!--[if IE 6]><link rel="stylesheet" href="/skins/scummmodern/ie6.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/skins/scummmodern/ie7.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="ScummVM_files/print.css" type="text/css" media="print">
+		<link rel="stylesheet" href="ScummVM_files/index_003.css" type="text/css">
+		<link rel="stylesheet" href="ScummVM_files/index_004.css" type="text/css" media="print">
+		<link rel="stylesheet" href="ScummVM_files/index.css" type="text/css">
+		<link rel="stylesheet" href="ScummVM_files/index_002.css" type="text/css">
+<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?207"></script>
+<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+<script type="text/javascript">/*<![CDATA[*/
+		var skin = "scummmodern";
+		var stylepath = "/skins";
+		var wgArticlePath = "/index.php/$1";
+		var wgScriptPath = "";
+		var wgScript = "/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://wiki.scummvm.org";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "OpenTasks";
+		var wgTitle = "OpenTasks";
+		var wgAction = "view";
+		var wgArticleId = "2163";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 16093;
+		var wgVersion = "1.15.5";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+<script type="text/javascript" src="ScummVM_files/wikibits.js"><!-- wikibits js --></script>
+
+<!-- Head Scripts -->
+		<script type="text/javascript" src="ScummVM_files/ajax.js"></script>
+		<script type="text/javascript" src="ScummVM_files/MathJax.js">    MathJax.Hub.Config({
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: false,
+            element: "content",
+            ignoreClass: "(tex2jax_ignore|mw-search-results|searchresults)", /* note: this is part of a regex, check the docs! */
+            skipTags: ["script","noscript","style","textarea","code"] /* removed pre as wikimedia renders math in there */
+        },
+        /* "HTML-CSS": { availableFonts: ["TeX"] }, */
+        TeX: {
+          Macros: {
+            /* Wikipedia compatibility: these macros are used on Wikipedia */
+            empty: '\\emptyset',
+            P: '\\unicode{xb6}',
+            Alpha: '\\unicode{x391}', /* FIXME: These capital Greeks don't show up in bold in \boldsymbol ... */
+            Beta: '\\unicode{x392}',
+            Epsilon: '\\unicode{x395}',
+            Zeta: '\\unicode{x396}',
+            Eta: '\\unicode{x397}',
+            Iota: '\\unicode{x399}',
+            Kappa: '\\unicode{x39a}',
+            Mu: '\\unicode{x39c}',
+            Nu: '\\unicode{x39d}',
+            Pi: '\\unicode{x3a0}',
+            Rho: '\\unicode{x3a1}',
+            Sigma: '\\unicode{x3a3}',
+            Tau: '\\unicode{x3a4}',
+            Chi: '\\unicode{x3a7}',
+            C: '\\mathbb{C}',        /* the complex numbers */
+            N: '\\mathbb{N}',        /* the natural numbers */
+            Q: '\\mathbb{Q}',        /* the rational numbers */
+            R: '\\mathbb{R}',        /* the real numbers */
+            Z: '\\mathbb{Z}',        /* the integer numbers */
+
+            /* some extre macros for ease of use; these are non-standard! */
+            F: '\\mathbb{F}',        /* a finite field */
+            HH: '\\mathcal{H}',      /* a Hilbert space */
+            bszero: '\\boldsymbol{0}', /* vector of zeros */
+            bsone: '\\boldsymbol{1}',  /* vector of ones */
+            bst: '\\boldsymbol{t}',    /* a vector 't' */
+            bsv: '\\boldsymbol{v}',    /* a vector 'v' */
+            bsw: '\\boldsymbol{w}',    /* a vector 'w' */
+            bsx: '\\boldsymbol{x}',    /* a vector 'x' */
+            bsy: '\\boldsymbol{y}',    /* a vector 'y' */
+            bsz: '\\boldsymbol{z}',    /* a vector 'z' */
+            bsDelta: '\\boldsymbol{\\Delta}', /* a vector '\Delta' */
+            E: '\\mathrm{e}',          /* the exponential */
+            rd: '\\,\\mathrm{d}',      /*  roman d for use in integrals: $\int f(x) \rd x$ */
+            rdelta: '\\,\\delta',      /* delta operator for use in sums */
+            rD: '\\mathrm{D}',         /* differential operator D */
+
+            /* example from MathJax on how to define macros with parameters: */
+            /* bold: ['{\\bf #1}', 1] */
+
+            RR: '\\mathbb{R}',
+            ZZ: '\\mathbb{Z}',
+            NN: '\\mathbb{N}',
+            QQ: '\\mathbb{Q}',
+            CC: '\\mathbb{C}',
+            FF: '\\mathbb{F}'
+          }
+        }
+    });
+</script><style type="text/css">#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style>
+<script type="text/javascript" src="ScummVM_files/ajax.js"></script>
+<script type="text/javascript" src="ScummVM_files/ajaxwatch.js"></script>
+		<script type="text/javascript" src="ScummVM_files/index.php"><!-- site js --></script>
+</head>
+<body class="mediawiki ltr ns-0 ns-subject page-OpenTasks skin-scummmodern"><div style="display: none;" id="MathJax_Message"></div>
+	
+<table id="tableMain" align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+  <tbody><tr id="topHeader"> 
+    <td width="199px"><a href="http://wiki.scummvm.org/index.php/Main_Page" title="Visit the main page [z]" accesskey="z"><img src="ScummVM_files/logo_phpVB2.png" alt="ScummVM logo" height="65" width="199"></a></td>
+
+    <td style="background-image: url(&quot;/skins/scummmodern/top_bg.png&quot;); vertical-align: middle; text-align: left; white-space: nowrap;" width="50%">
+      <a href="http://www.scummvm.org/" target="_parent" class="toplinks" id="tl_mw">Main website</a> - 
+      <a href="http://forums.scummvm.org/" target="_parent" class="toplinks" id="tl_f">Forums</a> -
+      <a href="http://buildbot.scummvm.org/" target="_parent" class="toplinks" id="tl_b">BuildBot</a> -
+      <a href="http://doxygen.scummvm.org/" target="_parent" class="toplinks" id="tl_d">Doxygen</a> -
+      <a href="http://planet.scummvm.org/" target="_parent" class="toplinks" id="tl_p">Planet</a> <br>
+      <a href="http://www.scummvm.org/contact.php" target="_parent" class="toplinks" id="tl_cu">Contact us</a> -
+      <b><a href="http://www.gog.com/en/frontpage/pp/22d200f8670dbdb3e253a90eee5098477c95c23d" target="_parent" class="toplinks" id="tl_go">Buy Supported Games</a></b>&nbsp;
+	  </td>
+	
+	  <td style="background-image: url(&quot;/skins/scummmodern/top_bg.png&quot;); vertical-align: middle; text-align: right; white-space: nowrap;" width="50%">
+      <!-- new nav table -->
+      				<a href="http://wiki.scummvm.org/index.php?title=Special:UserLogin&amp;returnto=OpenTasks" class="toplinks">
+        Log in</a> 
+          </td>
+    <td><img src="ScummVM_files/curve_tr.png" alt="curved edge" height="65" width="20"></td>
+  </tr>
+  <!-- top logo, navbar ends here, now on to the main forum body -->
+  <tr id="tableColor" bgcolor="#fbf1ce"> 
+    <td colspan="4">
+      <table style="padding-left: 5px; padding-right: 5px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+          <td>
+	          <div id="container"> 
+  	          <a name="top" id="top"></a>
+  				      <div id="menu"> <!-- start of menu -->
+  	             <script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+                 	<div class="menugroup" id="p-Users">
+		<h1 class="menu-main">Users</h1>
+		<div class="pBody">
+<ul><li><a href="http://wiki.scummvm.org/index.php/Main_Page"><b>Main Page</b></a></li><li><a href="http://wiki.scummvm.org/index.php/Documentation"><b>Documentation</b></a></li></ul><hr><ul><li><a href="http://wiki.scummvm.org/index.php/About">About ScummVM</a></li><li><a href="http://wiki.scummvm.org/index.php/User_Manual">User Manual</a></li><li><a href="http://wiki.scummvm.org/index.php/Datafiles">Game data files</a></li><li><a href="http://wiki.scummvm.org/index.php/Engines">Game Engines</a></li><li><a href="http://wiki.scummvm.org/index.php/Platforms">Platforms</a></li><li><a href="http://wiki.scummvm.org/index.php/Glossary">Glossary</a></li></ul>		</div>
+	</div>
+	<div class="menugroup" id="p-Developers">
+		<h1 class="menu-misc">Developers</h1>
+		<div class="pBody">
+<ul><li><a href="http://wiki.scummvm.org/index.php/Developer_Central"><b>Developer Central</b></a></li></ul><hr><ul><li><a href="http://wiki.scummvm.org/index.php/Compiling_ScummVM">Compiling ScummVM</a></li><li><a href="http://wiki.scummvm.org/index.php/Code_Formatting_Conventions">Code Formatting Conventions</a></li><li><a href="http://wiki.scummvm.org/index.php/Project_Services">Project Services</a></li><li><a href="http://wiki.scummvm.org/index.php/Wiki_Users">Wiki Editors</a></li><li><a href="http://wiki.scummvm.org/index.php/Instructions_to_Wiki_Editors">Instructions to Wiki Editors</a></li></ul>		</div>
+	</div>
+  <div class="menugroup">
+		<h1 class="menu-sf"><label for="searchInput">Search</label></h1>
+		<div id="searchBody" class="pBody" style="text-align: center;">
+			<form action="/index.php" id="searchform">
+				<input name="title" value="Special:Search" type="hidden">
+				<input id="searchInput" name="search" title="Search ScummVM :: Wiki [alt-shift-f]" accesskey="f" type="text">
+				<br><input name="go" class="searchButton" id="searchGoButton" value="Go" title="Go to a page with this exact name if exists" type="submit">&nbsp;
+				<input name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" type="submit">
+			</form>
+		</div>
+	</div>
+	<div class="menugroup" id="p-Tools">
+		<h1 class="menu-main">Tools</h1>
+		<div class="pBody">
+<ul><li><a href="http://wiki.scummvm.org/index.php/Special:Random">Random page</a></li><li><a href="http://wiki.scummvm.org/index.php/Special:RecentChanges">Recent changes</a></li><li><a href="http://wiki.scummvm.org/index.php/Help:Contents">Help</a></li></ul>		</div>
+	</div>
+	<div class="menugroup">
+		<h1 class="menu-misc">Toolbox</h1>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://wiki.scummvm.org/index.php/Special:WhatLinksHere/OpenTasks" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="http://wiki.scummvm.org/index.php/Special:RecentChangesLinked/OpenTasks" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="http://wiki.scummvm.org/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="http://wiki.scummvm.org/index.php?title=OpenTasks&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="http://wiki.scummvm.org/index.php?title=OpenTasks&amp;oldid=16093" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+<div><img src="ScummVM_files/hangmonk.gif" alt="monkey" class="monkey float_right" height="57" width="55"></div>
+	<div id="menu_banners">
+				<a href="http://sourceforge.net/donate/index.php?group_id=37116">
+					<img src="ScummVM_files/project-support.jpg" alt="Support This Project" height="32" width="88">
+				</a>	
+				<a href="http://combobreaker.com/">
+					<img src="ScummVM_files/scummvm_cb.png" alt="Combobreaker.com T-Shirts" height="32" width="88">
+				</a>
+				<a href="http://www.gog.com/en/frontpage/pp/22d200f8670dbdb3e253a90eee5098477c95c23d">
+					<img src="ScummVM_files/GOG_button_small.png" alt="Buy with GOG.com" height="32" width="88">
+				</a>
+			</div>
+				
+                </div><!-- end of menu -->
+  		          
+  	          <div id="p-cactions" class="portlet">
+            		<div class="tabs"><!-- start of Views -->
+  			         <div id="ltabs"><ul>
+  	               <li id="ca-nstab-main" class="selected"><a href="http://wiki.scummvm.org/index.php/OpenTasks" title="View the content page [c]" accesskey="c" class="selected"><span>Page</span></a></li><li id="ca-talk"><a href="http://wiki.scummvm.org/index.php/Talk:OpenTasks" title="Discussion about the content page [t]" accesskey="t"><span>Discussion</span></a></li>  			         </ul></div>
+  			         <div id="rtabs"><ul>
+  	               <li id="ca-viewsource"><a href="http://wiki.scummvm.org/index.php?title=OpenTasks&amp;action=edit" title="This page is protected.
+You can view its source [e]" accesskey="e"><span>View source</span></a></li><li id="ca-history"><a href="http://wiki.scummvm.org/index.php?title=OpenTasks&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>History</span></a></li>  			         </ul></div>
+  		          </div> <!-- end of Views -->
+  	          </div>
+  		        <div class="rbtop"> <!-- start of title -->
+			         <div>
+				        <p><span class="shadow-container" style="color: #fff;">OpenTasks<span class="shadow-text" style="color: #821d06;">OpenTasks</span></span><br></p>
+               </div>
+              </div> <!-- end of title -->
+		          <div class="rbcontent">
+			         <div class="rbwrapper">
+		            <div id="bodyContent">
+			           <div id="contentSub"></div>
+			                     			           			 <!-- start content -->
+          			 <p>This page contains a list of substantial open tasks 
+from throughout the project. Completing any of them would be of great 
+benefit the ScummVM project. 
+</p><p>In theory, all of these tasks should be doable even by somebody 
+relatively new to the project, in particular, as part of a Google <a href="http://wiki.scummvm.org/index.php/Summer_of_Code" title="Summer of Code">Summer of Code</a> project. 
+</p><p>It should be noted however that while we suggest that potential 
+GSoC students looks at these tasks they are in no way exclusive to GSoC.
+ Anyone is very welcome to work on any task (or any aspect of it).
+</p><p>Besides the tasks collected here, there are of course also the <a href="http://wiki.scummvm.org/index.php/TODO" title="TODO">TODO</a> pages listing more things that need to be done (but with far less details).
+</p>
+<table id="toc" class="toc" summary="Contents"><tbody><tr><td><div id="toctitle"><h2>Contents</h2> <span class="toctoggle">[<a href="javascript:toggleToc()" class="internal" id="togglelink">hide</a>]</span></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Some_basic_rules"><span class="tocnumber">1.1</span> <span class="toctext">Some basic rules</span></a></li>
+<li class="toclevel-2"><a href="#Some_good_advice_for_Summer_of_Code_Applications"><span class="tocnumber">1.2</span> <span class="toctext">Some good advice for Summer of Code Applications</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Student_application_template"><span class="tocnumber">1.2.1</span> <span class="toctext">Student application template</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Your_task"><span class="tocnumber">2</span> <span class="toctext">Your task</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Anything_you_can_dream_of"><span class="tocnumber">2.1</span> <span class="toctext">Anything you can dream of</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Current_Open_Tasks"><span class="tocnumber">3</span> <span class="toctext">Current Open Tasks</span></a></li>
+<li class="toclevel-1"><a href="#Current_TODO_Lists"><span class="tocnumber">4</span> <span class="toctext">Current TODO Lists</span></a></li>
+</ul>
+</td></tr></tbody></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<p><br>
+</p>
+<a name="Introduction" id="Introduction"></a><h2> <span class="mw-headline"> Introduction </span></h2>
+<a name="Some_basic_rules" id="Some_basic_rules"></a><h3> <span class="mw-headline"> Some basic rules </span></h3>
+<p>Below follow some basic rules that anybody interested in one of these
+ tasks should adhere to. Sometimes exceptions may be possible -- as 
+always, common sense applies, and if in doubt, ask.
+</p><p>The projects below are sketches and ideas. Plus, things evolve 
+over time, so the descriptions might be slightly outdated by the time 
+you read them (although we strive to keep them up-to-date). Hence, you 
+should talk with somebody from the team, probably the person(s) listed 
+as Tech Contact, before starting work on any of them.
+</p><p>All code, unless stated differently, must be written in clean and
+ portable C++, in particular, GCC must be able to compile it 
+(portability exceptions can be made for platform specific code, of 
+course). We also have some <a href="http://wiki.scummvm.org/index.php/Code_Formatting_Conventions" title="Code Formatting Conventions">Code Formatting Conventions</a>.
+ Using the standard C++ lib for code used inside ScummVM is at this time
+ not possible. Using it inside a non-essential tool should be fine, 
+though.
+</p><p>All of the code submitted must be contributed under the terms of the GPL v2+.
+</p><p>We only accept clean and maintainable code. This is a somewhat 
+vague requirement, but as a rule of thumb, if the code does what it is 
+supposed to do, but is not extensible, a quick hack, or we need to 
+rewrite it from scratch to properly integrate it, we will not accept it.
+ In particular, we would rather have a maintainable, clean and 
+incomplete piece of code that we could extend than a complete but 
+unmaintainable piece of code.
+</p>
+<a name="Some_good_advice_for_Summer_of_Code_Applications" id="Some_good_advice_for_Summer_of_Code_Applications"></a><h3> <span class="mw-headline"> Some good advice for <a href="http://wiki.scummvm.org/index.php/Summer_of_Code" title="Summer of Code">Summer of Code</a> Applications </span></h3>
+<p>The PostgreSQL folks have some real good
+<a href="http://www.postgresql.org/developer/summerofcodeadvice.html" class="external text" title="http://www.postgresql.org/developer/summerofcodeadvice.html" rel="nofollow">Advice to Students on Submitting GSoC Applications</a>. We recommend all students interested in applying with us (or any other GSoC project, for that matter) to read this.
+</p>
+<a name="Student_application_template" id="Student_application_template"></a><h4> <span class="mw-headline"> Student application template </span></h4>
+<p>The following was adapted from the FreeBSD <a href="http://www.freebsd.org/projects/summerofcode.html" class="external text" title="http://www.freebsd.org/projects/summerofcode.html" rel="nofollow">Proposal Guidelines</a>.
+</p>
+<ul><li> <b>Name</b>
+</li><li> <b>Email</b>
+</li><li> <b>Project Title</b>
+</li><li> <b>Possible Mentor</b> (optional)
+</li><li> <b>Benefits to the ScummVM Community</b> - A good project will not just be fun to work on, but also generally useful to others.
+</li><li> <b>Deliverables</b> - It is very important to list quantifiable results here e.g.
+<ul><li> "Improve X modules in ways Y and Z."
+</li><li> "Write 3 new man pages for the new interfaces."
+</li><li> "Improve test coverage by writing X more unit/regression tests."
+</li><li> "Improve performance in FOO by X%."
+</li></ul>
+</li><li> <b>Project Schedule</b> - How long will the project take? When can you begin work?
+</li><li> <b>Availability</b> - How many hours per week can you spend working on this? What other obligations do you have this summer?
+</li><li> <b>Skype ID</b> - If you don't use Skype, install it.
+</li><li> <b>Phone Number</b> - Cellular is preferable, for emergency contacts.
+</li><li> <b>Timezone</b> - Where do you live.
+</li><li> <b>Bio</b> - Who are you? What makes you the best person to work on this project?
+</li></ul>
+<a name="Your_task" id="Your_task"></a><h2> <span class="mw-headline"> Your task </span></h2>
+<a name="Anything_you_can_dream_of" id="Anything_you_can_dream_of"></a><h3> <span class="mw-headline"> Anything you can dream of </span></h3>
+<p><i>Technical Contact</i>: Our IRC channel, our mailing list, or contact <a href="http://wiki.scummvm.org/index.php/User:Sev" title="User:Sev">Eugene Sandulenko</a>, <a href="http://wiki.scummvm.org/index.php/User:DJWillis" title="User:DJWillis">John Willis</a>
+</p><p><i>The Task:</i>
+</p><p>Come up with your personal clever way to improve ScummVM and its 
+various side projects. Be creative. Incorporate the ideas listed below 
+and in our <a href="http://wiki.scummvm.org/index.php/TODO" title="TODO">TODO</a>, but don't let yourself be limited by them. Come up with something totally new, or enhance existing features. It's up to you.
+</p><p>But of course like with all the other tasks, we recommend that you first talk to us (see above).
+</p>
+<a name="Current_Open_Tasks" id="Current_Open_Tasks"></a><h2> <span class="mw-headline"> Current Open Tasks </span></h2>
+<p>Below is a table of all the currently open tasks that people may wish to consider working on and links for more information.
+These tasks can be considered in addition or in conjunction with anything on our <a href="http://wiki.scummvm.org/index.php/TODO" title="TODO">TODO</a>, any other task or your own 'Anything you can dream of' project.
+</p><p>The GSoC workload figure can be used to indicate the percentage 
+of GSoC project time we consider this task will take an average 
+competent programmer. These are just rough guides and should you feel 
+you can undertake a task well in less time (or take longer but deliver a
+ much better or more feature rich result) please feel free to mention 
+this on your application and select your tasks accordingly.
+</p><p><br>
+</p>
+<table id="sortable_table_id_0" class="sortable" border="1" cellpadding="2">
+<tbody><tr>
+<th style="background: none repeat scroll 0% 0% silver;"> Task
+&nbsp;&nbsp;<a href="#" class="sortheader" onclick="ts_resortTable(this);return false;"><span class="sortarrow"><img src="ScummVM_files/sort_none.gif" alt="↓"></span></a></th><th style="background: none repeat scroll 0% 0% silver;"> GSoC Workload
+&nbsp;&nbsp;<a href="#" class="sortheader" onclick="ts_resortTable(this);return false;"><span class="sortarrow"><img src="ScummVM_files/sort_none.gif" alt="↓"></span></a></th><th style="background: none repeat scroll 0% 0% silver;"> Technical Contact(s)
+&nbsp;&nbsp;<a href="#" class="sortheader" onclick="ts_resortTable(this);return false;"><span class="sortarrow"><img src="ScummVM_files/sort_none.gif" alt="↓"></span></a></th><th style="background: none repeat scroll 0% 0% silver;"> Subsystem
+&nbsp;&nbsp;<a href="#" class="sortheader" onclick="ts_resortTable(this);return false;"><span class="sortarrow"><img src="ScummVM_files/sort_none.gif" alt="↓"></span></a></th></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/OpenTasks/Audio/Accolade_MIDI_Parser" title="OpenTasks/Audio/Accolade MIDI Parser">Accolade MIDI Parser</a>
+</td><td align="center" bgcolor=""> 50%
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/User:Kirben" title="User:Kirben">Travis Howell</a>
+</td><td align="center" bgcolor=""> Audio
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/OpenTasks/Audio/Acorn_Tracker_Support" title="OpenTasks/Audio/Acorn Tracker Support">Support for Acorn Audio Format: Desktop Tracker</a>
+</td><td align="center" bgcolor=""> 50%
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/User:Sev" title="User:Sev">Eugene Sandulenko</a>, <a href="http://wiki.scummvm.org/index.php/User:DrMcCoy" title="User:DrMcCoy">Sven Hesse</a>
+</td><td align="center" bgcolor=""> Audio
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/OpenTasks/Audio/Audio_Output_Selection" title="OpenTasks/Audio/Audio Output Selection">Audio Output Selection</a>
+</td><td align="center" bgcolor=""> 50%
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/User:LordHoto" title="User:LordHoto">Johannes Schickel</a>
+</td><td align="center" bgcolor=""> Audio
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/OpenTasks/Audio/MIDI_Device_Configuration" title="OpenTasks/Audio/MIDI Device Configuration">MIDI Device Configuration</a>
+</td><td align="center" bgcolor=""> 50%
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/User:LordHoto" title="User:LordHoto">Johannes Schickel</a>
+</td><td align="center" bgcolor=""> Audio
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/OpenTasks/Audio/XMIDI_Parser" title="OpenTasks/Audio/XMIDI Parser">XMIDI Parser</a>
+</td><td align="center" bgcolor=""> 50%
+</td><td align="center" bgcolor=""> The ScummVM Team
+</td><td align="center" bgcolor=""> Audio
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/OpenTasks/Engine/Improve_AGI" title="OpenTasks/Engine/Improve AGI">Improve AGI Engine</a>
+</td><td align="center" bgcolor=""> 100%
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/User:Sev" title="User:Sev">Eugene Sandulenko</a>
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/OpenTasks/Engine/Improve_Sound_Support_in_SCUMM" title="OpenTasks/Engine/Improve Sound Support in SCUMM">Improve sound support in SCUMM games</a>
+</td><td align="center" bgcolor=""> 75%
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/User:Sev" title="User:Sev">Eugene Sandulenko</a>, <a href="http://wiki.scummvm.org/index.php/User:Kirben" title="User:Kirben">Travis Howell</a>
+</td><td align="center" bgcolor=""> Audio/Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/OpenTasks/Engine/Objectify_CruisE" title="OpenTasks/Engine/Objectify CruisE">Objectify CruisE Engine</a>
+</td><td align="center" bgcolor=""> 75%
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/User:Sev" title="User:Sev">Eugene Sandulenko</a>
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/OpenTasks/Generic/Add_Testing_Framework_Engines" title="OpenTasks/Generic/Add Testing Framework Engines">Add a testing framework for ScummVM's engines</a>
+</td><td align="center" bgcolor=""> 100%
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/User:Sev" title="User:Sev">Eugene Sandulenko</a>
+</td><td align="center" bgcolor=""> Generic/Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/OpenTasks/Generic/Add_Testing_Framework_Subsystems" title="OpenTasks/Generic/Add Testing Framework Subsystems">Add a testing framework for ScummVM's subsystems</a>
+</td><td align="center" bgcolor=""> 50%
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/User:LordHoto" title="User:LordHoto">Johannes Schickel</a>
+</td><td align="center" bgcolor=""> Generic
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/OpenTasks/Generic/Extend_plugin_system" title="OpenTasks/Generic/Extend plugin system">Extend plugin system</a>
+</td><td align="center" bgcolor=""> 75%
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/User:Sev" title="User:Sev">Eugene Sandulenko</a>
+</td><td align="center" bgcolor=""> Generic
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/OpenTasks/Generic/GUI_Improvement" title="OpenTasks/Generic/GUI Improvement">GUI Improvement</a>
+</td><td align="center" bgcolor=""> 100%
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/User:LordHoto" title="User:LordHoto">Johannes Schickel</a>
+</td><td align="center" bgcolor=""> Generic
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/OpenTasks/Generic/Improve_the_build_system" title="OpenTasks/Generic/Improve the build system">Improve the build system</a>
+</td><td align="center" bgcolor=""> 50%
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/User:Sev" title="User:Sev">Eugene Sandulenko</a>
+</td><td align="center" bgcolor=""> Generic
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/OpenTasks/Generic/Improve_the_default_backend" title="OpenTasks/Generic/Improve the default backend">Improve the default ScummVM backend by adding OpenGL support and providing a common base class</a>
+</td><td align="center" bgcolor=""> 75%
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/User:DJWillis" title="User:DJWillis">John Willis</a>, <a href="http://wiki.scummvm.org/index.php/User:JoostP" title="User:JoostP">Joost Peters</a>
+</td><td align="center" bgcolor=""> Audio
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/OpenTasks/Generic/Small_Devices_Backend" title="OpenTasks/Generic/Small Devices Backend">Small Devices Backend</a>
+</td><td align="center" bgcolor=""> 33%
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/User:DJWillis" title="User:DJWillis">John Willis</a>, <a href="http://wiki.scummvm.org/index.php/User:JoostP" title="User:JoostP">Joost Peters</a>
+</td><td align="center" bgcolor=""> Generic
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/OpenTasks/Tools/Game_script_decompiler" title="OpenTasks/Tools/Game script decompiler">Game script (bytecode) decompiler</a>
+</td><td align="center" bgcolor=""> 100%
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/User:LordHoto" title="User:LordHoto">Johannes Schickel</a>
+</td><td align="center" bgcolor=""> Tools
+</td></tr></tbody></table>
+<a name="Current_TODO_Lists" id="Current_TODO_Lists"></a><h2> <span class="mw-headline"> Current TODO Lists </span></h2>
+<p>Below is a table of all the TODO lists currently on the wiki. These 
+less detailed tasks can be considered in conjunction with anything from 
+our larger open task list or your own 'Anything you can dream of' 
+project.
+</p><p>A TODO list by its very nature if often made up of vague pointers or <i>one line</i> ideas. Please seek clarification if you are unsure of any <a href="http://wiki.scummvm.org/index.php/TODO" title="TODO">TODO</a>.
+</p><p><br>
+</p>
+<table id="sortable_table_id_1" class="sortable" border="1" cellpadding="2">
+<tbody><tr>
+<th style="background: none repeat scroll 0% 0% silver;"> Task
+&nbsp;&nbsp;<a href="#" class="sortheader" onclick="ts_resortTable(this);return false;"><span class="sortarrow"><img src="ScummVM_files/sort_none.gif" alt="↓"></span></a></th><th style="background: none repeat scroll 0% 0% silver;"> Technical Contact(s)
+&nbsp;&nbsp;<a href="#" class="sortheader" onclick="ts_resortTable(this);return false;"><span class="sortarrow"><img src="ScummVM_files/sort_none.gif" alt="↓"></span></a></th><th style="background: none repeat scroll 0% 0% silver;"> Subsystem
+&nbsp;&nbsp;<a href="#" class="sortheader" onclick="ts_resortTable(this);return false;"><span class="sortarrow"><img src="ScummVM_files/sort_none.gif" alt="↓"></span></a></th></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/AGI/TODO" title="AGI/TODO">AGI Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/AGI" title="AGI">AGI</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/AGOS/TODO" title="AGOS/TODO">AGOS Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/AGOS" title="AGOS">AGOS</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/Cine/TODO" title="Cine/TODO">Cine Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/Cine" title="Cine">Cine</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/Documentation/TODO" title="Documentation/TODO">Documentation TODO</a>
+</td><td align="center" bgcolor=""> The ScummVM Team
+</td><td align="center" bgcolor=""> Documentation
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/Drascula/TODO" title="Drascula/TODO">Drascula Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/Drascula" title="Drascula">Drascula</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/GUI_Themes/TODO" title="GUI Themes/TODO">GUI Themes TODO</a>
+</td><td align="center" bgcolor=""> The ScummVM Team
+</td><td align="center" bgcolor=""> Generic
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/Gob/TODO" title="Gob/TODO">Gob Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/Gob" title="Gob">Gob</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/Groovie/TODO" title="Groovie/TODO">Groovie Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/Groovie" title="Groovie">Groovie</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/Hugo/TODO" title="Hugo/TODO">Hugo Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/Hugo" title="Hugo">Hugo</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/Kyra/TODO" title="Kyra/TODO">Kyra Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/Kyra" title="Kyra">Kyra</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/MADE/TODO" title="MADE/TODO">MADE Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/MADE" title="MADE">MADE</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/Mohawk/TODO" title="Mohawk/TODO">Mohawk Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/Mohawk" title="Mohawk">Mohawk</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/Parallaction/TODO" title="Parallaction/TODO">Parallaction Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/Parallaction" title="Parallaction">Parallaction</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/SAGA/TODO" title="SAGA/TODO">SAGA Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/SAGA" title="SAGA">SAGA</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/SCI/TODO" title="SCI/TODO">SCI Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/SCI" title="SCI">SCI</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/SCUMM/TODO" title="SCUMM/TODO">SCUMM Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/SCUMM" title="SCUMM">SCUMM</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/Sword25/TODO" title="Sword25/TODO">Sword25 Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/Sword25" title="Sword25">Sword25</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/TODO" title="TODO">Main TODO List</a>
+</td><td align="center" bgcolor=""> The ScummVM Team
+</td><td align="center" bgcolor=""> Generic
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/Tinsel/TODO" title="Tinsel/TODO">Tinsel Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/Tinsel" title="Tinsel">Tinsel</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/Toon/TODO" title="Toon/TODO">Toon Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/Toon" title="Toon">Toon</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/Touche/TODO" title="Touche/TODO">Touche Engine TODO</a>
+</td><td align="center" bgcolor=""> <a href="http://wiki.scummvm.org/index.php/Touche" title="Touche">Touche</a> Engine Team
+</td><td align="center" bgcolor=""> Engine
+</td></tr>
+<tr>
+<td><a href="http://wiki.scummvm.org/index.php/User_Manual/TODO" title="User Manual/TODO">User Manual TODO</a>
+</td><td align="center" bgcolor=""> The ScummVM Team
+</td><td align="center" bgcolor=""> Documentation
+</td></tr></tbody></table>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2865/1000000
+Post-expand include size: 10151/2097152 bytes
+Template argument size: 4457/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<div class="printfooter">
+Retrieved from "<a href="http://wiki.scummvm.org/index.php/OpenTasks">http://wiki.scummvm.org/index.php/OpenTasks</a>"</div>
+          			           			 <!-- end content -->
+          			           			 <div class="visualClear"></div>
+		            </div>
+             	 </div>
+		          </div>
+
+<div class="rbbot"><div><p>&nbsp;</p></div></div> 
+      <div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="ScummVM_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki"></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="ScummVM_files/gnu-fdl.png" alt="GNU Free Documentation License 1.2"></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 19 March 2011, at 08:27.</li>
+					<li id="viewcount">This page has been accessed 78,338 times.</li>
+					<li id="copyright">Content is available under <a href="http://www.gnu.org/copyleft/fdl.html" class="external " title="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a>.</li>
+					<li id="privacy"><a href="http://wiki.scummvm.org/index.php/ScummVM_::_Wiki:Privacy_policy" title="ScummVM :: Wiki:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="http://wiki.scummvm.org/index.php/ScummVM_::_Wiki:About" title="ScummVM :: Wiki:About">About ScummVM :: Wiki</a></li>
+					<li id="disclaimer"><a href="http://wiki.scummvm.org/index.php/ScummVM_::_Wiki:General_disclaimer" title="ScummVM :: Wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<script src="ScummVM_files/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-1455743-1";_udn="scummvm.org";urchinTracker();</script><!-- Served in 4.382 secs. -->	
+
+</td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="4">
+      <table id="tableFooter" border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+          <td><img src="ScummVM_files/curve_bl.png" alt="curved edge" height="20" width="20"></td>
+
+          <td bgcolor="#fbf1ce" width="100%">&nbsp;</td>
+          <td align="right" valign="bottom"><img src="ScummVM_files/curve_br.png" alt="curved edge" height="20" width="20"></td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+</body></html>

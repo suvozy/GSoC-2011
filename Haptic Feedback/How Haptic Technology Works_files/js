@@ -1,0 +1,2 @@
+
+$(document).ready(function(){var seeMoreLink=$('li.articleTOCSeeMore');var seeMoreMenu=seeMoreLink.children('ol');seeMoreMenu.css({position:'absolute',top:seeMoreLink.height(),left:'0px'});seeMoreLink.mouseover(function(){seeMoreLink.css('position','relative');seeMoreMenu.show();}).mouseout(function(){seeMoreMenu.hide();seeMoreLink.css('position','static');});});

@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <link type="text/css" href="Proposal%20Example%201_files/booki.css" rel="Stylesheet">
+   <link type="text/css" href="Proposal%20Example%201_files/jquery_002.css" rel="Stylesheet">
+   <link type="text/css" href="Proposal%20Example%201_files/jquery.css" rel="Stylesheet">
+   <script type="text/javascript" src="Proposal%20Example%201_files/jquery-1.js"></script>
+   <script type="text/javascript" src="Proposal%20Example%201_files/jquery-ui-1.js"></script>
+   <script type="text/javascript" src="Proposal%20Example%201_files/jquery.js"></script>
+   <script type="text/javascript" src="Proposal%20Example%201_files/booki.js"></script>
+
+<style>
+.paginator { padding:.5em .75em; float:left; font:normal .8em arial; }
+ 
+.paginator .prev-na,
+.paginator .next-na {
+	padding:.3em;
+	font-weight: bold;
+/*	font:bold .875em arial; */
+}
+ 
+.paginator .prev-na,
+.paginator .next-na {
+/*	border:1px solid #ccc; 
+	background-color:#f9f9f9; */
+	color:#aaa;
+	font-weight:normal;
+}
+ 
+.paginator .prev a, .paginator .prev a:visited,
+.paginator .next a, .paginator .next a:visited {
+/*	border:1px solid #c2ee62; 
+	background-color:#edfdd0; */
+	color:#234f32;
+	padding:.3em;
+/*	font:bold .875em arial; */
+        font-weight: bold;
+}
+ 
+.paginator .prev, .paginator .prev-na { margin-right:.5em; }
+.paginator .next, .paginator .next-na { margin-left:.5em; }
+ 
+.paginator .page a, .paginator .page a:visited, .paginator .curr {
+	padding:.25em;
+	font-weight: normal;
+/*	font:normal .875em verdana; */
+/*	border:1px solid #C2EE62; 
+	background-color:#EDFDD0; */
+	margin:0em .25em;	
+	color:#006000;
+}
+ 
+.paginator .curr { 
+/*	background-color:#234f32; 
+	color:#fff; */
+	border:1px solid #234f32; 
+	font-weight:bold;
+	font-size:1em;
+}
+ 
+.paginator .page a:hover,
+.paginator .curr a:hover,
+.paginator .prev a:hover,
+.paginator .next a:hover {
+/*	color:#fff;
+	background-color:#234f32;
+	border:1px solid #234f32; */
+}
+</style>
+
+
+   <script type="text/javascript">
+     $(function() {
+	 // open debug window
+	 $.booki.debug.init();
+	 
+	 $("#dialog-sputnik-error").dialog({
+	     modal: true,
+	     autoOpen: false,
+	     buttons: {
+		 Ok: function() {
+		     $(this).dialog('close');
+		     window.location = '.';
+		 }
+	     }
+	 });
+	 
+	 $("A.debug").click(function() {
+	     $("#bookidebug").dialog("open");
+	     return false;
+	 });
+     });
+   </script>
+
+   
+<title>/chapter: Proposal-Examples / GSoCStudentGuide</title>
+<link type="text/css" href="Proposal%20Example%201_files/editor.css" rel="Stylesheet">
+
+<link rel="alternate" type="application/rss+xml" title="RSS feed for GSoCStudentGuide" href="http://www.booki.cc/feeds/rss/book/gsocstudentguide/"> 
+<link rel="alternate" type="application/atom+xml" title="Atom feed for GSoCStudentGuide" href="http://www.booki.cc/feeds/atom/book/gsocstudentguide/"> 
+
+<link rel="alternate" type="application/rss+xml" title="RSS feed for chapter Proposal-Examples" href="http://www.booki.cc/feeds/rss/chapter/gsocstudentguide/gsocstudentguide/"> 
+<link rel="alternate" type="application/atom+xml" title="Atom feed for chapter Proposal-Examples" href="http://www.booki.cc/feeds/atom/chapter/gsocstudentguide/gsocstudentguide/"> 
+
+
+ </head>
+<body>
+<div id="page-container"> 
+<!-- top bar + drop shadow -->
+<div class="topbar shadow"> 
+ <a href="http://www.booki.cc/"><img alt="Booki logo" src="Proposal%20Example%201_files/booki_logo_topleft.png" border="0"></a>
+
+
+<div id="login" style="position:absolute;top:25px;width:870px;text-align:right;font-family:helvetica,arial,verdana;font-size:11px;font-weight:bold;"> 
+ <a href="http://www.booki.cc/accounts/signin/?redirect=/gsocstudentguide/_v/1.0/proposal-examples/">Sign In / Create Account</a>
+</div>
+
+</div>
+
+</div>
+<!-- End top bar -->
+
+<!-- nav box + drop shadow -->
+<div class="navbox shadow" style="top:70px;">
+    		<ul>
+		<li><a href="http://blog.booki.cc/">Blog</a></li>
+		<li><a href="http://download.booki.cc/">Get Booki</a></li>
+		<li><a href="http://support.booki.cc/">Support</a></li>
+</ul>
+</div>
+
+<div class="navbox shadow" style="top:150px;">
+<ul>
+                <li><a href="http://www.booki.cc/list-books/">Books</a></li>
+                <li><a href="http://www.booki.cc/list-groups/">Groups</a></li>
+                <li><a href="http://www.booki.cc/list-people/">People</a></li>
+           	</ul>
+</div>
+<!-- End of nav box -->
+
+
+
+<div class="content-container shadow">
+<!-- Content box and the drop shadow-->
+
+
+
+
+<br clear="all">
+   <h1>GSoCStudentGuide</h1>
+<div id="bookmenu">
+<ul>
+
+ 
+   <li><b>Introduction</b></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/what-is-google-summer-of-code/">What is Google Summer of Code?</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/why-should-i-apply/">Why Should I Apply?</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/am-i-good-enough/">Am I Good Enough?</a></li>
+ 
+
+ 
+   <li><b>Applying</b></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/choosing-an-organization/">Choosing an Organization</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/making-first-contact/">Making First Contact</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/finding-the-right-project/">Finding the Right Project</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/writing-a-proposal/">Writing a Proposal</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/being-turned-down/">Being Turned Down</a></li>
+ 
+
+ 
+   <li><b>Community Bonding Period</b></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/how-gsoc-works-when-will-you-get-your-t-shirt/">How GSoC Works</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/what-does-community-mean/">What Does Community Mean?</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/open-source-culture/">Open Source Culture</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/how-to-use-a-mailing-list/">Communication Best Practices</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/how-to-get-a-head-start/">How to Get a Head Start</a></li>
+ 
+
+ 
+   <li><b>Let the Coding Begin</b></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/working-with-your-mentor/">Working with Your Mentor</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/time-management-for-students/">Time Management for Students</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/evaluation/">Evaluations</a></li>
+ 
+
+ 
+   <li><b>Wrapping Up</b></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/strategies-for-getting-your-code-committed/">Getting Your Code Committed</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/staying-engaged-with-your-community/">Staying Engaged with Your Community</a></li>
+ 
+
+ 
+   <li><b>APPENDICES</b></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/about-this-manual/">About This Manual</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/history-of-gsoc/">History of GSoC</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/additional-resources/">Additional Resources</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/proposal-examples/">Proposal Example 1</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/proposal-example-2/">Proposal Example 2</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/glossary/">Glossary</a></li>
+ 
+
+ 
+   <li><a href="http://www.booki.cc/gsocstudentguide/_v/1.0/credits/">Credits</a></li>
+ 
+
+</ul>
+</div>
+<div id="bookcontent">
+<h1>Proposal Example 1
+</h1>
+<p> "Database Abstractions" By Kanika Vats, Systers, 2009
+</p>
+<h2>Abstract
+</h2>Systers use GNU mailing list manager Mailman2 which currently uses 
+Python pickle files to store its data. Systers moderators have 
+customized it to make use of PostgreSQL database. They make use of raw 
+SQL statements and python db-api which makes the code :
+<ul>
+  <li>Dependent on the existing database</li>
+  <li>Reduces the efficiency and maintainability</li>
+</ul>
+<p>The project idea aims at making the code :
+</p>
+<p>Independent of the database by making the use of python classes and 
+objects to interact with the database rather than direct SQL statements.
+</p>
+<ul>
+  <li>This will be achieved with the help of an ORM (Object Relational Mapper). Storm will be our choice of ORM.</li>
+  <li>Also, Systers aim at bringing this feature upstream and 
+incorporating this feature in the yet to be released version - Mailman3 
+(which will switch&nbsp;to use a database) - so that the open source 
+world can benefit themselves with the addition of this feature.</li>
+</ul>
+<p>Thus, mapping existing schemas of the Systers database to an object 
+oriented paradigm and determination and incorporation of necessary 
+modifications in the database needs to be done so that it fits cleanly 
+and nicely into Mailman3's Architecture.
+</p>
+<h2>Proposal Timeline
+</h2>
+<p><strong>Before April 20:</strong>
+</p>
+<ul>
+  <li>To familiarize myself completely with Mailman2's functionality and architecture.</li>
+  <li>Study of the customized files of Systers Mailman available in the Launchpad Baazar version control.</li>
+  <li>To familiarize myself with Storm(ORM that we will be using)</li>
+</ul>
+<p> <strong>April 20 – May 23 (Before the official coding time):</strong>
+</p>
+<ul>
+  <li>To do self coding with Storm to improve my further understanding and ease of use with this ORM and database(PostgreSQL)</li>
+  <li>During this period I will remain in constant touch with my mentor 
+and the Mailman community. I will remain active on IRC and Mailling 
+lists to&nbsp;discuss and finalize on the modifications (if any) that 
+needs to be on existing schemas and design of new schemas (if needed to 
+fit cleanly with Mailman3's Architecture)</li>
+  <li>Thus with the help of my mentor I will become absolutely clear 
+about my future goals,the final database implementations that need to be
+ done as well as the approach that I will follow to map the schemas to 
+the Object Oriented Paradigm.&nbsp;</li>
+</ul>
+<p> <strong>May 23 – June 18 (Official coding period starts):</strong>
+</p>
+<ul>
+  <li>Define all the required Relations(Tables) in my local database using STORM.</li>
+  <li>Define all the corresponding Python Classes and Objects that will store,modify and retrieve data in database.</li>
+  <li>Define all the interactions that Systers perform with their 
+database (virtualize or stimulate all interactions) in STORM that will 
+deal with my&nbsp;local database.</li>
+</ul>
+<p>This will help in testing of the proper working of the entire basic 
+code changes that we will later on incorporate in Systers Source code.
+</p>
+<p> <strong>June 18 – July 5:</strong>
+</p>
+<ul>
+  <li>Bringing about the decided changes in the Relational Schemas of Systers database.</li>
+  <li>Replacing parts of the above code in their respective places in 
+the Systers source code. (This should not take much time as most of the 
+functionality has been implemented in the previous step).</li>
+  <li>Testing the overall working of each and every module of the modified source code with the help of Python Test Suites.</li>
+</ul>
+<p>JULY 6th MID TERM EVALUATION
+</p>
+<p> <strong>July 6 – July 15:</strong>
+</p>
+<ul>
+  <li>Making further changes in the code to improve the Functionality, Exception handling, Bug Removal.</li>
+</ul>
+<p> <strong>July 15 – July 25:</strong>
+</p>
+<ul>
+  <li>To be in constant touch with the Mailman3's developers and to let them know about our progress.</li>
+  <li>Most of the time will be consumed for rigorous testing and bug fixes.&nbsp;</li>
+</ul>
+<p> <strong>July 25 – July 31:</strong>
+</p>
+<ul>
+  <li>For Documentation</li>
+</ul> A Buffer of two weeks has been kept for any unpredictable delay.
+<hr>
+<a href="http://www.booki.cc/gsocstudentguide/_v/1.0/edit/">EDIT</a>
+</div>
+
+
+</div>
+<!-- End of content -->
+
+  
+<!-- DEV TOOLS -->
+
+
+<!-- sputnik error page -->
+<div id="dialog-sputnik-qrac" style="display: none"></div>
+
+
+
+
+<div aria-labelledby="ui-dialog-title-bookidebug" role="dialog" tabindex="-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all  ui-draggable ui-resizable" style="display: none; z-index: 1000; outline: 0px none; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-dialog-title-bookidebug" class="ui-dialog-title">Booki Debug</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div class="ui-dialog-content ui-widget-content" id="bookidebug">
+<div class="header"><form style="margin: 0px;"><input checked="checked" class="checkdebug" type="checkbox"> <span class="debug">Debug</span> <input class="checkwarning" type="checkbox"> <span class="warning">Warning</span> <input class="checkwarning" type="checkbox"> <span class="info">Info</span>  <input class="checknetwork" type="checkbox"> <span class="network">Network</span> <span style="float: right;"><a class="clear" href="#">clear</a></span></form></div><div class="content">  </div></div><div class="ui-resizable-handle ui-resizable-n"></div><div class="ui-resizable-handle ui-resizable-e"></div><div class="ui-resizable-handle ui-resizable-s"></div><div class="ui-resizable-handle ui-resizable-w"></div><div style="z-index: 1001;" class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se"></div><div style="z-index: 1002;" class="ui-resizable-handle ui-resizable-sw"></div><div style="z-index: 1003;" class="ui-resizable-handle ui-resizable-ne"></div><div style="z-index: 1004;" class="ui-resizable-handle ui-resizable-nw"></div></div><div aria-labelledby="ui-dialog-title-dialog-sputnik-error" role="dialog" tabindex="-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all  ui-draggable ui-resizable" style="display: none; z-index: 1000; outline: 0px none; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-dialog-title-dialog-sputnik-error" class="ui-dialog-title">Can't communicate with booki</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div class="ui-dialog-content ui-widget-content" id="dialog-sputnik-error">
+	<p>
+		<span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+		There has been error in communication with booki server.
+                Not sure right now where is the problem.
+	</p>
+	<p>
+		You should refresh this page.
+	</p>
+</div><div class="ui-resizable-handle ui-resizable-n"></div><div class="ui-resizable-handle ui-resizable-e"></div><div class="ui-resizable-handle ui-resizable-s"></div><div class="ui-resizable-handle ui-resizable-w"></div><div style="z-index: 1001;" class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se"></div><div style="z-index: 1002;" class="ui-resizable-handle ui-resizable-sw"></div><div style="z-index: 1003;" class="ui-resizable-handle ui-resizable-ne"></div><div style="z-index: 1004;" class="ui-resizable-handle ui-resizable-nw"></div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">Ok</span></button></div></div></div></body></html>

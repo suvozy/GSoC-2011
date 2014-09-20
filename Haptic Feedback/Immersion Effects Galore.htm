@@ -1,0 +1,553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb"><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Immersion, mobile, development, developer, SDK">
+  <meta name="title" content="Effects Library - Mouse and Trackball Effects - Community Effects - PC gaming">
+  <meta name="author" content="Administrator">
+  <meta name="description" content="Immersion Developer Zone">
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management">
+  <title>Effects Galore</title>
+  <link href="http://www2.immersion.com/developers/templates/ceynocta-jtemp/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="Immersion%20Effects%20Galore_files/style.css" type="text/css">
+  <link rel="stylesheet" href="Immersion%20Effects%20Galore_files/phocadownload.css" type="text/css">
+  <link rel="stylesheet" href="Immersion%20Effects%20Galore_files/ja.css" type="text/css">
+  <script type="text/javascript" src="Immersion%20Effects%20Galore_files/mootools.js"></script>
+  <script type="text/javascript" src="Immersion%20Effects%20Galore_files/caption.js"></script>
+  <script type="text/javascript" src="Immersion%20Effects%20Galore_files/ja.js"></script>
+  <script type="text/javascript" src="Immersion%20Effects%20Galore_files/script.js" charset="utf-8"></script>
+<script type="text/javascript">var jaUserSetting; window.addEvent( 'domready', function() {
+							jaUserSetting = new JAUserSetting();
+						}); </script>
+
+
+<script>
+
+/*
+cgw
+*/
+
+var myimages=new Array()
+function preloadimages(){
+for (i=0;i<preloadimages.arguments.length;i++){
+myimages[i]=new Image()
+myimages[i].src=preloadimages.arguments[i]
+}
+}
+
+
+//Enter path of images to be preloaded inside parenthesis. Extend list as desired.
+preloadimages("http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/anroid-home.jpg","http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/anroid-home-ho.jpg","http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/other-mobi-home.jpg","http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/other-mobi-home-ho.jpg","http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/pcgaming-home.jpg","http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/pcgaming-home-ho.jpg","http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/top_nav_over_states.png","http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/top_nav_default_states.png","http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/top_nav_on_states.png")
+
+</script>
+
+
+<link rel="stylesheet" href="Immersion%20Effects%20Galore_files/system.css" type="text/css">
+<link rel="stylesheet" href="Immersion%20Effects%20Galore_files/general.css" type="text/css">
+<link rel="stylesheet" href="Immersion%20Effects%20Galore_files/addons.css" type="text/css">
+<link rel="stylesheet" href="Immersion%20Effects%20Galore_files/layout.css" type="text/css">
+<link rel="stylesheet" href="Immersion%20Effects%20Galore_files/template.css" type="text/css">
+<link rel="stylesheet" href="Immersion%20Effects%20Galore_files/typo.css" type="text/css">
+
+<!--[if IE]>
+<link rel="stylesheet" href="http://www2.immersion.com/developers/templates/ceynocta-jtemp/css/ie.css" type="text/css" />
+<![endif]-->
+
+<!--[if lt IE 7.0]>
+<link rel="stylesheet" href="http://www2.immersion.com/developers/templates/ceynocta-jtemp/css/ie7minus.css" type="text/css" />
+<![endif]-->
+
+<!--[if IE 7.0]>
+<style>
+.clearfix {
+	display: inline-block; /* IE7xhtml*/
+}
+</style>
+<![endif]-->
+
+<script type="text/javascript">
+var siteurl='http://www2.immersion.com/developers/';
+var tmplurl='http://www2.immersion.com/developers/templates/ceynocta-jtemp';
+</script>
+
+<script language="javascript" type="text/javascript" src="Immersion%20Effects%20Galore_files/ja_003.js"></script>
+<script language="javascript" type="text/javascript" src="Immersion%20Effects%20Galore_files/ja_002.js"></script><style type="text/css">.ja-movable-container{visibility: hidden;}</style>
+
+
+<link href="Immersion%20Effects%20Galore_files/css.css" rel="stylesheet" type="text/css"><script src="Immersion%20Effects%20Galore_files/css.js" language="javascript" type="text/javascript"></script>
+<link href="Immersion%20Effects%20Galore_files/theme-deepblue.css" rel="stylesheet" type="text/css">
+
+
+<script type="text/javascript">var CurrentFontSize=parseInt('3');</script>
+</head>
+
+<body id="bd" class="fs3 FF">
+
+<div id="ja-wrapper">
+	<a name="Top" id="Top"></a>
+
+	<!-- HEADER -->
+	<div id="ja-header" class="wrap">
+<div class="main">
+<div class="inner clearfix">
+
+		<h1 class="logo">
+		<a href="http://www2.immersion.com/developers/index.php" title="immersion"><span>immersion</span></a>
+	</h1>
+		
+		<div id="ja-search">
+		
+<form action="/developers/index.php?option=com_search#content" method="post" class="search">
+	<label for="mod_search_searchword">
+		Search	</label>
+	<input name="searchword" id="mod_search_searchword" class="inputbox" size="20" value="Search" onfocus="if(this.value=='Search') this.value='';" type="text">	<input name="option" value="com_search" type="hidden">
+	<input name="task" value="search" type="hidden">
+    <!-- add cgw -->
+    <input name="limit" value="5" type="hidden">
+</form>
+
+	</div>
+	   <!-- add cgw -->
+   	 
+   		<div class="main-title"><p><img src="Immersion%20Effects%20Galore_files/title_pcgaming.jpg" border="0"></p></div>
+	        
+</div>
+
+<div class="ja-topbar clearfix">
+	
+    <!-- cgw comment -->
+	    
+    <!-- // cgw comment -->
+
+    
+		
+		
+	<div id="ja-topnav" class="clearfix">
+	    <ul class="menu"><li class="parent item468"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=110&amp;Itemid=503"><span>Android Developers</span></a></li><li class="parent item469"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=section&amp;layout=blog&amp;id=17&amp;Itemid=504"><span>Other Mobile Developers</span></a></li><li class="parent active item470"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=109&amp;Itemid=505"><span>PC Gaming Developers</span></a></li></ul>
+</div>
+
+</div>
+</div>
+</div>
+	<!-- //HEADER -->
+
+	<!-- MAIN NAVIGATION -->      
+    <div id="cgw_nav_outer">
+	        <div id="cgw_main-nav-wrap">
+        <div id="ja-mainnav">
+<ul class="menu_cgw-horimenu"><li class="item489"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=109&amp;Itemid=505"><span>Home</span></a></li><li class="item490"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=104&amp;Itemid=506"><span>What's new?</span></a></li><li class="item491"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=105&amp;Itemid=507"><span>getting started</span></a></li><li class="item492"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=106&amp;Itemid=508"><span>Technology</span></a></li><li id="current" class=" last active item493"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=107&amp;Itemid=509"><span>COMMUNITY</span></a></li></ul>
+</div>
+<!--</div>-->
+        <!-- //MAIN NAVIGATION -->
+        </div>
+        </div>
+    
+	
+	<!-- MAIN CONTAINER -->
+	<div id="ja-container" class="wrap ja-l1">
+	<div class="main"><div class="main-inner clearfix">
+
+		<div id="ja-mainbody" style="width:100%">
+			<!-- CONTENT -->
+<div id="ja-main" style="width:80%">
+<div class="inner clearfix">
+	
+	
+
+	
+	<div id="ja-contentwrap" class="">
+				<div id="ja-content" class="column" style="width:100%">
+
+			<div id="ja-current-content" class="column" style="width:100%">
+								
+								<div class="ja-content-main clearfix">
+					
+<div class="componentheading">Effects Galore</div>
+
+
+
+
+
+
+
+<div class="article-content">
+<p>The following sample effects were created with Immersion Studio® software.</p>
+<p class="title-go">Mouse and Trackball Effects:</p>
+<p><img src="Immersion%20Effects%20Galore_files/tfm3.gif" style="border: 0pt none; vertical-align: middle;" border="0"> = Tactile Feedback Mouse, e.g. Logitech iFeel Mouse<br><img src="Immersion%20Effects%20Galore_files/t3.gif" style="border: 0pt none; vertical-align: middle;" border="0"> = Tactile Feedback Mouse, e.g. Logitech iFeel Mouse<br><img src="Immersion%20Effects%20Galore_files/ffm3p.gif" style="border: 0pt none; vertical-align: middle;" border="0"> = Full Force Feedback Mouse, e.g. Logitech Wingman Force Feedback <span style="font-family: Verdana,Arial,Geneva,sans-serif; font-size: 11px;">Mouse</span></p>
+<hr>
+<table style="width: 306px; height: 98px;" border="0">
+<tbody>
+<tr>
+<td><span class="title-go">Alarms</span></td>
+<td align="right"><span style="text-decoration: underline;"><br></span></td>
+</tr>
+<tr>
+<td>Alarm chimer</td>
+<td align="right"><span style="text-decoration: underline;"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect1.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect1.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></span></td>
+</tr>
+<tr>
+<td>Aooga</td>
+<td align="right"><span style="text-decoration: underline;"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect2.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect2.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></span></td>
+</tr>
+<tr>
+<td>Beelelee</td>
+<td align="right"><span style="text-decoration: underline;"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect3.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect3.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></span></td>
+</tr>
+<tr>
+<td>Buzzer 1</td>
+<td align="right"><span style="text-decoration: underline;"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect4.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect4.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></span></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 306px; height: 112px;" border="0">
+<tbody>
+<tr>
+<td class="title-go">Household</td>
+<td><br></td>
+</tr>
+<tr>
+<td>Doorknock</td>
+<td align="right"><span style="text-decoration: underline;"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect5.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect5.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></span></td>
+</tr>
+<tr>
+<td>Breakin</td>
+<td align="right"><span style="text-decoration: underline;"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect6.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect6.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></span></td>
+</tr>
+<tr>
+<td>Pouring</td>
+<td align="right"><span style="text-decoration: underline;"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect7.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect7.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></span></td>
+</tr>
+<tr>
+<td>Can Crush<br></td>
+<td align="right"><span style="text-decoration: underline;"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect8.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect8.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></span></td>
+</tr>
+<tr>
+<td>Drop Stuff</td>
+<td align="right"><span style="text-decoration: underline;"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect9.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect9.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></span></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 306px; height: 98px;" border="0">
+<tbody>
+<tr>
+<td class="title-go">Machinery</td>
+<td><br></td>
+</tr>
+<tr>
+<td>Factory</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect10.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect10.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Stamper</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect11.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect11.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Chopper</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect12.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect12.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Bigger</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect13.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect13.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 305px; height: 112px;" border="0">
+<tbody>
+<tr>
+<td class="title-go">Music</td>
+<td><br></td>
+</tr>
+<tr>
+<td>Tututu</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect14.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect14.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Bopshur</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect15.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect15.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Woodblok</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect16.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect16.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Doeseedo</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect17.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect17.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Monitor</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect18.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect18.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 304px; height: 87px;" border="0">
+<tbody>
+<tr>
+<td class="title-go">Animal</td>
+<td><br></td>
+</tr>
+<tr>
+<td>Dog</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect19.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect19.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Chimp</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect20.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect20.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Cricket 2<br></td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect21.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect21.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 305px; height: 86px;" border="0">
+<tbody>
+<tr>
+<td class="title-go">Nature</td>
+<td><br></td>
+</tr>
+<tr>
+<td>Strong</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect22.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect22.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Thunder</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect23.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect23.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Smallwa<br></td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect24.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect24.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 305px; height: 47px;" border="0">
+<tbody>
+<tr>
+<td class="title-go">Tasteless</td>
+<td><br></td>
+</tr>
+<tr>
+<td>Snore</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect25.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect25.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 304px; height: 98px;" border="0">
+<tbody>
+<tr>
+<td><span class="title-go">Pops and Clicks</span><strong><br></strong></td>
+<td><br></td>
+</tr>
+<tr>
+<td>Bhump</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect26.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect26.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Boingec</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect27.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect27.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Tick</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect28.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect28.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Intercom</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect29.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect29.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 304px; height: 112px;" border="0">
+<tbody>
+<tr>
+<td class="title-go">Weapons</td>
+<td><br></td>
+</tr>
+<tr>
+<td>Rifle Fire</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect30.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect30.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Damper Drop</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect31.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect31.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>RazorJack Fire</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect32.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect32.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Field Activate</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect33.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect33.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Shotgun Cock<br></td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect34.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect34.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Crowbar Hit</td>
+<td style="text-align: right;"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect35.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect35.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 305px; height: 98px;" border="0">
+<tbody>
+<tr>
+<td class="title-go">Textures</td>
+<td><br></td>
+</tr>
+<tr>
+<td>Nylon stockings</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect36.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect35.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>DualH Texture</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect37.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect37.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Texture Down Only</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect38.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect38.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Texture Rough</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect39.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect39.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<hr>
+<p><span class="title-go">Joystick, Wheel, and Gamepad Effects: </span></p>
+<p><img src="Immersion%20Effects%20Galore_files/j3.gif" border="0"> = Full Force Feedback Joystick, e.g. Microsoft Sidewinder Joystick<br><img src="Immersion%20Effects%20Galore_files/g3.gif" border="0"> = Full Force Feedback Gamepad, e.g. Gravis Xterminator Force Gamepad<br><img src="Immersion%20Effects%20Galore_files/w3.gif" border="0"> = <span style="font-family: Verdana,Arial,Geneva,sans-serif; font-size: 11px;">Full Force Feedback Wheel, e.g. AVB Force Feedback Steering Wheel<br></span><span style="font-family: Verdana,Arial,Geneva,sans-serif; font-size: 11px;"><img src="Immersion%20Effects%20Galore_files/r3.gif" border="0"> = </span>Rumble Feedback Gamepad, e.g. InterAct HammerheadFX Gamepad</p>
+<hr>
+<p>&nbsp;</p>
+<table style="width: 305px; height: 76px;" border="0">
+<tbody>
+<tr>
+<td class="title-go">Driving</td>
+<td><br></td>
+</tr>
+<tr>
+<td>Bus Driving<br></td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect40.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect40.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Car Crash<br></td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect41.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect41.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 305px; height: 102px;" border="0">
+<tbody>
+<tr>
+<td class="title-go">Flight</td>
+<td><br></td>
+</tr>
+<tr>
+<td>Engine 1<br></td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect42.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect42.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Broken Jack Screw<br></td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect43.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect43.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Vortex 1<br></td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect44.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect44.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 305px; height: 92px;" border="0">
+<tbody>
+<tr>
+<td class="title-go">Sports</td>
+<td><br></td>
+</tr>
+<tr>
+<td>Punch</td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect45.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect45.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Quarter<br></td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect46.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect46.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+<tr>
+<td>Bow and Arrow<br></td>
+<td align="right"><a href="http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect47.html" onclick="window.open('http://gaming.immersion.com/developer/community/touchSwap/effectpages/effect47.html','','width=300,height=300,left='+(screen.availWidth/2-150)+',top='+(screen.availHeight/2-150)+'');return false;">Try it</a></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+
+				</div>
+				
+							</div>
+
+			
+		</div>
+		
+			</div>
+
+	
+</div>
+</div>
+<!-- //CONTENT -->			<!-- LEFT COLUMN--> 
+<div id="ja-left" class="column sidebar" style="width:20%">
+
+		
+		<div class="ja-colswrap clearfix ja-l1">
+			<div class="ja-col  column">
+				
+    <div class="ja-moduletable moduletable_menu  clearfix" id="Mod156">
+    <div class="cgw-mod-top"></div>
+						<div class="ja-box-ct clearfix">
+		<ul class="menu_cgw-mod-menu"><li class="item637"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=article&amp;id=408&amp;Itemid=634"><span>FAQ</span></a></li><li id="current" class="active item638"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=article&amp;id=409&amp;Itemid=635"><span>Effects</span></a></li><li class=" last item639"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=article&amp;id=435&amp;Itemid=636"><span>Tips</span></a></li></ul>		</div>
+    <div class="cgw-mod-bottom"></div>
+    </div>
+	
+		</div>
+			</div>
+		
+	
+</div>
+<!-- //LEFT COLUMN--> 
+		</div>
+
+				
+	</div>
+	</div>
+	</div>
+	<!-- //MAIN CONTAINER -->
+
+	
+	<!-- FOOTER -->
+	<div id="ja-footer" class="wrap">
+<div class="main">
+
+<div class="ja-footnav clearfix">
+	<p>Copyright 2011 Immersion Corporation</p><ul id="mainlevel-nav"><li class="ja-firstitem"><a href="http://www.immersion.com/about/legal.html" class="mainlevel-nav">Terms of Use</a></li><li><a href="http://www.immersion.com/about/privacy.html" class="mainlevel-nav">Privacy Policy</a></li><li><a href="http://www.immersion.com/about/trademark.html" class="mainlevel-nav">Brand Guidelines</a></li></ul>
+	</div>
+	
+<div class="inner">
+	<div id="ja-poweredby">
+		<!--<a id="t3-logo" href="http://t3.joomlart.com" title="Powered By T3 Framework" target="_blank">Powered By T3 Framework</a>-->
+	</div>
+	
+	<div class="ja-copyright">
+		
+	</div>
+</div>
+
+</div>
+</div>
+
+	<!-- //FOOTER -->
+
+</div>
+
+
+
+
+
+
+
+</body></html>

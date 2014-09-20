@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><!-- monobook/monobook.tmpl
+See PHP for credits and license
+--><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <title>Komodo OpenLab - GSoC 2011</title>
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <!--HeaderText--><style type="text/css"><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  
+span.anchor {
+	float: left;
+	font-size: 10px;
+	margin-left: -10px;
+	width: 10px;
+    position:relative; top:-0.1em;
+	text-align: center;
+}
+span.anchor a { text-decoration: none; }
+span.anchor a:hover { text-decoration: underline; }
+ol.toc { text-indent:-20px; list-style: none; }
+ol.toc ol.toc { text-indent:-40px; }
+div.tocfloat { font-size: smaller; margin-bottom: 10px;
+    border-top: 1px dotted #555555; border-bottom: 1px dotted #555555;
+    padding-top: 5px; padding-bottom: 5px; 
+    width: 38%; float: right; margin-left: 10px; clear: right;
+    margin-right:-13px; padding-right: 13px; padding-left: 13px;
+    background-color: #eeeeee; }
+div.toc { font-size: smaller; 
+    padding: 5px; border: 1px dotted #cccccc;
+    background: #f7f7f7;
+    margin-bottom: 10px; }
+div.toc p { background-color: #f9f6d6;
+    margin-top:-5px;   padding-top: 5px;
+    margin-left:-5px;  padding-left: 5px;
+    margin-right:-5px; padding-right: 5px;
+    padding-bottom: 3px;
+    border-bottom:  1px dotted #cccccc; }.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>
+<script src="Komodo%20OpenLab%20Inc._files/ga.js" async="" type="text/javascript"></script><script type="text/JavaScript">
+<!--
+Nix={map:null,convert:function(a){Nix.init();var s='';for(i=0;i<a.length;i++){var b=a.charAt(i);s+=((b>='A'&&b<='Z')||(b>='a'&&b<='z')?Nix.map[b]:b);}return s;},init:function(){if(Nix.map!=null)return;var map=new Array();var s='abcdefghijklmnopqrstuvwxyz';for(i=0;i<s.length;i++)map[s.charAt(i)]=s.charAt((i+13)%26);for(i=0;i<s.length;i++)map[s.charAt(i).toUpperCase()]=s.charAt((i+13)%26).toUpperCase();Nix.map=map;},decode:function(a){document.write(Nix.convert(a));}}
+//-->
+</script>
+<script type="text/javascript">
+function toggle(obj) {
+    var elstyle = document.getElementById(obj).style;
+    var text    = document.getElementById(obj + "tog");
+    if (elstyle.display == 'none') {
+        elstyle.display = 'block';
+        text.innerHTML = "hide";
+    } else {
+        elstyle.display = 'none';
+        text.innerHTML = "show";
+    }
+}
+</script>  <meta name="robots" content="index,follow">
+<link rel="stylesheet" type="text/css" href="Komodo%20OpenLab%20Inc._files/monobook.css">
+
+  <!-- <link rel='stylesheet' href='http://wiki.komodoopenlab.com/pub/skins/monobook/monobook.css' type='text/css'/> -->
+
+<style type="text/css">#header { border-bottom: none; }</style>
+
+<!--Google analytics code-->
+	<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-21451819-1']);
+	_gaq.push(['_setDomainName', '.komodoopenlab.com']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+	</script>
+</head>
+<body>
+  <div id="globalwrapper">
+    <!--PageLeftFmt--><div id="pageleft">
+      <div id="pageleftcontent">
+        <div class="pageleftbody" id="sidesearch">
+          <form name="searchform" action="http://wiki.komodoopenlab.com/index.php/Site/Search">
+            <input name="pagename" value="Site/Search" type="hidden">
+            <a href="http://wiki.komodoopenlab.com/index.php/Site/Search">Search</a>:<br>
+            <input class="searchbox" name="q" type="text">
+            <input class="searchbutton" value="Go" type="submit">
+          </form>
+        </div><!-- id='sidesearch' -->
+        <div class="pageleftbody" id="sidebar">
+          <p class="sidehead"> <a class="wikilink" href="http://wiki.komodoopenlab.com/index.php/Main/HomePage">Home Page</a>
+<br clear="all"><br clear="all">
+ <span class="wikiword">GSoC</span>
+</p><ul><li><a class="selflink" href="http://wiki.komodoopenlab.com/index.php/Main/GSoC2011">2011</a>
+</li></ul><p class="vspace" style="text-align: right;"> <span style="font-size:83%"><a class="wikilink" href="http://wiki.komodoopenlab.com/index.php/Site/SideBar?action=edit">edit SideBar</a></span>
+</p>
+
+        </div><!-- id='sidebar' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id="pagelogo">
+        <a href="http://wiki.komodoopenlab.com/index.php" title="Komodo OpenLab - GSoC 2011"><img style="margin-top: 15px; margin-left: 10px;" src="Komodo%20OpenLab%20Inc._files/komodo_small.png" width="136px"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name="topcontent"></a>
+    <div id="content">
+      <!--PageHeaderFmt--><div id="header"></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id="tabs">
+      <ul><li class="browse"><p id="active">View</p>
+</li><li class="edit"><a accesskey="e" rel="nofollow" class="wikilink" href="http://wiki.komodoopenlab.com/index.php/Main/GSoC2011?action=edit">Edit</a>
+</li><li class="diff"><a accesskey="h" rel="nofollow" class="wikilink" href="http://wiki.komodoopenlab.com/index.php/Main/GSoC2011?action=diff">History</a>
+</li><li class="print"><a accesskey="" rel="nofollow" class="wikilink" href="http://wiki.komodoopenlab.com/index.php/Main/GSoC2011?action=print">Print</a>
+</li></ul>
+
+      </div><!--/PageTabsFmt-->
+      <div id="tabpage">
+        <div id="contentbody">
+          <!--PageTitleFmt--><h1 class="titlepage"><span class="wikiword">GSoC</span> 2011
+
+</h1><!--/PageTitleFmt-->
+          <div id="rightbody">
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id="wikitext">
+<div class="vspace"></div><div class="toc"><p><a name="toc" id="toc"></a><b>On this page...</b> (<a id="tocidtog" href="javascript:toggle('tocid');">hide</a>)</p><ol class="toc" id="tocid"><li>1.&#8194;<a href="#toc1">About GSoC</a><ol class="toc"><li>1.1&#8194;<a href="#toc2">Important Dates</a></li></ol></li><li>2.&#8194;<a href="#toc3">About Komodo OpenLab</a></li><li>3.&#8194;<a href="#toc4">Project Ideas</a><ol class="toc"><li>3.1&#8194;<a href="#toc5">Tekla Project Ideas</a></li><li>3.2&#8194;<a href="#toc6">tagin! Project Ideas</a></li></ol></li><li>4.&#8194;<a href="#toc7">Frequently Asked Questions</a><ol class="toc"><li>4.1&#8194;<a href="#toc8">Can I propose a project that is not in your ideas page?</a></li><li>4.2&#8194;<a href="#toc9">Do I need to have an Android / BlackBerry / iPhone / iPad?</a></li><li>4.3&#8194;<a href="#toc10">I am applying to Tekla, do I need access to a Tekla Shield?</a></li><li>4.4&#8194;<a href="#toc11">Would you accept a hardware development project?</a></li></ol></li></ol></div>
+<h2><a name="toc1" id="toc1"></a>1.&#8194;  About <span class="wikiword">GSoC</span></h2>
+<p>Google's summer of code is now in its 7th year, funding student 
+positions over the summer, working with various open source development 
+projects producing code that benefits everyone. <span class="wikiword">GSoC</span>
+ will put up $5000 US to cover the wage of a student during the period 
+between the end of May and the end of August. Students who are 
+interested in participating should scan through the <span class="wikiword">GSoC</span>
+ FAQ for information about the program and how to apply, and scan 
+through the "Project Ideas" listed below for potential projects they 
+might participate in. Or, propose a project of your own and attach it to
+ your application.
+</p>
+<div class="vspace"></div><ul><li><a class="urllink" href="http://www.google-melange.com/" rel="nofollow">Google Summer of Code</a>
+</li><li><a class="urllink" href="http://www.google-melange.com/document/show/gsoc_program/google/gsoc2011/faqs" rel="nofollow">Google Summer of Code FAQs</a>
+</li><li><a class="urllink" href="http://code.google.com/p/google-summer-of-code/wiki/AdviceforStudents" rel="nofollow">Advice for Students Applying for GSoC</a>
+</li></ul><p class="vspace">Since the deadline is quickly approaching, we are asking students interested in working with <a class="urllink" href="http://komodoopenlab.com/" rel="nofollow">Komodo</a> to submit a 2-4 page proposal to the <span class="wikiword">GSoC</span> site at <a class="urllink" href="http://www.google-melange.com/gsoc/org/google/gsoc2011/komodo" rel="nofollow">http://www.google-melange.com/gsoc/org/google/gsoc2011/komodo</a> using the template below:
+</p>
+<div class="vspace"></div><ol><li>Summary
+</li><li>Proposed Design
+</li><li>Proposed Implementation
+</li><li>Proposed Timeline (with milestones/deliverables)
+</li><li>Full contact details (including skype, irc or other IM handle)
+</li></ol><p class="vspace"><strong>Please include a link to your resume on your proposal</strong>.
+ Once you have made the submission, please let us know by sending an 
+e-mail to info[at]komodoopenlab[dot]com or through our contact form 
+here: <a class="urllink" href="http://komodoopenlab.com/contact/" rel="nofollow">http://komodoopenlab.com/contact/</a>
+</p>
+<p class="vspace">If time allows, we will be providing feedback in the 
+form of comments on your proposal page, so check back every few hours to
+ see if we have managed to review it.
+</p>
+<div class="vspace"></div><h3><a name="toc2" id="toc2"></a>1.1&#8194;  Important Dates</h3>
+<ul><li>Mentoring Organisation Applications February 28 to March 11
+</li><li>Student Application Period March 28 to April 8
+</li><li>Accepted Students Announced April 25
+</li></ul><div class="vspace"></div><h2><a name="toc3" id="toc3"></a>2.&#8194;  About Komodo <span class="wikiword">OpenLab</span></h2>
+<p><a class="urllink" href="http://komodoopenlab.com/" rel="nofollow">Komodo OpenLab</a>
+ is a research and development lab specializing in the creation, 
+adaptation and support of open and inclusive technologies that 
+facilitate the daily lives of people with disabilities, while also 
+benefiting everybody else.
+</p>
+<p class="vspace">Starting in 2011, <a class="urllink" href="http://komodoopenlab.com/" rel="nofollow">Komodo</a> will be working with the <a class="urllink" href="http://inclusivedesign.ca/" rel="nofollow">Inclusive Design Institute (IDI)</a> in the ongoing development of two projects: <a class="urllink" href="http://scyp.idrc.ocad.ca/projects/tekla" rel="nofollow">Tekla</a> (started with <span class="wikiword">GSoC</span> 2010) &amp; <a class="urllink" href="http://scyp.idrc.ocad.ca/projects/tagin" rel="nofollow">tagin!</a>. The goal of the <a class="urllink" href="http://inclusivedesign.ca/" rel="nofollow">IDI</a>
+ is to ensure that information and communication technologies are 
+designed to be accessible and usable by the full range of human 
+diversity from the very beginning. This is fully in line with the goals 
+of <a class="urllink" href="http://komodoopenlab.com/" rel="nofollow">Komodo OpenLab</a> so we are very excited about the chance to work with the <a class="urllink" href="http://inclusivedesign.ca/" rel="nofollow">IDI</a>!
+</p>
+<div class="vspace"></div><h2><a name="toc4" id="toc4"></a>3.&#8194;  Project Ideas</h2>
+<h3><a name="toc5" id="toc5"></a>3.1&#8194;  <a class="urllink" href="http://scyp.idrc.ocad.ca/projects/tekla" rel="nofollow">Tekla</a> Project Ideas</h3>
+<p>(1 position available)
+Mentor: Jorge Silva
+</p>
+<p class="vspace"><a class="urllink" href="http://scyp.idrc.ocad.ca/projects/tekla" rel="nofollow">Tekla</a>
+ is a collection of mobile open source and open hardware applications 
+that may be used to enable access to, and extend the functionality of, 
+mobile devices for people with motor impairments.
+</p>
+<p class="vspace">Our initial goal is to enable access to mobile devices
+ through the same interfaces that powered-wheelchair users employ to 
+move around, thus allowing them to easily select between controlling 
+their wheelchair or controlling their mobile device.
+</p>
+<p class="vspace">Students submitting ideas for the Tekla project should sign up to the development mailing list at: <a class="urllink" href="https://launchpad.net/%7Emeadl-devel" rel="nofollow">https://launchpad.net/~meadl-devel</a>
+</p>
+<div class="vspace"></div><div><span class="frame rfloat"> <img src="Komodo%20OpenLab%20Inc._files/tekla03alpha_shot.jpg" alt="" title="" width="220px"><br>Tekla Android App screenshot</span></div>
+<h4>Tekla plug-in framework for 3rd-party apps</h4>
+<p>Difficulty: moderate
+</p>
+<p class="vspace">The <a class="urllink" href="http://scyp.idrc.ocad.ca/projects/tekla/the-app" rel="nofollow">Tekla Android App</a>
+ is great for basic access to Android devices, but we would like to be 
+able to share the love to 3rd-party applications so open and 
+closed-source developers alike can make their apps fully accessible to 
+people with mobility impairments. The <a class="urllink" href="http://scyp.idrc.ocad.ca/projects/tekla/the-app" rel="nofollow">Tekla Android App</a> is currently made up of the <a class="urllink" href="http://wiki.scyp.idrc.ocad.ca/w/Tekla/Switch_Event_Provider" rel="nofollow">Switch Event Provider (SEP)</a> and the <a class="urllink" href="http://wiki.scyp.idrc.ocad.ca/w/Tekla/Input_Method" rel="nofollow">Tekla Input Method (IME)</a>. The SEP is a service responsible for (i) managing the Bluetooth connection with the <a class="urllink" href="http://scyp.idrc.ocad.ca/projects/tekla/the-shield" rel="nofollow">Tekla Shield</a>,
+ and (ii) broadcasting switch events to the Android operating system. 
+The IME, in turn, listens to the events broadcasted by the SEP and turns
+ them into emulated keyboard inputs. However, this broadcast-based 
+notification of switch events does not yet allow for 3rd-party 
+applications such as games, to temporarily process switch input directly
+ (i.e., by-passing the IME). We need to design and code a policy to 
+allow 3rd-party applications to request and receive direct processing of
+ switch events from any other application or from the IME. This will 
+likely involve transforming the SEP into a manager able to selectively 
+deliver switch events to specific applications.
+</p>
+<p class="vspace">Successful candidate students will have experience in 
+Android development as well as a strong grasp of key Android concepts 
+such as services, broadcasts/intents and service binding.
+</p>
+<div class="vspace"></div><div><span class="frame lfloat"> <img src="Komodo%20OpenLab%20Inc._files/meadl.png" alt="" title="" width="360px"><br>Schematic diagram of Tekla user case</span></div>
+<h4>Accessible, cross-platform slide presenter app</h4>
+<p>Difficulty: moderate
+</p>
+<p class="vspace">We would like to take advantage of the touch-free access to Android provided by the <a class="urllink" href="http://scyp.idrc.ocad.ca/projects/tekla/the-app" rel="nofollow">Tekla App</a> and <a class="urllink" href="http://scyp.idrc.ocad.ca/projects/tekla/the-shield" rel="nofollow">Tekla Shield</a>
+ in order to create an accessible, cross-platform slide-presenter app 
+that allows anyone, but particularly Tekla users, to control slide 
+presentations on Windows, Mac OS and/or Linux. This will most likely 
+involve the adaptation of an already active open-source project like <a class="urllink" href="http://www.gmote.org/" rel="nofollow">Gmote</a> in order to ensure usability and accessibility for Tekla users.
+</p>
+<p class="vspace">Successful candidate students will have experience in 
+Android and/or Java development as well as working knowledge of 
+cross-platform desktop application development tools.
+</p>
+<div class="vspace"></div><h4><span class="wikiword">BlackBerry</span> application support for Tekla Shield</h4>
+<p>Difficulty: moderate
+</p>
+<p class="vspace">Blackberry devices provide <a class="urllink" href="http://en.wikipedia.org/wiki/Bluetooth_profile#Serial_Port_Profile_.28SPP.29" rel="nofollow">serial port profile (SPP)</a> support for external bluetooth devices and it turns out SPP is the protocol the <a class="urllink" href="http://scyp.idrc.ocad.ca/projects/tekla/the-shield" rel="nofollow">Tekla Shield</a>
+ uses to enable people with mobility impairments to access 
+Bluetooth-enabled devices using their personally adapted assistive 
+technologies. Therefore, it is possible to port some of the 
+functionality provided by the <a class="urllink" href="http://scyp.idrc.ocad.ca/projects/tekla/the-app" rel="nofollow">Tekla Android App</a> to Blackberry.
+</p>
+<p class="vspace">Specifically, this project will involve implementing a <a class="urllink" href="http://wiki.scyp.atrc.utoronto.ca/w/Tekla/Switch_Event_Provider" rel="nofollow">Switch Event Provider (SEP)</a>
+ service on Blackberry that applications can use to receive Tekla Shield
+ commands, and thus become accessible to people with mobility 
+impairments. The SEP service will (i) have the ability to establish an 
+SPP connection to a nearby Tekla Shield, (ii) perform basic input 
+processing tasks on the phone (e.g., wake and unlock phone), and (iii) 
+broadcast switch events to interested applications on the operating 
+system.
+</p>
+<p class="vspace">Successful candidate students will have experience in <span class="wikiword">BlackBerry</span>
+ development, basic knowledge of serial port communication, and 
+familiarity with porting applications from Android to Blackberry.
+</p>
+<div class="vspace"></div><div><span class="frame rfloat"> <img src="Komodo%20OpenLab%20Inc._files/tagin_shot.png" alt="" title="" width="220px"><br>Screenshot of tagin! Android<br clear="all"> demo app</span></div>
+<h3><a name="toc6" id="toc6"></a>3.2&#8194;  <a class="urllink" href="http://scyp.idrc.ocad.ca/projects/tagin" rel="nofollow">tagin!</a> Project Ideas</h3>
+<p>(2 positions available)
+Mentor: Jorge Silva
+</p>
+<p class="vspace"><a class="urllink" href="http://scyp.idrc.ocad.ca/projects/tagin" rel="nofollow">tagin!</a>
+ is an open source, location tagging engine that may be used to create 
+indoor, location-based services (LBS) and applications. Developers can 
+use <a class="urllink" href="http://scyp.idrc.ocad.ca/projects/tagin" rel="nofollow">tagin!</a> to manage points of interest (POI) and digital signs making them available to their applications on <span class="wikiword">WiFi</span>-capable devices.
+</p>
+<p class="vspace">Students submitting ideas for the tagin! project should sign up to the development mailing list at: <a class="urllink" href="https://launchpad.net/%7Etagin-devel" rel="nofollow">https://launchpad.net/~tagin-devel</a>
+</p>
+<div class="vspace"></div><h4>Indoor Geocaching Game</h4>
+<p>Difficulty: hard (but fun)
+</p>
+<p class="vspace">Our tagin! indoor positioning engine works very well 
+with up to room-level accuracies. However, we have a small problem: 
+knowing where you are is not all that exciting for most people after the
+ first 5 minutes. However, this information is still very useful for 
+people with visual impairments, so we need to come up with a clever way 
+to encourage everyone to use the tagin! engine to describe indoor 
+locations so blind folks can reap the benefits. One idea we would like 
+to explore is to create a simple mobile app that implements an indoor 
+version of <a class="urllink" href="http://www.geocaching.com/" rel="nofollow">geocaching</a>.
+ The game would be designed to reward gamers who hide lots of caches in a
+ building as well as gamers who accurately describe the location of any 
+cache they find (hidden goal: ensure the location database is up to 
+date).
+</p>
+<p class="vspace">Since this is a bit of a complex project, we are dividing it in two stages summarized below:
+</p><h5>Hidding the cache</h5>
+<p>Hidding the cache will involve two steps:
+</p><ul><li>Recording the cache's location, and
+</li><li>Fingerprinting the cache
+</li></ul><p class="vspace"><span class="frame lfloat"> 
+<object type="application/x-shockwave-flash" data="Komodo%20OpenLab%20Inc._files/FKCkNciB7dk" height="233" width="360">
+  <param name="movie" value="http://www.youtube-nocookie.com/v/FKCkNciB7dk?fs=1&amp;hd=1">
+  <param name="wmode" value="transparent">
+  <param name="allowFullScreen" value="true">
+  <param name="allowscriptaccess" value="always">
+</object> <br clear="all"> Geocaching introductory video</span>
+The first thing a player hiding a cache should do, is to record the 
+location where the cache will be hidden. This location will be based on 
+the <a class="urllink" href="http://xmpp.org/extensions/xep-0080.html" rel="nofollow">XMPP user location standard</a>
+ up to room-level accuracy. A wizard will guide the player to add 
+buildings, floors, areas and rooms. We want to be able to do this 
+offline as much as possible, so local data storage and cloud syncing 
+will be required.
+</p>
+<p class="vspace">The next thing the player will have to do is 
+'fingerprint' the cache, which involves matching the previously recorded
+ location information with the pattern of <span class="wikiword">WiFi</span>
+ signals visible at the place where the cache is hidden. We already have
+ the fingerprinting algorithms available on Android, so all we need for 
+this part is the local storage and cloud syncing code.
+</p>
+<div class="vspace"></div><h5>Finding the cache</h5>
+<p>Finding the cache will involve three steps:
+</p><ul><li>Searching for previously hidden caches nearby,
+</li><li>Track a cache, and
+</li><li>Confirm the location of the cache
+</li></ul><p class="vspace">A player interested in finding a cache 
+should be able to retrieve a list of previously hidden caches by 
+proximity (proximity as defined through GPS or by manually entering a 
+location). Once a particular cache is selected, the application will 
+allow the user to track it, this may include a 'radar' or 'hot &amp; 
+cold' view that lets the user know how close or how far he/she is from 
+the hidden cache. Once the cache is found, the user will confirm the 
+find to the game server, and at that point, the app will submit a fresh 
+fingerprint that may be used to update the positioning engine database 
+(trick borrowed from 'reinforced learning' in artificial intelligence).
+</p>
+<div class="vspace"></div><h5>Please Note:</h5>
+<p>We don't expect to complete this project over the summer, but we 
+should be able to get something functional off the ground. If you wish, 
+you can focus on either the server or the client Android app.
+</p>
+<p class="vspace">Successful candidate students focusing on the server will have experience in the implementation of <span class="wikiword">RESTful</span> frameworks such as <a class="urllink" href="http://bottle.paws.de/docs/dev/index.html" rel="nofollow">bottle</a> or <a class="urllink" href="http://flask.pocoo.org/" rel="nofollow">flask</a>, data exchange protocols such as <a class="urllink" href="http://www.json.org/" rel="nofollow">JSON</a> and database engines such as <a class="urllink" href="http://www.postgresql.org/" rel="nofollow">PosgreSQL</a>.
+</p>
+<p class="vspace">Successful candidate students focusing on the client 
+Android app will have experience in Android development, as well as 
+familiarity with data exchange protocols such as <a class="urllink" href="http://www.json.org/" rel="nofollow">JSON</a> and database engines such as <a class="urllink" href="http://www.sqlite.org/" rel="nofollow">SQLite</a>.
+</p>
+<p class="vspace">In both cases, experience with the usual (outdoor) geocaching will be considered an asset.
+</p>
+<div class="vspace"></div><h2><a name="toc7" id="toc7"></a>4.&#8194;  Frequently Asked Questions</h2>
+<h3><a name="toc8" id="toc8"></a>4.1&#8194;  Can I propose a project that is not in your ideas page?</h3>
+<p><strong>Answer:</strong> Definitely!, we are quite sure we couldn't 
+possibly think of all of the best ideas on our own, but be aware that 
+the project ideas described in this page reflect (more or less) our 
+priorities, so your idea would have to be somewhat related or would 
+really have to impress us in order to get picked. In any case, if you 
+send a draft early, we can help you shape it into something that would 
+be useful for the projects (if not already).
+</p>
+<div class="vspace"></div><h3><a name="toc9" id="toc9"></a>4.2&#8194;  Do I need to have an Android / <span class="wikiword">BlackBerry</span> / iPhone / iPad?</h3>
+<p><strong>Answer:</strong> Not necessarily, but it would make things a 
+lot easier if you did have access to the device you are interested in 
+working on. The main issue to consider is that since both the Tekla and 
+tagin! projects rely heavily on hardware peripherals such as Bluetooth 
+and <span class="wikiword">WiFi</span>, it may not be possible to fully test your code with the emulators provided on the <span class="wikiword">SDKs</span>. However, if like <a class="urllink" href="http://en.wikipedia.org/wiki/Linus_Torvalds" rel="nofollow">Linus Torvalds</a>
+ you believe you can write perfect code on your first try, then we 
+definitely want you on the team even if you don't have the device, so do
+ apply!
+</p>
+<div class="vspace"></div><h3><a name="toc10" id="toc10"></a>4.3&#8194;  I am applying to Tekla, do I need access to a Tekla Shield?</h3>
+<p><strong>Answer:</strong> No, Tekla provides a very simple API that can be easily emulated. In fact, we do have a bare-bones <a class="urllink" href="http://bazaar.launchpad.net/%7Ejorge-silva/meadl/main/files/head:/servers/python/" rel="nofollow">python script</a>
+ that can turn you bluetooth-enabled PC or laptop into a fully featured 
+Tekla Shield emulator, so go ahead and submit your proposal, don't let 
+the lack of access to the Tekla Shield stop you!
+</p>
+<div class="vspace"></div><h3><a name="toc11" id="toc11"></a>4.4&#8194;  Would you accept a hardware development project?</h3>
+<p><strong>Answer:</strong> Not really. Unfortunately, the Google Summer
+ of Code program does not support projects with a heavy hardware 
+development component. You can definitely work on hardware development 
+as part of your project, but the hardware component cannot be the main 
+focus of your proposal, nor should it be required for your final product
+ to work.
+</p>
+</div>
+
+            <span style="clear:both;"></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id="footer">
+        <div class="lastmod">Copyright © 2008-2011 by <a href="http://www.komodoopenlab.com/">Komodo OpenLab</a></div>
+        <div class="lastmod">Powered by <a href="http://www.pmwiki.org/" target="_new">PmWiki</a>. Page last modified on April 05, 2011, at 09:18 PM</div>
+        <ul>
+          <li class="navbox"><a href="#topcontent">&#9650; Top &#9650;</a></li>
+          <li><a href="http://wiki.komodoopenlab.com/index.php/Site/Search">Search</a></li>
+          <li><a href="http://wiki.komodoopenlab.com/index.php/Main/RecentChanges">Recent Changes</a></li>
+          <li><a href="http://wiki.komodoopenlab.com/index.php/Site/AllRecentChanges">All Recent Changes</a></li>
+        </ul>
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+  <div id="stopwatch"><pre></pre></div>
+
+
+
+</body></html>

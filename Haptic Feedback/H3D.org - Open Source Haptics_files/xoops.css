@@ -1,0 +1,123 @@
+table {
+    width:      100%;
+}
+
+img, a img {
+    border:     0;
+}
+
+acronym, abbr, dfn {
+    cursor:     help;
+}
+
+#xoopsHiddenText {
+    visibility:         hidden;
+    color:              #000000;
+    font-weight:        normal;
+    font-style:         normal;
+    text-decoration:    none;
+}
+
+.pagneutral {
+    font-size:          10px;
+    width:              16px;
+    height:             19px;
+    text-align:         center;
+    background-image:   url(./images/pagneutral.gif);
+}
+
+.pagact {
+    font-size:          10px;
+    width:              16px;
+    height:             19px;
+    text-align:         center;
+    background-image:   url(./images/pagact.gif);
+}
+
+.paginact {
+    font-size:          10px;
+    width:              16px;
+    height:             19px;
+    text-align:         center;
+    background-image:   url(./images/paginact.gif);
+}
+
+
+
+/* For required elements in XOOPS form, can be overwritten in theme styles */
+.xoops-form-element-caption .caption-marker {
+    display:            none;
+}
+
+.xoops-form-element-caption-required .caption-marker {
+	background-color:   inherit;
+	padding-left: 	    2px;
+	color: 			    #ff0000;
+}
+
+.xoops-form-element-help {
+	font-size:		    .9em;
+    padding-top:        5px;
+    font-weight:        normal;
+}
+
+/* DOCUMENTATION DOWNLOADS PAGE */
+table#documentation {
+  width: 80%;
+	max-width:800px;
+	margin-top:10px;
+}
+table#documentation th.main {
+	background-color:#2F5376;
+}
+
+table#documentation th.sub {
+  background-color:#9cf;
+  color:#000;
+}
+table#documentation th {
+  background-color:none;
+}
+table#documentation td {
+  padding-bottom:10px;
+  text-align:left;
+}
+
+
+/* REGISTER NOW */
+table#register td {
+    vertical-align: middle;
+	height:52px;
+	font-weight:bold;
+	padding-right:0px;
+}
+
+fieldset {
+	border-width:1px 0 0 0;
+	border-style:solid;
+	border-color:#999;
+	margin:20px 0px 10px 0px;
+	position:relative;
+	display:block;
+	padding: 0px 10px 0px 10px;
+}
+
+td#centerCcolumn legend.blockTitle,
+td#centerRcolumn legend.blockTitle,
+td#centerLcolumn legend.blockTitle {
+	background-color:#e4e4e4;
+	border:1px solid #999;
+	font-weight:bold;
+	text-align:center;
+	padding:3px 5px;
+	margin:0px 0px 12px 0px;
+	position:relative;
+	top: -12px;
+}
+
+table#welcome td {
+	padding-left:5px;
+	padding-right:5px;
+	font-size:11px;
+}
+

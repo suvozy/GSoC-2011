@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>
+      SoC Ideas – CrystalSpace
+    </title>
+        <link rel="search" href="http://www.crystalspace3d.org/trac/CS/search">
+        <link rel="help" href="http://www.crystalspace3d.org/trac/CS/wiki/TracGuide">
+        <link rel="alternate" href="http://www.crystalspace3d.org/trac/CS/wiki/SoC%20Ideas?format=txt" type="text/x-trac-wiki" title="Plain Text">
+        <link rel="start" href="http://www.crystalspace3d.org/trac/CS/wiki">
+        <link rel="stylesheet" href="Crystal%20Space_files/trac.css" type="text/css"><link rel="stylesheet" href="Crystal%20Space_files/wiki.css" type="text/css">
+        <link rel="shortcut icon" href="http://www.crystalspace3d.org/trac/CS/chrome/common/trac.ico" type="image/x-icon">
+        <link rel="icon" href="http://www.crystalspace3d.org/trac/CS/chrome/common/trac.ico" type="image/x-icon">
+      <link type="application/opensearchdescription+xml" rel="search" href="http://www.crystalspace3d.org/trac/CS/search/opensearch" title="Search CrystalSpace">
+    <script type="text/javascript" src="Crystal%20Space_files/jquery.js"></script><script type="text/javascript" src="Crystal%20Space_files/trac.js"></script><script type="text/javascript" src="Crystal%20Space_files/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/trac-static-0.11/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.crystalspace3d.org/"><img src="Crystal%20Space_files/crystallogo2.png" alt="CrystalSpace bug tracker" height="119" width="300"></a>
+      </div>
+      <form id="search" action="/trac/CS/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input id="proj-search" name="q" size="18" type="text">
+          <input value="Search" type="submit">
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://www.crystalspace3d.org/trac/CS/login">Login</a></li><li><a href="http://www.crystalspace3d.org/trac/CS/wiki/TracGuide">Help/Guide</a></li><li><a href="http://www.crystalspace3d.org/trac/CS/about">About Trac</a></li><li><a href="http://www.crystalspace3d.org/trac/CS/notification" title="Wiki Pages Change Notifications">My Notifications</a></li><li class="last"><a href="http://www.crystalspace3d.org/trac/CS/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="http://www.crystalspace3d.org/trac/CS/wiki">Wiki</a></li><li><a href="http://www.crystalspace3d.org/trac/CS/timeline">Timeline</a></li><li><a href="http://www.crystalspace3d.org/trac/CS/roadmap">Roadmap</a></li><li><a href="http://www.crystalspace3d.org/trac/CS/browser">Browse Source</a></li><li><a href="http://www.crystalspace3d.org/trac/CS/report">View Tickets</a></li><li class="last"><a href="http://www.crystalspace3d.org/trac/CS/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="http://www.crystalspace3d.org/trac/CS/wiki/WikiStart">Start Page</a></li><li><a href="http://www.crystalspace3d.org/trac/CS/wiki/TitleIndex">Index</a></li><li><a href="http://www.crystalspace3d.org/trac/CS/wiki/SoC%20Ideas?action=history">History</a></li><li><a href="http://www.crystalspace3d.org/trac/CS/wiki/SoC%20Ideas?action=diff&amp;version=130">Last Change</a></li><li class="last"><a href="http://www.crystalspace3d.org/trac/CS/notification/SoC%20Ideas" title="Watch Page">Watch Page</a></li>
+          </ul>
+        <hr>
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <h1 id="SummerofCode-GeneralInfo">Summer of Code - General Info<a title="Link to this section" href="#SummerofCode-GeneralInfo" class="anchor"> ¶</a></h1>
+<p>
+General information for GSoC and CS can be found at <a class="wiki" href="http://www.crystalspace3d.org/trac/CS/wiki/SoC">SoC</a>
+</p>
+<h1 id="SummerofCode-Projectideas">Summer of Code - Project ideas<a title="Link to this section" href="#SummerofCode-Projectideas" class="anchor"> ¶</a></h1>
+<p>
+As CrystalSpace is a 3D engine, there should be plenty of opportunities 
+for interesting projects. If the intended end result is nice and shiny, 
+it's probably a project candidate ;). So <strong>feel free to submit your own ideas</strong>,
+ or discuss them some of the administrators/mentors if you want some 
+more guidance. At this point no specific project has been assigned to 
+any specific mentor, so if you cannot find "the" mentor for your 
+questions, try to talk to Jorrit, Frank (res2k) or Marten (thebolt) and 
+they will help you out.
+</p>
+<p>
+Below you will find our proposals for things to do within the Crystal Space project.
+</p>
+<h2 id="GLSLsupport">GLSL support<a title="Link to this section" href="#GLSLsupport" class="anchor"> ¶</a></h2>
+<p>
+Crystal Space currently supports Nvidia's Cg language for shaders (as 
+well as fixed-function). The goal of this project would be to implement 
+support for GLSL shaders (at least vertex, pixel shaders; geometry, 
+tessellation would be a bonus). This would involve refactors to the 
+existing shader system to make it suitable for GLSL, extensions to the 
+xml shader system to support GLSL shaders, and the creation of a new 
+plugin to interact with the GLSL API.
+</p>
+<h2 id="Lighter2improvements">Lighter2 improvements<a title="Link to this section" href="#Lighter2improvements" class="anchor"> ¶</a></h2>
+<p>
+Crystal Space new(er) lightmap calculation 'lighter2' has over the last 
+years been improved to a state where it can replace the older 
+lightmapping system and generate nice-looking static lighting. However 
+to fully compete in quality with commercial alternatives it does need a 
+set of improvements. 
+</p>
+<p>
+At this moment, the most interesting parts in 'lighter2' to look at are:
+</p>
+<ul><li>More memory efficient data representations. At the moment the 
+data needed for computing the lighting takes massive amount of memory 
+(multi-GB on big levels) and the techniques needed to handle it 
+(explicit swapping, compression etc) slows the process down. A student 
+with strong interest in data structures should be able to find a more 
+memory efficient data representation.
+</li><li>Multi-threading / multi-computer usage for calculations. To 
+speed up the execution of lightmapping, which is an inherently parallel 
+process, we would like 'lighter2' to be able to utilize more than one 
+processor; both via multithreading (taking advantage of multicore) and 
+across multiple processors. A SoC project here could include either or 
+both parts. Some work on this front has already been started in GSoC 
+2010, code is accessible <a class="ext-link" href="http://trac.crystalspace3d.org/trac/CS/browser/CS/branches/soc2010/lighter2"><span class="icon">&nbsp;</span>here</a>.
+</li><li>Improve the configurability of lighter2. Currently lighter2 
+takes a lot of runtime configuration parameters, especially for photon 
+mapping, it would be great to have more configurability in the sense 
+that the end user should be able to mention some basic stuff based on 
+which most of the parameters should be set, or read from a config file, 
+and also providing an option to mention them explicitlly if required. 
+</li><li>Using OpenCL (ideally) or CUDA, implement support for GPGPU computation in lighter2.
+</li><li>Light probes: sample information in incoming light at different
+ points in space. A full implementation would include a lighter2 part 
+(generation of light probes) as well as an engine part (loading light 
+probes, and setting information on meshes from the light probes). In 
+fact, a <i>framework</i> for light probes would be a more interesting result than a fancy light probe style. <i>(Light
+ probes here means information about incoming lighting at some points in
+ space. Think of it as kind of a lightmap in 3D. "HDR light probes" are 
+_not_ meant here.)</i>
+</li><li>Improve directional lightmaps: lighter2 already has support for
+ that, but the implementation isn't great - it could use a cleanup. And,
+ of course, some improvements: e.g. right now, directional LMs are 
+enabled globally, per-object control would be desireable. They should 
+also be "future-proofed" so e.g. photon mapping can be dropped in 
+easily.  -- This is more of a "janitorial" task, but it would be great 
+for people that don't like to juggle much with maths, but love to solve 
+real-life implementation problems ;)
+</li><li>Lightmap layout per factory: currently, lighter2 gives every <i>object</i>
+ it's own lightmap layout (= set of lightmap coordinates). However, in 
+CS, multiple objects (instances) can be created from one factory (e.g.: a
+ lamp mesh for a street: one mesh factory but many mesh objects). It 
+would be more efficient, memory-wise and also for computing the lightmap
+ layout, if a lightmap layout is computed per factory and reused for 
+every instance of the factory.
+</li><li>Improve lightmap packing: the current algo leaves a lot of 
+unused space, implementing e.g. a tetris packer would help a lot. 
+Automatic resolution reduction - so a lightmap only uses the resolution 
+it needs, like described in <a class="ext-link" href="http://www.bungie.net/images/Inside/publications/presentations/Lightmap_Compression_2008_02_22.pptx"><span class="icon">&nbsp;</span>http://www.bungie.net/images/Inside/publications/presentations/Lightmap_Compression_2008_02_22.pptx</a> - would also be nice, although that will probably require some knowledge in the area of digital image processing.
+</li></ul><p>
+[A “tetris packer” alone is somewhat janitorial and could be connected 
+with something else (as an "optional" goal). However, together with an 
+automatic lightmap resolution reduction the package would certainly 
+qualify as a project in it's own right.]
+</p>
+<ul><li>Implementation of area lights. Full implementation and support 
+would be desirable for quality of lighting. Might relate to photon 
+mapping.
+</li></ul><p>
+'Lighter2' subproject is not realtime per se and can offer other 
+interesting areas to look at for a student that is more interested in 
+offline rendering than realtime rendering.
+</p>
+<h2 id="Advancedrenderingtechniques">Advanced rendering techniques<a title="Link to this section" href="#Advancedrenderingtechniques" class="anchor"> ¶</a></h2>
+<p>
+CS has now good support for advanced rendering techniques such as 
+rendering to texture and post-processing effects, but is lacking of 
+examples on the way to use them. This project would involve implementing
+ one or more cutting edge rendering techniques, to act as a starting 
+point for those of our users that wish to utilize them.
+</p>
+<p>
+Examples might be <a class="ext-link" href="http://en.wikipedia.org/wiki/Screen_Space_Ambient_Occlusion"><span class="icon">&nbsp;</span>Screen Space Ambient Occlusion (SSAO)</a>, <a class="ext-link" href="http://http.developer.nvidia.com/GPUGems3/gpugems3_ch18.html"><span class="icon">&nbsp;</span>Relaxed Cone Step Mapping</a>, <a class="ext-link" href="http://http.developer.nvidia.com/GPUGems3/gpugems3_ch14.html"><span class="icon">&nbsp;</span>Skin</a>, <a class="ext-link" href="http://http.developer.nvidia.com/GPUGems3/gpugems3_ch04.html"><span class="icon">&nbsp;</span>Trees</a>, inspiration for algorithms and/or effects can be found from <a class="ext-link" href="http://developer.nvidia.com/"><span class="icon">&nbsp;</span>Nvidia</a>, <a class="ext-link" href="http://ati.amd.com/developer/"><span class="icon">&nbsp;</span>ATI</a>, <a class="ext-link" href="http://advances.realtimerendering.com/"><span class="icon">&nbsp;</span>SIGGRAPH presentations</a>, <a class="ext-link" href="http://www.google.com/"><span class="icon">&nbsp;</span>GDC presentations</a> and papers: <a class="ext-link" href="http://www-evasion.imag.fr/Publications/2008/BNMBC08/"><span class="icon">&nbsp;</span>paper1</a>. Improvements can also be made to the previous GSOC project on <a class="ext-link" href="http://trac.crystalspace3d.org/trac/CS/wiki/Cloud%20System"><span class="icon">&nbsp;</span>clouds</a>.
+</p>
+<p>
+The new deferred render manager has been added during the last GSOC. 
+Many existing shaders of CS may need an adaptation for this render 
+manager, and some new effects can be made by exploiting the G-buffers of
+ the deferred process.
+</p>
+<h2 id="Improvesupportforwaterbodies">Improve support for water bodies<a title="Link to this section" href="#Improvesupportforwaterbodies" class="anchor"> ¶</a></h2>
+<p>
+CS has support for simulating bodies of water (river, lake, ocean) already, however there is much to be improved.
+For example;
+</p>
+<ul><li>Ocean support is only half complete (there are bugs in LOD, the pixel shader needs work).
+</li><li>There is little in the way of simulating waves hitting a 
+shoreline (needs more than just movement, some graphical effect for the 
+head of the wave would be desirable).
+</li><li>There is no standard (and convenient) method of supporting 
+'fogging' when the camera goes underwater (or more difficult; half 
+above, half below the water).
+</li></ul><h2 id="Improvedtoolssupport">Improved tools support<a title="Link to this section" href="#Improvedtoolssupport" class="anchor"> ¶</a></h2>
+<p>
+CS has many different tools to import, convert and manipulate the models, textures, etc. All these tools should be merged in a <a class="wiki" href="http://www.crystalspace3d.org/trac/CS/wiki/Tools%20plugins">common framework</a>.
+</p>
+<p>
+The support for importing models into CS can be improved. In particular 
+our animated mesh system has no exporter for tools such as Blender 2.5, 
+3ds Max and Maya, and some other properties can be improved such as 
+materials, physical properties and particles.
+</p>
+<h4 id="DataFormatCoordination">Data Format Coordination<a title="Link to this section" href="#DataFormatCoordination" class="anchor"> ¶</a></h4>
+<ul><li>An implementation of real-time loading of COLLADA files into the Crystal Space engine could be useful.
+</li><li>An important format to be supported is COLLADA, along with its 
+extensions COLLADA FX and COLLADA Physics. The COLLADA conversion 
+utility handles only basic materials at the moment.  CS is also lacking 
+in good importing tools for materials and its shader weaver, therefore 
+COLLADA FX is an interesting way to import these data. Some work toward 
+the improvement to the current <a class="ext-link" href="http://trac.crystalspace3d.org/trac/CS/wiki/COLLADA%20Conversion%20System"><span class="icon">&nbsp;</span>COLLADA plugin of CS</a>
+ can therefore be made, primarily with COLLADA FX, then with animated 
+meshes, particles and physical properties. Implementation of advanced 
+shaders and physics, including some basic items such as animation bones 
+could be useful for 3D modelers using data brought into the Crystal 
+Space system from another modeling system. Ideally, the materials 
+developed through the <a class="ext-link" href="http://www.blender.org/development/release-logs/blender-242/blender-composite-nodes/"><span class="icon">&nbsp;</span>Blender's composite nodes system</a>
+ could be exported into COLLADA FX then imported into CS. An interesting
+ idea would be to have two twin GSOC projects about that: one from the 
+Blender project about the export into COLLADA FX, and one from the CS 
+project about importing from COLLADA FX.
+</li></ul><h4 id="Knowntools">Known tools<a title="Link to this section" href="#Knowntools" class="anchor"> ¶</a></h4>
+<p>
+Known tools that could use some of your love.
+</p>
+<ul><li>B2.5CS: The successor to B2CS but for blender 2.5, it currently 
+doesn't support animation, but it does support genmesh, imposters, 
+factory instances and merging(decreasing object count)), in addition it 
+does neat things like hiding all UI panels that aren't useful for 
+real-time graphics and adding some CS specific ones, making the blender 
+UI less cluttered <a class="ext-link" href="http://wiki.peragro.org/index.php/Tools/B2.5CS"><span class="icon">&nbsp;</span>http://wiki.peragro.org/index.php/Tools/B2.5CS</a>
+</li><li>D.A.M.N: An Asset management system that aims to automate all exporting <a class="ext-link" href="http://wiki.peragro.org/index.php/Tools/DAMN"><span class="icon">&nbsp;</span>http://wiki.peragro.org/index.php/Tools/DAMN</a>
+</li><li>Anvil: A world editor that integrates with D.A.M.N, it could 
+use some improved terrain editing (also see the csterraineddemo in CS) <a class="ext-link" href="http://wiki.peragro.org/index.php/Tools/Anvil"><span class="icon">&nbsp;</span>http://wiki.peragro.org/index.php/Tools/Anvil</a>
+</li></ul><h2 id="Videodecodesupport">Video decode support<a title="Link to this section" href="#Videodecodesupport" class="anchor"> ¶</a></h2>
+<p>
+Many games will want the ability to play pre-recorded cut-scenes or 
+renders. This project would consist of adding one or more plugins for 
+the decoding of video codecs (e.g. Theora), and playing these in an 
+arbitrary area of the screen (so full screen and/or on an object). 
+</p>
+<h2 id="Videorecordingsupport">Video recording support<a title="Link to this section" href="#Videorecordingsupport" class="anchor"> ¶</a></h2>
+<p>
+CrystalSpace provides a plugin to make recordings of what is rendered; however, it has some drawbacks:
+</p>
+<ul><li>Performance: It reads back the frame, compresses it, writes it to disk - in the main thread, blocking all other operations.
+</li><li>Obscure output format: it writes files in the “NuppelVideo” 
+format... supported by some OpenSource tools it's still quite obscure.
+</li><li>No sound recording.
+</li><li>Licensing: all of CS is licensed under the LGPL *except* the movie recorder plugin.
+</li></ul><p>
+So the project would be trying to design + write a new video recorder, 
+preferably one that can grab and write out frames in an asynchronous 
+manner (so the application itself keeps running).
+The sound system would also need some enhancements to allow retrieval of
+ the currently played sound.
+</p>
+<p>
+Emphasis is on actual grabbing of the data; how it's written and in what
+ format is still secondary, as long as it could be converted with some 
+3rd party tool.
+An important aspect is, to avoid “GPL infection”, that the movie 
+recording has to be written *from scratch* and can not be based on the 
+existing movie recorder.
+</p>
+<h2 id="Improvementsofthecollisionandphysicssimulationsystems">Improvements of the collision and physics simulation systems<a title="Link to this section" href="#Improvementsofthecollisionandphysicssimulationsystems" class="anchor"> ¶</a></h2>
+<p>
+CS now uses <a class="ext-link" href="http://bulletphysics.org/wordpress/"><span class="icon">&nbsp;</span>Bullet</a>
+ as the default physics simulation engine. The Bullet plugin in CS has 
+already almost all the features from his big brother the ODE plugin, 
+plus some nice additions such as kinematics objects, soft bodies and 
+terrain2 support.
+</p>
+<p>
+Bullet contains also intrinsically a collision system which is extremely
+ optimized (they are even working on doing it partially on GPU) and 
+benefits also of the knowledge of the types of the colliders (eg 
+spheres, capsules, boxes). This collision system can be used in CS as an
+ alternative of OPCODE (and should in all cases be more efficient). 
+Also, having sometimes the need for two different systems doing 
+basically the same thing is of course not efficient.
+</p>
+<p>
+The current collision system of CS can also be improved by adding 
+mechanisms to define the meshes which are or not part of the collision 
+system, with some custom optimized colliders, and some collision 
+filtering. The terrain collision system can also be integrated more 
+transparently.
+</p>
+<p>
+A first task would be to improve both the collision and the physical 
+simulation systems of CS, and to unify their functionalities in a common
+ framework. The collision system would centralize all collision 
+functionalities (detection of the collisions between objects, trace 
+beams, collision filtering, etc), while the physical simulation part 
+would simply introduce a behavior for the colliders of the system. The 
+Bullet plugin would therefore implement both the iCollideSystem and the 
+iDynamicSystem interfaces.
+</p>
+<p>
+To ease the work, the support for the ODE implementation can probably be
+ dropped in favor of a more coherent API. But OPCODE should remain as a 
+fallback collision system when Bullet is not present. It can however 
+have limited functionalities compared to the Bullet implementation.
+</p>
+<p>
+After that, many additions and improvements can be made to the Bullet plugin (in reverse order of importance):
+</p>
+<ul><li>Add some missing features to the plugin: collision information, 
+ghost colliders, collision filtering, more memory efficient 
+implementation of iRigidBody, modifications of the heightmap of the 
+terrains, cone and multi-sphere colliders
+</li><li>Align the soft body parameters on the ones from Blender
+</li><li>Portals: dynamic objects should traverse an iPortal and be 
+teleported to the other side of the portal. Not that complex but really 
+fun.
+</li><li>Automatic generation of efficient colliders from an iAnimatedMesh for the ragdoll animation node.
+</li><li>Dynamic environments: efficient management of the colliders of 
+the objects around the camera, generation of dynamic objects on hit
+</li><li>Particles (to be made in connection with the mesh particle system of CS)
+</li><li>Improve the support of cars and other vehicles
+</li><li>Explosions
+</li><li>Fracturable objects
+</li></ul><h2 id="Advancedanimationtechniques">Advanced animation techniques<a title="Link to this section" href="#Advancedanimationtechniques" class="anchor"> ¶</a></h2>
+<p>
+The new iAnimatedMesh is going very well and has already many advanced 
+features such as forward dynamics (ragdolls) and inverse kinematics. 
+More advanced animation techniques can now be added to leverage on the 
+infrastructure already present.
+</p>
+<h3 id="Dynamicreactiveness">Dynamic reactiveness<a title="Link to this section" href="#Dynamicreactiveness" class="anchor"> ¶</a></h3>
+<p>
+The goal of this project would be to add the ability for the animated 
+characters to react dynamically to actions such as being hit, preventing
+ from falling, or falling with the ragdoll animation then getting back 
+on his feet. Reference papers on that topic are <a class="ext-link" href="http://www.cc.gatech.edu/%7Esumit/projects/phoward/index.html"><span class="icon">&nbsp;</span>here</a>, <a class="ext-link" href="http://graphics.cs.ucr.edu/projects/dynResp/mocsim2.html"><span class="icon">&nbsp;</span>here</a> and <a class="ext-link" href="http://www.mmandel.com/blog/gdc2005_michael_mandel.pdf"><span class="icon">&nbsp;</span>here</a>.
+</p>
+<h3 id="Locomotionsystem">Locomotion system<a title="Link to this section" href="#Locomotionsystem" class="anchor"> ¶</a></h3>
+<p>
+Managing the motion of the feet of animated characters is a complex 
+topic, because it has to deal with the highly variable constraints of 
+the environments while being reactive to the changes of orders given by 
+the player or the AI. A project on that topic would be to implement the <a class="ext-link" href="http://runevision.com/thesis/"><span class="icon">&nbsp;</span>solution developed in the Unity engine</a>.
+</p>
+<h2 id="DocumentationandAPIfixes">Documentation and API fixes<a title="Link to this section" href="#DocumentationandAPIfixes" class="anchor"> ¶</a></h2>
+<p>
+<del>That's clear for everybody that CS lacks a good documentation, a 
+good manual and some good examples (this last point is actually getting 
+much better lately). The API has also inherited of a twelve year long 
+story and suffers of many inconsistencies as well as deprecated methods.
+ The API doc is getting better, but the manual has been completely 
+forgotten these last years. The doxygen generation is not happy at all.</del>
+</p>
+<p>
+<del>A GSOC project about that would be to track and solve as much as 
+possible of these problems. It would require fluent English, digging in 
+the code, harassing the developers for some information, digging in the 
+forum or the mailing list for some information, basically a job for a 
+detective. Good knowledge of the 3D engine technologies is also helpful.</del>
+</p>
+<p>
+Unfortunately not allowed, see <a class="ext-link" href="http://www.google-melange.com/document/show/gsoc_program/google/gsoc2011/faqs#documentation"><span class="icon">&nbsp;</span>http://www.google-melange.com/document/show/gsoc_program/google/gsoc2011/faqs#documentation</a>.
+</p>
+<h2 id="Levelofdetailandresourcemanagement">Level of detail and resource management<a title="Link to this section" href="#Levelofdetailandresourcemanagement" class="anchor"> ¶</a></h2>
+<p>
+CS has now several solutions for LOD and resource management. There are 
+static and progressive LODs, imposters, the threaded loader, and many 
+meshes such as the terrain and the hairs have builtin features for LOD 
+management.
+</p>
+<p>
+All the LOD features should be merged under a common interface, 
+abstracting the way the LOD is actually managed. A resource manager can 
+then be written who will load the objects in background based e.g. on 
+the distance to the camera or preferably the size on screen. This 
+manager will also implement a more complex heuristic for choosing the 
+LODs of the meshes, e.g. depending on the total count and size of render
+ buffers, the size on screen, the current framerate, the history of the 
+changes of LODs in the meshes (to avoid flickering between two states), 
+etc.
+</p>
+<p>
+The imposters and progressive LOD systems can also be improved. The 
+progressive LOD generator would need at least a better heuristic to 
+accelerate the process, as well as more parameters to control the 
+generation of the LOD levels. Animeshes would also need a special 
+treatment using the bone influences in order to keep details at the 
+articulations.
+</p>
+<h2 id="ImprovementtoVFSVirtualFileSystem">Improvement to VFS (Virtual File System)<a title="Link to this section" href="#ImprovementtoVFSVirtualFileSystem" class="anchor"> ¶</a></h2>
+<p>
+CS has used a vfs overlay to handle files in a platform independent way 
+since a long while. But while many basic functionalities of file access 
+are there another good amount of them is missing: Copying files, moving 
+files, changing attributes for both archives and real file systems are 
+just an example of such things. Improving this layer by adding more 
+functionalities might be useful to increase the easiness of use of 
+crystal space and avoid obliging projects using cs to implement their 
+own file system functionalities to overcome these limits.
+Alternatively, instead of just extending the existing VFS 
+implementation, a VFSv2 might be developed based upon the ideas <a class="ext-link" href="http://trac.crystalspace3d.org/trac/CS/wiki/VFSv2Proposal"><span class="icon">&nbsp;</span>here</a>.
+</p>
+<h2 id="FillInYourOwnIdeaHere">Fill In Your Own Idea Here<a title="Link to this section" href="#FillInYourOwnIdeaHere" class="anchor"> ¶</a></h2>
+<p>
+There's some graphics effect CS doesn't do? You know of some paper and want to implement it in a real environment?
+You've noticed that some CS feature is not that elegant to use? Feel free to submit your own ideas!
+</p>
+<p>
+You can also check the “<a class="wiki" href="http://www.crystalspace3d.org/trac/CS/wiki/Developer%27s%20Whiteboard">Developer's Whiteboard</a>”
+ - it contains note and scraps of ideas for changes to CS. It's more 
+aimed towards existings CS developers, so it's occasionally sparse on 
+explanation and describes things rather roughly, but it can serve as a 
+source of inspiration if none of the ideas above appeal to you and you 
+feel adventurous.
+</p>
+<h1 id="IdeasforprojectsrelatedtoCS">Ideas for projects related to CS<a title="Link to this section" href="#IdeasforprojectsrelatedtoCS" class="anchor"> ¶</a></h1>
+<p>
+While not part of "core" Crystal Space the software projects mentioned 
+here are part of the Crystal Space community and SoC projects for them 
+could be handled under the "Crystal Space umbrella".
+</p>
+<h2 id="CEL">CEL<a title="Link to this section" href="#CEL" class="anchor"> ¶</a></h2>
+<h3 id="ArtificialIntelligencepathfinding">Artificial Intelligence &amp; path finding<a title="Link to this section" href="#ArtificialIntelligencepathfinding" class="anchor"> ¶</a></h3>
+<p>
+CEL has received several improvements for artificial intelligence over the last year, with both the <a class="ext-link" href="http://aigamedev.com/open/articles/bt-overview/"><span class="icon">&nbsp;</span>behavior tree system</a> during the GSOC 2009 and the hierarchical path finding on top of the '<a class="ext-link" href="http://code.google.com/p/recastnavigation/"><span class="icon">&nbsp;</span>Recast &amp; Detour</a>' library during the GSOC 2010.
+</p>
+<p>
+Both of these systems can still be improved:
+</p>
+<ul><li>The <a class="ext-link" href="http://aigamedev.com/open/articles/bt-overview/"><span class="icon">&nbsp;</span>behavior tree</a> property class would need the addition of other type of nodes and decorators. See <a href="http://www.crystalspace3d.org/blog/samd">here</a> for more info on what has already be made on this topic during the GSOC 2009.
+</li></ul><ul><li>The '<a class="ext-link" href="http://code.google.com/p/recastnavigation/"><span class="icon">&nbsp;</span>Recast &amp; Detour</a>'
+ library should be updated to the last version, and the new 
+functionalities for dynamic objects and steering behaviors should be 
+used. See <a href="http://www.crystalspace3d.org/blog/leonardord">here</a> for more info on what has already be made on this topic during the GSOC 2010.
+</li></ul><p>
+A demo of a life simulator using both of these features has just been 
+started, this demo should be improved as an advanced demonstrator.
+</p>
+<h3 id="Networking">Networking<a title="Link to this section" href="#Networking" class="anchor"> ¶</a></h3>
+<ul><li>There is a network layer that has been implemented in CEL. An 
+API has been designed for the network management of CEL entities and 
+property classes, and a first TCP plugin was written, but it is still 
+missing some features before being usable. A first need would be to 
+define and implement a system so that the whole networking behavior is 
+defined through property classes, e.g. so that a CEL game can become a 
+networked game simply by adding some specific entities and property 
+classes. Another need would be to define for each existing property 
+classes how they update efficiently to/from the network.
+</li><li>It would be nice to have a UDP plugin too for faster-paced games, which could handle packet loss.
+</li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://www.crystalspace3d.org/trac/CS/wiki/SoC%20Ideas?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" xml:lang="en" lang="en"><hr>
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="Crystal%20Space_files/trac_logo_mini.png" alt="Trac Powered" height="30" width="107"></a>
+      <p class="left">
+        Powered by <a href="http://www.crystalspace3d.org/trac/CS/about"><strong>Trac 0.11.5stable-r8184</strong></a><br>
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">CrystalSpace</p>
+    </div>
+  
+</body></html>

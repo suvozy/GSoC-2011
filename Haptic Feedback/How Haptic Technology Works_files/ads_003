@@ -1,0 +1,53 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = new Object(); 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BDqjkg-6pTfS8EsS4cLTz7J0G3IHDhgHA4-KCDsCNtwHgtg0QARgBIPjmowYoAzgAUNm99_cFYOXK5YO0DrIBHWVsZWN0cm9uaWNzLmhvd3N0dWZmd29ya3MuY29tyAEB2gFQaHR0cDovL2VsZWN0cm9uaWNzLmhvd3N0dWZmd29ya3MuY29tL2dhZGdldHMvb3RoZXItZ2FkZ2V0cy9oYXB0aWMtdGVjaG5vbG9neS5odG2oAwHoA8AI6AOZCegDygn1AwAEAAQ&amp;num=1&amp;sig=AGiWqtyC9IrEh9i6xiNbBOfoe8uF0XXb5A&amp;client=ca-howstuffworks_rs_2_js&amp;adurl=http://www.pacinian.com"; 
+google_ad.visible_url = "www.pacinian.com"; 
+google_ad.line1 = "Haptic Touch Screens"; 
+google_ad.line2 = "Innovative surface actuation for"; 
+google_ad.line3 = "thin, low power, and high fidelity"; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BRdjKg-6pTfS8EsS4cLTz7J0GrKXn6gGE3_DDGMCNtwGwvRAQAhgCIPjmowYoAzgAUKSS3uH5_____wFg5crlg7QOsgEdZWxlY3Ryb25pY3MuaG93c3R1ZmZ3b3Jrcy5jb23IAQHaAVBodHRwOi8vZWxlY3Ryb25pY3MuaG93c3R1ZmZ3b3Jrcy5jb20vZ2FkZ2V0cy9vdGhlci1nYWRnZXRzL2hhcHRpYy10ZWNobm9sb2d5Lmh0bYACAagDAegDwAjoA5kJ6APKCfUDAAQABA&amp;num=2&amp;sig=AGiWqtw7ex-Dr90bX4pRfIYrPC2yRlkrbg&amp;client=ca-howstuffworks_rs_2_js&amp;adurl=http://www.microchip.com/mtouch"; 
+google_ad.visible_url = "www.microchip.com/mtouch"; 
+google_ad.line1 = "Integrate Touch Sensing"; 
+google_ad.line2 = "Quickly and Easily with Microchip\x26#39;s"; 
+google_ad.line3 = "Low Power, Low Cost Solutions"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 3; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "site"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=BsBp-g-6pTfS8EsS4cLTz7J0GwcLV-wGRltPNFe3ks5AFgKdwEAMYAyD45qMGKAM4AFCNttiiA2DlyuWDtA6gAc2uuv0DsgEdZWxlY3Ryb25pY3MuaG93c3R1ZmZ3b3Jrcy5jb23IAQHaAVBodHRwOi8vZWxlY3Ryb25pY3MuaG93c3R1ZmZ3b3Jrcy5jb20vZ2FkZ2V0cy9vdGhlci1nYWRnZXRzL2hhcHRpYy10ZWNobm9sb2d5Lmh0bcACAagDAegDwAjoA5kJ6APKCfUDAAQABA&amp;num=3&amp;sig=AGiWqtx42UYL-5aKf1GIzfHt-9KVjtYO5w&amp;client=ca-howstuffworks_rs_2_js&amp;adurl=http://nanoandmore.com/USA/afm_probes.php"; 
+google_ad.visible_url = "NanoAndMore.com/Probes"; 
+google_ad.line1 = "Any Kind of AFM Probes"; 
+google_ad.line2 = "AFM Probes For Any Application."; 
+google_ad.line3 = "Fast Delivery. Free Samples!"; 
+google_ad.regionname = ""; 
+google_ads[2] = google_ad; 
+google_info.feedback_url = "http://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://electronics.howstuffworks.com/gadgets/other-gadgets/haptic-technology.htm%26hl%3Den%26client%3Dca-howstuffworks_rs_2_js%26adU%3Dwww.pacinian.com%26adT%3DHaptic%2BTouch%2BScreens%26adU%3Dwww.microchip.com/mtouch%26adT%3DIntegrate%2BTouch%2BSensing%26adU%3DNanoAndMore.com/Probes%26adT%3DAny%2BKind%2Bof%2BAFM%2BProbes%26gl%3DIN%26hideleadgen%3D1\x26usg\x3dAFQjCNGwQl_XiE_0coVXuB9dXCeAP2e0PA";
+var google_attribution_text = "Ads by Google";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

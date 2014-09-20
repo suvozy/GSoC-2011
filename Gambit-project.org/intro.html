@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>An Overview of Gambit — Gambit v0.2010.09.01 documentation</title>
+    <link rel="stylesheet" href="intro_files/default.css" type="text/css">
+    <link rel="stylesheet" href="intro_files/pygments.css" type="text/css">
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.2010.09.01',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="intro_files/jquery.js"></script>
+    <script type="text/javascript" src="intro_files/underscore.js"></script>
+    <script type="text/javascript" src="intro_files/doctools.js"></script>
+    <link rel="top" title="Gambit v0.2010.09.01 documentation" href="http://www.gambit-project.org/doc/index.html">
+    <link rel="next" title="The graphical interface" href="http://www.gambit-project.org/doc/gui.html">
+    <link rel="prev" title="Gambit: Software Tools for Game Theory" href="http://www.gambit-project.org/doc/index.html"> 
+  </head>
+  <body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<a href="http://www.gambit-project.org/doc/index.html"><img src="intro_files/gambit.png" alt="Chadwick" border="0"></a>
+<font size="+3">Gambit: Software Tools for Game Theory</font>
+</div>
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="http://www.gambit-project.org/doc/genindex.html" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="http://www.gambit-project.org/doc/gui.html" title="The graphical interface" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="http://www.gambit-project.org/doc/index.html" title="Gambit: Software Tools for Game Theory" accesskey="P">previous</a> |</li>
+        <li><a href="http://www.gambit-project.org/doc/index.html">home</a>&nbsp;|&nbsp;</li>
+        <li><a href="http://www.gambit-project.org/doc/search.html">search</a>&nbsp;|&nbsp;</li>
+        <li><a href="http://www.gambit-project.org/doc/intro.html#section-downloading">download</a>&nbsp;|&nbsp;</li>
+	<li><a href="http://www.gambit-project.org/doc/ideas.html">project ideas</a>&nbsp;</li>
+    <!--   <li><a href="contents.html">documentation </a> &raquo;</li> -->
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="http://www.gambit-project.org/doc/index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">An Overview of Gambit</a><ul>
+<li><a class="reference internal" href="#what-is-gambit">What is Gambit?</a></li>
+<li><a class="reference internal" href="#a-brief-history-of-gambit">A brief history of Gambit</a></li>
+<li><a class="reference internal" href="#key-features-of-gambit">Key features of Gambit</a></li>
+<li><a class="reference internal" href="#limitations-of-gambit">Limitations of Gambit</a></li>
+<li><a class="reference internal" href="#developers">Developers</a></li>
+<li><a class="reference internal" href="#downloading-gambit">Downloading Gambit</a></li>
+<li><a class="reference internal" href="#community">Community</a></li>
+<li><a class="reference internal" href="#bug-reports-and-inquiries">Bug reports and inquiries</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="http://www.gambit-project.org/doc/index.html" title="previous chapter">Gambit: Software Tools for Game Theory</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="http://www.gambit-project.org/doc/gui.html" title="next chapter">The graphical interface</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="http://www.gambit-project.org/doc/_sources/intro.txt" rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input name="q" size="18" type="text">
+      <input value="Go" type="submit">
+      <input name="check_keywords" value="yes" type="hidden">
+      <input name="area" value="default" type="hidden">
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="an-overview-of-gambit">
+<h1>An Overview of Gambit<a class="headerlink" href="#an-overview-of-gambit" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-is-gambit">
+<h2>What is Gambit?<a class="headerlink" href="#what-is-gambit" title="Permalink to this headline">¶</a></h2>
+<p>Gambit is a set of software tools for doing computation on finite,
+noncooperative games. These comprise a graphical interface for
+interactively building and analyzing general games in extensive or
+strategy form; a number of command-line tools for computing Nash
+equilibria and other solution concepts in games; and, a set of file
+formats for storing and communicating games to external tools.</p>
+</div>
+<div class="section" id="a-brief-history-of-gambit">
+<h2>A brief history of Gambit<a class="headerlink" href="#a-brief-history-of-gambit" title="Permalink to this headline">¶</a></h2>
+<p>The Gambit Project was founded in the mid-1980s by Richard McKelvey at
+the California Institute of Technology. The original implementation
+was written in BASIC, with a simple graphical interface. This code was
+ported to C around 1990 with the help of Bruce Bell, and was
+distributed publicly as version 0.13 in 1991 and 1992.</p>
+<p>A major step in the evolution of Gambit took place with the awarding
+of the NSF grants in 1994, with McKelvey and Andrew McLennan as
+principal investigators, and <a class="reference external" href="http://www.gambit-project.org/turocy">Theodore Turocy</a> as the head programmer.
+The grants sponsored a complete rewrite of Gambit in C++. The
+graphical interface was made portable across platforms through the use
+of the wxWidgets library (<a class="reference external" href="http://www.wxwidgets.org/">http://www.wxwidgets.org</a>). Version 0.94 of Gambit was released in
+the late summer of 1994, version 0.96 followed in 1999, and version
+0.97 in 2002. During this time, many students at Caltech and Minnesota
+contributed to the effort by programming, testing, and/or documenting.
+These include, alphabetically, Bruce Bell, Anand Chelian, Matthew
+Derer, Nelson Escobar, Ben Freeman, Eugene Grayver, Todd Kaplan, Geoff
+Matters, Brian Trotter, Michael Vanier, Roberto Weber, and Gary Wu.</p>
+<p>Over the same period, Bernhard von Stengel, of the London School of
+Economics, made significant contributions in the implementation of the
+sequence form methods for two-player extensive games, and for
+contributing his “clique” code for identification of equilibrium
+components in two-player strategic games, as well as other advice
+regarding Gambit’s implementation and architecture.</p>
+<p>The present series of Gambit releases, numbered 0.2005.mm.dd according
+to release date, focuses on two objectives. First, the graphical
+interface was reimplemented and modernized, with the goal of following
+good interaction design principles, especially in regards to easing
+the learning curve for users new to Gambit and new to game theory.
+Second, the internal architecture of Gambit was refactored to increase
+interoperability between the tools provided by Gambit and those
+written independently. In particular, there are many more researchers
+active in computation in game theory in 2005 then during the last
+major Gambit development phase circa 1995, and the architecture of
+Gambit is evolving to reflect this.</p>
+</div>
+<div class="section" id="key-features-of-gambit">
+<h2>Key features of Gambit<a class="headerlink" href="#key-features-of-gambit" title="Permalink to this headline">¶</a></h2>
+<p>Gambit has a number of features useful both for the researcher and the
+instructor:</p>
+<p><strong>Interactive, cross-platform graphical interface.</strong> All Gambit
+features are available through the use of a graphical interface, which
+runs under multiple operating systems: Windows, various flavors of
+Un*x (including Linux), and Mac OS X. The interface offers flexible
+methods for creating extensive and strategic games. It offers an
+interface for running algorithms to compute Nash equilibria, and for
+visualizing the resulting profiles on the game tree or table, as well
+as an interactive tool for analyzing the dominance structure of
+actions or strategies in the game. The interface is useful for the
+advanced researcher, but is intended to be accessible for students
+taking a first course in game theory as well.</p>
+<p><strong>Command-line tools for computing equilibria.</strong> More advanced
+applications often require extensive computing time and/or the ability
+to script computations. All algorithms in Gambit are packaged as
+individual, command-line programs, whose operation and output are
+configurable.</p>
+<p><strong>Extensibility and interoperability.</strong> The Gambit tools read and
+write file formats which are textual and documented, making them
+portable across systems and able to interact with external tools. It
+is therefore straightforward to extend the capabilities of Gambit by,
+for example, implementing a new method for computing equilibria,
+reimplementing an existing one more efficiently, or creating tools to
+programmatically create, manipulate, and transform games, or for
+econometric analysis on games.</p>
+</div>
+<div class="section" id="limitations-of-gambit">
+<h2>Limitations of Gambit<a class="headerlink" href="#limitations-of-gambit" title="Permalink to this headline">¶</a></h2>
+<p>Gambit has a few limitations that may be important in some
+applications. We outline them here.</p>
+<p><strong>Gambit is for finite games only.</strong> Because of the mathematical
+structure of finite games, it is possible to write many general-
+purpose routines for analyzing these games. Thus, Gambit can be used
+in a wide variety of applications of game theory. However, games that
+are not finite, that is, games in which players may choose from a
+continuum of actions, or in which players may have a continuum of
+types, do not admit the same general-purpose methods.</p>
+<p><strong>Gambit is for noncooperative game theory only.</strong> Gambit focuses on
+the branch of game theory in which the rules of the game are written
+down explicitly, and in which players choose their actions
+independently. Gambit’s analytical tools center primarily around Nash
+equilibrium, and related concepts of bounded rationality such as
+quantal response equilibrium. Gambit does not at this time provide any
+representations of, or methods for, analyzing games written in
+cooperative form. (It should be noted that some problems in
+cooperative game theory do not suffer from the computational
+complexity that the Nash equilibrium problem does, and thus
+cooperative concepts could be an interesting future direction of
+development.)</p>
+<p><strong>Analyzing large games may become infeasible surprisingly quickly.</strong>
+While the specific formal complexity classes of computing Nash
+equilibria and related concepts are still an area of active research,
+it is clear that, in the typical case, the amount of time required to
+compute equilibria increases rapidly in the size of the game. In other
+words, it is quite easy to write down games which will take Gambit an
+unacceptably long amount time to compute the equilibria of. There are
+two ways to deal with this problem in practice. One way is to better
+identify good heuristic approaches for guiding the equilibrium
+computation process. Another way is to take advantage of known
+features of the game to guide the process. Both of these approaches
+are now becoming areas of active interest. While it will certainly not
+be possible to analyze every game that one would like to, it is hoped
+that Gambit will both contribute to these two areas of research, as
+well as make the resulting methods available to both students and
+practitioners.</p>
+</div>
+<div class="section" id="developers">
+<h2>Developers<a class="headerlink" href="#developers" title="Permalink to this headline">¶</a></h2>
+<p>The principal developers of Gambit are:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.gambit-project.org/turocy">Theodore Turocy</a>,
+University of East Anglia: director.</li>
+<li>Richard D. McKelvey, California Institute of Technology:
+project founder.</li>
+<li>Andrew McLennan, University of Queensland: co-PI during main
+development, developer and maintainer of polynomial-based algorithms
+for equilibrium computation.</li>
+</ul>
+<p>Much of the development of the main Gambit codebase took place in
+1994-1996, under a grant from the National Science Foundation to the
+California Institute of Technology and the University of Minnesota
+(McKelvey and McLennan, principal investigators).</p>
+<p>Others contributing to the development and distribution of Gambit
+include:</p>
+<ul class="simple">
+<li>Bernhard von Stengel provided advice on implementation of
+sequence form code, and contributed clique code</li>
+<li>Eugene Grayver developed the first version of the
+graphical user interface.</li>
+<li>Gary Wu implemented an early scripting language interface for th
+Gambit library.</li>
+<li>Many undergraduate and graduate students at Caltech and the
+University of Minnesota contributed in testing and documenting
+various features.</li>
+</ul>
+</div>
+<div class="section" id="downloading-gambit">
+<span id="section-downloading"></span><h2>Downloading Gambit<a class="headerlink" href="#downloading-gambit" title="Permalink to this headline">¶</a></h2>
+<p>Versions of Gambit are available for download from
+<a class="reference external" href="http://sourceforge.net/projects/gambit/files">http://sourceforge.net/projects/gambit/files</a>.</p>
+<p>The current stable version is 0.2010.09.01.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://sourceforge.net/projects/gambit/files/gambit-stable/0.2010.09.01/gambit-0.2010.09.01.tar.gz/download">gambit-0.2010.09.01.tar.gz</a> (source tarball, for Linux/Windows/Mac OSX)</li>
+<li><a class="reference external" href="http://sourceforge.net/projects/gambit/files/gambit-stable/0.2010.09.01/gambit-0.2010.09.01.dmg/download">gambit-0.2010.09.01.dmg</a> (application binary for Mac OSX 10.6)</li>
+</ul>
+<p>The previous stable version of Gambit was 0.2007.12.04.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://sourceforge.net/projects/gambit/files/gambit-stable/0.2007.12.04/gambit-0.2007.12.04.tar.gz/download">gambit-0.2007.12.04.tar.gz</a> (source tarball, for Linux/Windows/Mac OSX)</li>
+<li><a class="reference external" href="http://sourceforge.net/projects/gambit/files/gambit-stable/0.2007.12.04/gambit-0.2007.12.04.exe/download">gambit-0.2007.12.04.exe</a> (binary installer distribution for Microsoft Windows).</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">There is no Windows installer yet available for the latest stable
+version.  The previous stable version contains all the essential
+functionality and is adequate for most users.  There is a known bug
+involving viewing dominated actions in extensive games in the
+0.2007.12.04 version of the graphical interface.  Users are advised
+to avoid using this feature.  The error is entirely cosmetic and
+does not affect the correctness of equilibria calculated.</p>
+</div>
+</div>
+<div class="section" id="community">
+<h2>Community<a class="headerlink" href="#community" title="Permalink to this headline">¶</a></h2>
+<p>The following mailing lists are available for those interested in the
+use and further development of Gambit:</p>
+<dl class="docutils">
+<dt><a class="reference external" href="http://lists.sourceforge.net/lists/listinfo/gambit-announce">gambit-announce@lists.sourceforge.net</a></dt>
+<dd>Announcement-only mailing list for notifications of new releases of
+Gambit.</dd>
+<dt><a class="reference external" href="http://lists.sourceforge.net/lists/listinfo/gambit-users">gambit-users@lists.sourceforge.net</a></dt>
+<dd>General discussion forum for teaching and research users of Gambit.</dd>
+<dt><a class="reference external" href="http://lists.sourceforge.net/lists/listinfo/gambit-devel">gambit-devel@lists.sourceforge.net</a></dt>
+<dd>Discussion for those interested in devleoping or extending Gambit,
+or using Gambit source code in other applications.</dd>
+</dl>
+</div>
+<div class="section" id="bug-reports-and-inquiries">
+<h2>Bug reports and inquiries<a class="headerlink" href="#bug-reports-and-inquiries" title="Permalink to this headline">¶</a></h2>
+<p>Bug reports or other inquiries about Gambit should be directed to
+<a class="reference external" href="http://www.gambit-project.org/turocy">Theodore Turocy</a>,
+project director, at ted.turocy (aht) gmail (daht) com.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="http://www.gambit-project.org/doc/genindex.html" title="General Index">index</a></li>
+        <li class="right">
+          <a href="http://www.gambit-project.org/doc/gui.html" title="The graphical interface">next</a> |</li>
+        <li class="right">
+          <a href="http://www.gambit-project.org/doc/index.html" title="Gambit: Software Tools for Game Theory">previous</a> |</li>
+        <li><a href="http://www.gambit-project.org/doc/index.html">home</a>&nbsp;|&nbsp;</li>
+        <li><a href="http://www.gambit-project.org/doc/search.html">search</a>&nbsp;|&nbsp;</li>
+        <li><a href="http://www.gambit-project.org/doc/intro.html#section-downloading">download</a>&nbsp;|&nbsp;</li>
+	<li><a href="http://www.gambit-project.org/doc/ideas.html">project ideas</a>&nbsp;</li>
+    <!--   <li><a href="contents.html">documentation </a> &raquo;</li> -->
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        © Copyright 2010, The Gambit Project.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  
+</body></html>

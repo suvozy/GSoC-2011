@@ -1,0 +1,53 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = new Object(); 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BXh96he6pTaPlE8ahcPfyuJwGsKDppgLQ8PuIJsCNtwHwp6MDEAEYASCWlJ4DKAM4AFD58LLe-v____8BYOXK5YO0DrIBHWVsZWN0cm9uaWNzLmhvd3N0dWZmd29ya3MuY29tyAEB2gFQaHR0cDovL2VsZWN0cm9uaWNzLmhvd3N0dWZmd29ya3MuY29tL2dhZGdldHMvb3RoZXItZ2FkZ2V0cy9oYXB0aWMtdGVjaG5vbG9neS5odG2pAqP15asfQVg-yALQ2aAfqAMB6APACOgDmQnoA8oJ9QMABAAE&amp;num=1&amp;sig=AGiWqtwZAppeB7TBk3XMEod_6Rc-OHcxMg&amp;client=ca-howstuffworks_rs_js&amp;adurl=http://clk.atdmt.com/INM/go/314045321/direct/01/"; 
+google_ad.visible_url = "Insistongenuine.com/SpecialOffers"; 
+google_ad.line1 = "Looking to buy a New PC?"; 
+google_ad.line2 = "Great PC Deals with 100% Original"; 
+google_ad.line3 = "Windows. Offers at your door step"; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=BJTUlhe6pTaPlE8ahcPfyuJwGl-Dk-gGNmfrQAcCNtwGAs68-EAIYAiCWlJ4DKAM4AFCg7d_hB2DlyuWDtA6gAYOSvv0DsgEdZWxlY3Ryb25pY3MuaG93c3R1ZmZ3b3Jrcy5jb23IAQHaAVBodHRwOi8vZWxlY3Ryb25pY3MuaG93c3R1ZmZ3b3Jrcy5jb20vZ2FkZ2V0cy9vdGhlci1nYWRnZXRzL2hhcHRpYy10ZWNobm9sb2d5Lmh0bYACAakCK7VJrFc2Nz6oAwHoA8AI6AOZCegDygn1AwAEAAQ&amp;num=2&amp;sig=AGiWqtxkMaYq9RSDzzXGC1o6gKXc-H-eUg&amp;client=ca-howstuffworks_rs_js&amp;adurl=http://www.q-net.com"; 
+google_ad.visible_url = "www.q-net.com"; 
+google_ad.line1 = "Q-net Queueing Systems"; 
+google_ad.line2 = "Queue Management System and"; 
+google_ad.line3 = "Info Kiosk in high-tech design."; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 3; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=BkpBEhe6pTaPlE8ahcPfyuJwG_ZzKswGVy4CvA8CNtwGwzAsQAxgDIJaUngMoAzgAUIGl4YL8_____wFg5crlg7QOoAHzmLT_A7IBHWVsZWN0cm9uaWNzLmhvd3N0dWZmd29ya3MuY29tyAEB2gFQaHR0cDovL2VsZWN0cm9uaWNzLmhvd3N0dWZmd29ya3MuY29tL2dhZGdldHMvb3RoZXItZ2FkZ2V0cy9oYXB0aWMtdGVjaG5vbG9neS5odG2oAwHoA8AI6AOZCegDygn1AwAEAAQ&amp;num=3&amp;sig=AGiWqtxvT6BWhOfYt_wcGw-NJZClp7ZJMA&amp;client=ca-howstuffworks_rs_js&amp;adurl=http://www.xenarc.com"; 
+google_ad.visible_url = "www.Xenarc.com"; 
+google_ad.line1 = "Xenarc Touch Screens"; 
+google_ad.line2 = "Portable High Resolution Monitors"; 
+google_ad.line3 = "7\x26quot; to 15\x26quot; Touch Screen LCD Monitors"; 
+google_ad.regionname = ""; 
+google_ads[2] = google_ad; 
+google_info.feedback_url = "http://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://electronics.howstuffworks.com/gadgets/other-gadgets/haptic-technology.htm%26hl%3Den%26client%3Dca-howstuffworks_rs_js%26adU%3DInsistongenuine.com/SpecialOffers%26adT%3DLooking%2Bto%2Bbuy%2Ba%2BNew%2BPC%253F%26adU%3Dwww.q-net.com%26adT%3DQ-net%2BQueueing%2BSystems%26adU%3Dwww.Xenarc.com%26adT%3DXenarc%2BTouch%2BScreens%26gl%3DIN%26hideleadgen%3D1\x26usg\x3dAFQjCNFtUFJB2ejXr5rW3T17vbO-8ldtbA";
+var google_attribution_text = "Ads by Google";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

@@ -1,0 +1,33 @@
+/* CSS placed here will be applied to all skins */
+
+/**** reduced subset of the mbox styles from enwiki, mainly for the nice boxflow ****/
+table.mbox {
+	margin: 4px 10%;
+	border-collapse: collapse;
+	border: 1px solid #aaa; /* Default "notice" gray */
+	background: #f9f9f9;
+}
+table.mbox-wide {
+	margin: 4px 0;
+}
+ 
+th.mbox-text, td.mbox-text {     /* The message body cell(s) */
+	border: none;
+	padding: 0.25em 0.9em;       /* 0.9em left/right */
+	width: 100%;    /* Make all mboxes the same width regardless of text length */
+}
+td.mbox-image {                  /* The left image cell */
+	border: none;
+	padding: 2px 0 2px 0.9em;    /* 0.9em left, 0px right */
+	text-align: center;
+}
+td.mbox-imageright {             /* The right image cell */
+	border: none;
+	padding: 2px 0.9em 2px 0;    /* 0px left, 0.9em right */
+	text-align: center;
+}
+td.mbox-empty-cell {         /* An empty narrow cell */
+	border: none;
+	padding: 0px;
+	width: 1px;
+}

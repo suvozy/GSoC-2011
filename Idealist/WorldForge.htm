@@ -1,0 +1,819 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" lang="en"><head>
+<title>Summer of Code - WorldForgeWiki</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="MediaWiki 1.16.0">
+<link rel="shortcut icon" href="http://wiki.worldforge.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.worldforge.org/w/opensearch_desc.php" title="WorldForgeWiki (en)">
+<link title="Creative Commons" type="application/rdf+xml" href="http://wiki.worldforge.org/w/index.php?title=Summer_of_Code&amp;action=creativecommons" rel="meta">
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html">
+<link rel="alternate" type="application/atom+xml" title="WorldForgeWiki Atom feed" href="http://wiki.worldforge.org/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="WorldForge_files/shared.css" media="screen">
+<link rel="stylesheet" href="WorldForge_files/commonPrint.css" media="print">
+<link rel="stylesheet" href="WorldForge_files/main.css" media="screen">
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/w/skins/monobook/IE50Fixes.css?270" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/w/skins/monobook/IE55Fixes.css?270" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/w/skins/monobook/IE60Fixes.css?270" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/w/skins/monobook/IE70Fixes.css?270" media="screen" /><![endif]-->
+<link rel="stylesheet" href="WorldForge_files/index.css">
+<link rel="stylesheet" href="WorldForge_files/index_002.css" media="print">
+<link rel="stylesheet" href="WorldForge_files/index_004.css">
+<link rel="stylesheet" href="WorldForge_files/index_003.css">
+<script>
+var skin="monobook",
+stylepath="/w/skins",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://wiki.worldforge.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Summer_of_Code",
+wgTitle="Summer of Code",
+wgAction="view",
+wgArticleId=1846,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=5445,
+wgVersion="1.16.0",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "WorldForgeWiki", "5": "WorldForgeWiki talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "worldforgewiki": 4, "worldforgewiki_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "image": 6, "image_talk": 7},
+wgSiteName="WorldForgeWiki",
+wgCategories=["GSoC"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[];
+</script><script src="WorldForge_files/wikibits.js"></script>
+<script src="WorldForge_files/ajax.js"></script>
+<script src="WorldForge_files/index.php"></script>
+
+</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Summer_of_Code skin-monobook">
+<div id="globalWrapper">
+<div id="column-content"><div id="content">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading">Summer of Code</h1>
+	<div id="bodyContent">
+		<h3 id="siteSub">From WorldForgeWiki</h3>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+		<!-- start content -->
+<p><br>
+</p>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2> <span class="toctoggle">[<a href="javascript:toggleToc()" class="internal" id="togglelink">hide</a>]</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#About_Google_Summer_of_Code"><span class="tocnumber">1</span> <span class="toctext">About Google Summer of Code</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#WorldForge_in_the_Summer_of_Code"><span class="tocnumber">2</span> <span class="toctext">WorldForge in the Summer of Code</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Requirements"><span class="tocnumber">2.1</span> <span class="toctext">Requirements</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#General_Prerequisites"><span class="tocnumber">2.1.1</span> <span class="toctext">General Prerequisites</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#During_the_Program"><span class="tocnumber">2.1.2</span> <span class="toctext">During the Program</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-6"><a href="#Helpful_Links"><span class="tocnumber">2.2</span> <span class="toctext">Helpful Links</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Ideas_List"><span class="tocnumber">3</span> <span class="toctext">Ideas List</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Ember_Ideas"><span class="tocnumber">3.1</span> <span class="toctext">Ember Ideas</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Ember_Prerequisites"><span class="tocnumber">3.1.1</span> <span class="toctext">Ember Prerequisites</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Integrate_the_Google_Breakpad"><span class="tocnumber">3.1.2</span> <span class="toctext">Integrate the Google Breakpad</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Allow_for_dynamically_dowloadable_remote_resources"><span class="tocnumber">3.1.3</span> <span class="toctext">Allow for dynamically dowloadable remote resources</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Automatic_adjustment_of_graphical_level"><span class="tocnumber">3.1.4</span> <span class="toctext">Automatic adjustment of graphical level</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#Dynamic_calculating_of_lower_LOD_versions_for_meshes"><span class="tocnumber">3.1.5</span> <span class="toctext">Dynamic calculating of lower LOD versions for meshes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-14"><a href="#Cyphesis_ideas"><span class="tocnumber">3.2</span> <span class="toctext">Cyphesis ideas</span></a>
+<ul>
+<li class="toclevel-3 tocsection-15"><a href="#Cyphesis_Prerequisites"><span class="tocnumber">3.2.1</span> <span class="toctext">Cyphesis Prerequisites</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#Develop_Mason_Game_Systems"><span class="tocnumber">3.2.2</span> <span class="toctext">Develop Mason Game Systems</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-17"><a href="#Infrastructure_ideas"><span class="tocnumber">3.3</span> <span class="toctext">Infrastructure ideas</span></a>
+<ul>
+<li class="toclevel-3 tocsection-18"><a href="#Infrastructure_Prerequisites"><span class="tocnumber">3.3.1</span> <span class="toctext">Infrastructure Prerequisites</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="#Next_generation_Metaserver"><span class="tocnumber">3.3.2</span> <span class="toctext">Next generation Metaserver</span></a></li>
+<li class="toclevel-3 tocsection-20"><a href="#Develop_WorldForge_security"><span class="tocnumber">3.3.3</span> <span class="toctext">Develop WorldForge security</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-21"><a href="#WOMBAT_ideas"><span class="tocnumber">3.4</span> <span class="toctext">WOMBAT ideas</span></a>
+<ul>
+<li class="toclevel-3 tocsection-22"><a href="#WOMBAT_Prerequisites"><span class="tocnumber">3.4.1</span> <span class="toctext">WOMBAT Prerequisites</span></a></li>
+<li class="toclevel-3 tocsection-23"><a href="#Yaminon_-_A_modular_back-end_server_for_WOMBAT"><span class="tocnumber">3.4.2</span> <span class="toctext">Yaminon - A modular back-end server for WOMBAT</span></a></li>
+<li class="toclevel-3 tocsection-24"><a href="#Research_Project:_WOMBAT_Implementations_using_other_frameworks"><span class="tocnumber">3.4.3</span> <span class="toctext">Research Project: WOMBAT Implementations using other frameworks</span></a></li>
+<li class="toclevel-3 tocsection-25"><a href="#Research_Project:_Preview_for_3D_assets"><span class="tocnumber">3.4.4</span> <span class="toctext">Research Project: Preview for 3D assets</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-26"><a href="#Ryzom_Core_Ideas"><span class="tocnumber">3.5</span> <span class="toctext">Ryzom Core Ideas</span></a>
+<ul>
+<li class="toclevel-3 tocsection-27"><a href="#About_Ryzom_Core"><span class="tocnumber">3.5.1</span> <span class="toctext">About Ryzom Core</span></a></li>
+<li class="toclevel-3 tocsection-28"><a href="#Contacting_Ryzom_Core"><span class="tocnumber">3.5.2</span> <span class="toctext">Contacting Ryzom Core</span></a>
+<ul>
+<li class="toclevel-4 tocsection-29"><a href="#Mentor_Contact_Information"><span class="tocnumber">3.5.2.1</span> <span class="toctext">Mentor Contact Information</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-30"><a href="#Tools_Related_Ideas"><span class="tocnumber">3.5.3</span> <span class="toctext">Tools Related Ideas</span></a>
+<ul>
+<li class="toclevel-4 tocsection-31"><a href="#OVQT_Translation_Plugin"><span class="tocnumber">3.5.3.1</span> <span class="toctext">OVQT Translation Plugin</span></a></li>
+<li class="toclevel-4 tocsection-32"><a href="#Web-Based_Translation_Tool"><span class="tocnumber">3.5.3.2</span> <span class="toctext">Web-Based Translation Tool</span></a></li>
+<li class="toclevel-4 tocsection-33"><a href="#World_Editor_Conversion"><span class="tocnumber">3.5.3.3</span> <span class="toctext">World Editor Conversion</span></a></li>
+<li class="toclevel-4 tocsection-34"><a href="#BNP_Tools"><span class="tocnumber">3.5.3.4</span> <span class="toctext">BNP Tools</span></a></li>
+<li class="toclevel-4 tocsection-35"><a href="#Ryzom_GUI_Editor"><span class="tocnumber">3.5.3.5</span> <span class="toctext">Ryzom GUI Editor</span></a></li>
+<li class="toclevel-4 tocsection-36"><a href="#NeLNS_Qt_Displayer_and_Services_Dashboard"><span class="tocnumber">3.5.3.6</span> <span class="toctext">NeLNS Qt Displayer and Services Dashboard</span></a></li>
+<li class="toclevel-4 tocsection-37"><a href="#Ryzom_Core_Blender_Exporter"><span class="tocnumber">3.5.3.7</span> <span class="toctext">Ryzom Core Blender Exporter</span></a></li>
+<li class="toclevel-4 tocsection-38"><a href="#Ryzom_Core_Landscape_Editor_Plugin"><span class="tocnumber">3.5.3.8</span> <span class="toctext">Ryzom Core Landscape Editor Plugin</span></a></li>
+<li class="toclevel-4 tocsection-39"><a href="#OVQT_Build_Gamedata_Frontend_Plugin"><span class="tocnumber">3.5.3.9</span> <span class="toctext">OVQT Build Gamedata Frontend Plugin</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-40"><a href="#Ryzom_Game_Functionality"><span class="tocnumber">3.5.4</span> <span class="toctext">Ryzom Game Functionality</span></a>
+<ul>
+<li class="toclevel-4 tocsection-41"><a href="#Implement_Guild_Missions"><span class="tocnumber">3.5.4.1</span> <span class="toctext">Implement Guild Missions</span></a></li>
+<li class="toclevel-4 tocsection-42"><a href="#Implement_Additional_Sound_Triggers"><span class="tocnumber">3.5.4.2</span> <span class="toctext">Implement Additional Sound Triggers</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-43"><a href="#Misc_hints"><span class="tocnumber">3.6</span> <span class="toctext">Misc hints</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-44"><a href="#For_accepted_students"><span class="tocnumber">4</span> <span class="toctext">For accepted students</span></a>
+<ul>
+<li class="toclevel-2 tocsection-45"><a href="#Community_related"><span class="tocnumber">4.1</span> <span class="toctext">Community related</span></a></li>
+<li class="toclevel-2 tocsection-46"><a href="#Code_related"><span class="tocnumber">4.2</span> <span class="toctext">Code related</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></tbody></table><script>if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<h2> <span class="mw-headline" id="About_Google_Summer_of_Code"> About Google Summer of Code </span></h2>
+<p>Flip code, not burgers. Google is sponsoring students to work on Open Source projects this summer.
+To learn more about this program see the <a href="http://code.google.com/soc" class="external text" rel="nofollow">Google Summer of Code</a> website and the <a href="http://socghop.appspot.com/document/show/program/google/gsoc2009/faqs" class="external text" rel="nofollow">Summer of Code FAQ</a>. You can also find a some advice for students <a href="http://code.google.com/p/google-summer-of-code/wiki/AdviceforStudents" class="external text" rel="nofollow">here</a>.
+</p>
+<h2> <span class="mw-headline" id="WorldForge_in_the_Summer_of_Code"> WorldForge in the Summer of Code </span></h2>
+<p>Find our proposed projects below. You can see past projects at the <a href="http://wiki.worldforge.org/wiki/Past_GSoCs" title="Past GSoCs">Past GSoCs</a> page.
+</p>
+<h3> <span class="mw-headline" id="Requirements"> Requirements </span></h3>
+<h4> <span class="mw-headline" id="General_Prerequisites"> General Prerequisites </span></h4>
+<ul><li> You should discuss your application on the <a href="http://mail.worldforge.org/lists/listinfo/general" class="external text" rel="nofollow">WorldForge General mailing list</a> before submitting. Note that you need to be subscribed to the list before you can send a message to it.
+</li><li> You should have the time to work on the project all summer.
+</li></ul>
+<h4> <span class="mw-headline" id="During_the_Program"> During the Program </span></h4>
+<ul><li> You need to provide a weekly progress report.
+</li><li> Provide your patches early and often.
+</li><li> This is not exactly a requirement, but it would be nice if you
+ could hang out on WorldForge IRC during the program. This will make it 
+easier to get feedback from other project members as well.
+</li></ul>
+<h3> <span class="mw-headline" id="Helpful_Links"> Helpful Links </span></h3>
+<ul><li><a href="http://wiki.worldforge.org/wiki/Main_Page#Communication_Channels" title="Main Page">Communication channels</a>
+ A nice summary of the communication channels used by the project. New 
+members should start by using the mailing lists (go for the General 
+list), but day to day communication mostly happens on IRC. We also have a
+ specific <a href="http://forums.worldforgedev.org/viewforum.php?f=19" class="external text" rel="nofollow">forum</a> set up for the SoC.
+</li><li><a href="http://wiki.worldforge.org/wiki/Summer_of_Code/Application_Template" title="Summer of Code/Application Template">Application Template</a> The application template we would like you to use when applying.
+</li><li><a href="http://wiki.worldforge.org/wiki/Compiling_Ember" title="Compiling Ember">Compiling Ember</a>
+ A requirement is that you can compile and run Ember. Due to the large 
+number of required libraries this is not always straight forward, hence 
+this guide.
+</li><li><a href="https://launchpad.net/ember" class="external text" rel="nofollow">Ember development</a> General information on current Ember development (bug tracker, blueprints etc.)
+</li></ul>
+<h1> <span class="mw-headline" id="Ideas_List"> Ideas List </span></h1>
+<p>For Summer of Code projects, we recommend working on <a href="http://wiki.worldforge.org/wiki/Ember" title="Ember">Ember</a>, <a href="http://wiki.worldforge.org/wiki/Cyphesis" title="Cyphesis">Cyphesis</a> or <a href="http://wiki.worldforge.org/wiki/Wombat" title="Wombat">Wombat</a>. This is a summary of suggested projects. The full specifications can be found as blueprints on the <a href="https://blueprints.launchpad.net/ember" class="external text" rel="nofollow">Ember Launchpad</a>, <a href="https://blueprints.launchpad.net/cyphesis" class="external text" rel="nofollow">Cyphesis Launchpad</a> and <a href="https://blueprints.launchpad.net/wombat" class="external text" rel="nofollow">Wombat Launchpad</a>.
+ Note that these are all just suggestions. If you have another idea that
+ you want to see implemented, don't hesitate to submit that instead. It 
+might also be a good idea to talk with the developers first about your 
+idea. Use the mailing list or the forums, or reach us on irc. Most of 
+the developers are based in Europe and are logged on in the evenings.
+</p>
+<h2> <span class="mw-headline" id="Ember_Ideas"> Ember Ideas </span></h2>
+<h4> <span class="mw-headline" id="Ember_Prerequisites"> Ember Prerequisites </span></h4>
+<ul><li> You should know your way around C++ already, and be comfortable
+ with templates since this is commonly used throughout the WF stack.
+</li><li> You should be comfortable with working with many different 
+libraries, combining them and translating data between the different 
+domains, as Ember is an application which uses a great number of third 
+party libraries.
+</li><li> You should be able to compile/run the <a href="http://wiki.worldforge.org/wiki/Ember" title="Ember">Ember</a> client on Linux from the master git repository.
+</li><li> As a way for you to see whether you have the basic skill 
+needed, and for us to prevent non-serious applications we require that 
+any student submitting an application for Ember submits patches for the 
+two errors in this special <a href="https://github.com/worldforge/ember-gsoc2011" class="external text" rel="nofollow">Ember code drop</a>.
+ There's one compilation time error, and one error which will be 
+apparent during runtime. A patch file, or just a description of which 
+lines in which files should be changed will suffice.
+</li></ul>
+<h3> <span class="mw-headline" id="Integrate_the_Google_Breakpad"> Integrate the Google Breakpad </span></h3>
+<ul><li> <b>Summary</b>: Integrate the Google Breakpad crash reporting system with Ember
+</li><li> <b>Description</b>: Google hosts a project called the <a href="http://code.google.com/p/google-breakpad/" class="external text" rel="nofollow">Breakpad</a>,
+ which is an automated crash reporting system. This project aims to 
+integrate into Ember, so that crash information is automatically sent to
+ a Worldforge server for collection and processing. A phase two of the 
+project will involve building various crash report handling and 
+reporting functionalty, perhaps integrating it with the Launchpad used 
+for bug tracking.
+</li><li> <b>Technical Details</b>: This is a task which won't require 
+any in depth knowledge of Ember or the Worldforge system. The focus is 
+instead on the Breakpad system, and how it can be integrated into Ember.
+</li><li> <b>Specification</b>: More information can be found <a href="https://blueprints.launchpad.net/ember/+spec/ember-breakpad" class="external text" rel="nofollow">here</a>.
+</li><li> <b>Difficulty</b>: medium
+</li><li> <b>Technical requirements</b>: beginner C++
+</li><li> <b>Mentor</b>: <a href="http://wiki.worldforge.org/wiki/User:Erik" title="User:Erik">Erik Hjortsberg</a>
+</li></ul>
+<h3> <span class="mw-headline" id="Allow_for_dynamically_dowloadable_remote_resources"> Allow for dynamically dowloadable remote resources </span></h3>
+<ul><li> <b>Summary</b>: Add support for dynamically downloadable remote ressources
+</li><li> <b>Description</b>: Allow for media to be dynamically 
+downloaded from remote resources. This involves specifying how resource 
+discovery and location definition is specified and then implementing 
+this in the client. The goal is to allow each world to be able to fully 
+provide it's own complete set of media.
+</li><li> <b>Technical Details</b>: This is a task which will require the student to both learn Ember and <a href="http://www.ogre3d.org/" class="external text" rel="nofollow">Ogre</a>, and deal with network transfer, probably through the libwfut library.
+</li><li> <b>Specification</b>: More information can be found <a href="https://blueprints.launchpad.net/ember/+spec/ember-dynamic-media-download" class="external text" rel="nofollow">here</a>.
+</li><li> <b>Difficulty</b>: hard
+</li><li> <b>Technical requirements</b>: advanced C++, basic knowledge of web servers and network transfer
+</li><li> <b>Mentor</b>: <a href="http://wiki.worldforge.org/wiki/User:Erik" title="User:Erik">Erik Hjortsberg</a>
+</li></ul>
+<h3> <span class="mw-headline" id="Automatic_adjustment_of_graphical_level"> Automatic adjustment of graphical level </span></h3>
+<ul><li> <b>Summary</b>: Design a system which will automatically adjust the graphical detail level so that framerate is smooth
+</li><li> <b>Description</b>: Ember already has an ability to change the
+ graphics detail level, as well as the ability to tweak the settings of 
+the terrain system. However, all of this must currently be done by hand.
+ This task aims to implement a system which will sample the current 
+frame rate and adjust the graphical detail level accordingly, so that 
+the player always has a smooth framerate.
+</li><li> <b>Specification</b>: More details can be found <a href="https://blueprints.launchpad.net/ember/+spec/ember-automatic-level-adjustment" class="external text" rel="nofollow">here</a>.
+</li><li> <b>Technical Details</b>: This task does not require much 
+knowledge of Ogre or CEGUI, but it will require that the developer 
+becomes familiar with large parts of the Ember source code, as this 
+feature is sure to touch on many different subsystems.
+</li><li> <b>Difficulty</b>: medium
+</li><li> <b>Technical requirements</b>: standard C++
+</li><li> <b>Mentor</b>: <a href="http://wiki.worldforge.org/wiki/User:Erik" title="User:Erik">Erik Hjortsberg</a>
+</li></ul>
+<h3> <span class="mw-headline" id="Dynamic_calculating_of_lower_LOD_versions_for_meshes"> Dynamic calculating of lower LOD versions for meshes </span></h3>
+<ul><li> <b>Summary</b>: Implement dynamic and automatic creation of low-LOD versions of meshes, to be used for far away entities.
+</li><li> <b>Description</b>: While Ogre has a built in LOD system which
+ allows you to provide different versions of each mesh for different LOD
+ levels, the current media available only provides high level meshes. 
+One approach to this would be to have Ember instead dynamically 
+calculating various lower detailed meshes on the fly, to be used for 
+lower LOD levels.
+</li><li> <b>Specification</b>: More details can be found <a href="https://blueprints.launchpad.net/ember/+spec/ember-automatic-mesh-lod" class="external text" rel="nofollow">here</a>.
+</li><li> <b>Technical Details</b>: This task requires basic 
+understanding of how a mesh works, basic familiarity with Ogre, and the 
+ability to implement various methods for collapsing a 3d mesh into a 
+lower detailed one.
+</li><li> <b>Difficulty</b>: medium
+</li><li> <b>Technical requirements</b>: standard C++
+</li><li> <b>Mentor</b>: <a href="http://wiki.worldforge.org/wiki/User:Erik" title="User:Erik">Erik Hjortsberg</a>
+</li></ul>
+<h2> <span class="mw-headline" id="Cyphesis_ideas"> Cyphesis ideas </span></h2>
+<h4> <span class="mw-headline" id="Cyphesis_Prerequisites"> Cyphesis Prerequisites </span></h4>
+<ul><li> You should be a capable general programmer, capable of understanding code and picking up new languages as required.
+</li><li> You should be experienced in Python, or good with another 
+similar high level language and be prepared to put in the effort to 
+learn Python.
+</li><li> You should be able to compile and run Cyphesis from the master git repository on a Linux system.
+</li><li> You should be familiar with C++.
+</li></ul>
+<h3> <span class="mw-headline" id="Develop_Mason_Game_Systems"> Develop Mason Game Systems </span></h3>
+<ul><li> <b>Summary</b>: Implement game systems require to build a basic
+ castle fortification from scratch from gathering raw materials to the 
+completed construction.
+</li><li> <b>Description</b>: WorldForge have been working for some time
+ towards a loose set of ideas for a game called Mason. Mason has a 
+generic medieval fantasy setting and is a freeform multiplayer sandbox 
+game in which players have a broad ability to permanently affect a 
+persistent online game world. A number of example game systems have been
+ defined as a starting point. The goal is to implement these game 
+systems, and then further expand the defined systems. An ideal candidate
+ would help push the boundaries that the core code can currently 
+support, debug existing infrastructure and stimulate the rest of the 
+WorldForge team to create a more capable framework.
+</li><li> <b>Technical Details</b>: Game systems are implemented by 
+editing XML data which defines the game elements, and by writing python 
+scripts that defines how players can interact with the systems. It may 
+also be necessary to propose and make changes to the C++ core on which 
+the game systems run.
+</li><li> <b>Specification</b>: More information can be found <a href="https://blueprints.launchpad.net/cyphesis/+spec/gs-fortification" class="external text" rel="nofollow">here</a>.
+</li><li> <b>Difficulty</b>: Medium-Hard
+</li><li> <b>Technical Requirements</b>: Python, basic XML, optionally C++
+</li><li> <b>Mentor</b>: <a href="http://wiki.worldforge.org/wiki/User:Alriddoch" title="User:Alriddoch">Alistair Riddoch</a>
+</li></ul>
+<h2> <span class="mw-headline" id="Infrastructure_ideas"> Infrastructure ideas </span></h2>
+<h4> <span class="mw-headline" id="Infrastructure_Prerequisites"> Infrastructure Prerequisites </span></h4>
+<ul><li> You should be a capable general programmer, capable of understanding code and picking up new languages as required.
+</li><li> You should be familiar with C++, include templates and the STL
+</li><li> You should have a good knowledge of systems design and networking
+</li><li> You should be able to compile and run Cyphesis and Ember from the master git repository on a Linux system.
+</li></ul>
+<h3> <span class="mw-headline" id="Next_generation_Metaserver"> Next generation Metaserver </span></h3>
+<ul><li> <b>Summary</b>: Enhance WorldForge metaserver to support IPv6, server matching and authentication.
+</li><li> <b>Description</b>: WorldForge uses a metaserver to register 
+the existance of game servers, and allow clients to get a list of those 
+available. The current design is simple and elegant, but not extensible 
+and does not provide enough features to support our evolving 
+requirements. It needs to be re-written to support a set of new 
+features, and allow for future extension.
+</li><li> <b>Technical Details</b>: The new metaserver needs to support 
+old clients in legacy mode as well as defining a new extensible protocol
+ which is independent of the underlying IP version (for IPv6 support), 
+capable of supporting better server searches using additional data 
+fields, and support extensions to the protocol.
+</li><li> <b>Specification</b>: More information can be found <a href="https://blueprints.launchpad.net/cyphesis/+spec/metaserver-ng" class="external text" rel="nofollow">here</a>.
+</li><li> <b>Difficulty</b>: Hard
+</li><li> <b>Technical Requirements</b>: C++, networking
+</li><li> <b>Mentor</b>: <a href="http://wiki.worldforge.org/wiki/User:Alriddoch" title="User:Alriddoch">Alistair Riddoch</a>
+</li></ul>
+<h3> <span class="mw-headline" id="Develop_WorldForge_security"> Develop WorldForge security </span></h3>
+<ul><li> <b>Summary</b>: Enhance WorldForge system to use well design, off the shelf technologies for encryption and authentication.
+</li><li> <b>Description</b>: WorldForge uses plain text network 
+communication, and only the most basic of authentication security. In 
+order to support the necessary level of security it will be necessary to
+ use much stronger technologies, but it is well outside the scope of the
+ project to develop or implement these technologies from scratch. 
+Technologies are required to ensure privacy and integrity of 
+communication and a high standard of authentication both of users and of
+ server systems.
+</li><li> <b>Technical Details</b>: We expect the StartTLS and SASL will
+ be extremely applicable technologies, and anyone considering this 
+project should evaluate the way these technologies are used to enhance 
+the security of XMPP. XMPP has much in common with WorldForge 
+communication protocols.
+</li><li> <b>Specification</b>: More information can be found <a href="http://blueprints.launchpad.net/cyphesis/+spec/worldforge-security" class="external text" rel="nofollow">here</a>.
+</li><li> <b>Difficulty</b>: Hard
+</li><li> <b>Technical Requirements</b>: C++
+</li><li> <b>Mentor</b>: <a href="http://wiki.worldforge.org/wiki/User:Alriddoch" title="User:Alriddoch">Alistair Riddoch</a>
+</li></ul>
+<h2> <span class="mw-headline" id="WOMBAT_ideas"> WOMBAT ideas </span></h2>
+<h4> <span class="mw-headline" id="WOMBAT_Prerequisites"> WOMBAT Prerequisites </span></h4>
+<ul><li> You need to know your way around <a href="http://www.python.org/" class="external text" rel="nofollow">Python</a> already, though the basics should be sufficient.
+</li><li> Web design skills are helpful.
+</li><li> You should have a local <a href="http://www.pocoo.org/projects/flask/#flask" class="external text" rel="nofollow">Flask</a> or <a href="http://www.pocoo.org/projects/werkzeug/#werkzeug" class="external text" rel="nofollow">Werkzeug</a> install, depending on the exact nature of your project.
+</li><li> To help you cut your teeth on Wombat and help us to filter out
+ non-serious applications, every student applying for Wombat should have
+ a go at setting up a small webapp serving a couple of image files from a
+ directory. The webapp should be implemented using either <a href="http://www.pocoo.org/projects/flask/#flask" class="external text" rel="nofollow">Flask</a> or <a href="http://www.pocoo.org/projects/werkzeug/#werkzeug" class="external text" rel="nofollow">Werkzeug</a>. The focus should be on clean code, following the PEP8 standards, and good documentation.
+</li></ul>
+<h3> <span class="mw-headline" id="Yaminon_-_A_modular_back-end_server_for_WOMBAT"> Yaminon - A modular back-end server for WOMBAT </span></h3>
+<ul><li> <b>Summary</b>: Split out the WOMBAT back-end handling to a standalone server.
+</li><li> <b>Description</b>: The current WOMBAT design relies on using 
+the paste standalone server and using different threads to handle the 
+back-end tasks like updating the SVN repository and cleaning up the 
+database. The goal of this project would be to implement a standalone 
+server service that handles all the back-end tasks for WOMBAT. A common 
+SQL database will be used to communicate between the web front-end 
+(WOMBAT) and the back-end server.
+</li><li> <b>Technical Details</b>: While currently the only required 
+version control back-end is subversion, the design needs to stay modular
+ enough to allow for easy addition of new back-ends. As a 
+proof-of-concept, a second plain file back-end should be implemented 
+using the same API.
+</li><li> <b>Specification</b>: TODO
+</li><li> <b>Technical requirements</b>: intermediate Python, beginner SQL
+</li><li> <b>Mentor</b>: <a href="http://wiki.worldforge.org/wiki/User:KaiBlin" title="User:KaiBlin"> Kai Blin</a>
+</li></ul>
+<h3> <span class="mw-headline" id="Research_Project:_WOMBAT_Implementations_using_other_frameworks"> Research Project: WOMBAT Implementations using other frameworks </span></h3>
+<ul><li> <b>Summary</b>: Implement WOMBAT using other Python web-app frameworks.
+</li><li> <b>Description</b>: Currently, WOMBAT is built on top of the 
+Pylons framework. By the time WOMBAT 0.0.1 was developed,Pylons was the 
+best tool for the job. Now that Wombat has matured, the list of 
+requirements has changed, and some things, like running time-consuming 
+tasks in the background, are a bit clumsy to implement using Pylons. The
+ goal of this project would be to reimplement WOMBAT on top of some 
+other Python web-app frameworks to see if one of them fits better.
+</li><li> <b>Technical Details</b>: The <a href="http://werkzeug.pocoo.org/" class="external text" rel="nofollow">Werkzeug</a> toolkit or <a href="http://www.pocoo.org/projects/flask/#flask" class="external text" rel="nofollow">Flask</a> should be used.
+</li><li> <b>Specification</b>: TODO
+</li><li> <b>Technical requirements</b>: intermediate Python, intermediate JavaScript/Ajax
+</li><li> <b>Mentor</b>: <a href="http://wiki.worldforge.org/wiki/User:KaiBlin" title="User:KaiBlin"> Kai Blin</a>
+</li></ul>
+<h3> <span class="mw-headline" id="Research_Project:_Preview_for_3D_assets"> Research Project: Preview for 3D assets </span></h3>
+<ul><li> <b>Summary</b>: Render 2D preview images for 3D assets
+</li><li> <b>Description</b>: Currently WOMBAT only creates thumbnails 
+for 2D images. However, a lot of the artwork in the repository consists 
+of 3D models that do not have previews yet. The goal of this project 
+would be to design and implement a method for intelligently creating 
+thumbnails for 3D assets as well. As described in the blueprint, this 
+could be done by extending the existing <a href="http://wiki.worldforge.org/wiki/Plunger" title="Plunger">Plunger</a> tool, or by creating a specialized tool. File formats that should be supported are:
+<ul><li> Ogre3D (binary or xml)
+</li><li> Cal3D
+</li><li> md3
+</li><li> 3ds
+</li></ul>
+</li><li> <b>Technical Details</b>: Different 3D file formats require 
+different helpers to load and render. Many models are composed of the 
+mesh, the skeleton and textures, often in different files. A simple 
+software renderer should be used to create the previews that would then 
+be cached on the server side.
+</li><li> <b>Specification</b>: For more information, see <a href="https://blueprints.launchpad.net/wombat/+spec/wombat-render-3d-previews" class="external text" rel="nofollow">the blueprint</a>.
+</li><li> <b>Difficulty</b>: hard
+</li><li> <b>Technical requirements</b>: beginner Python, intermediate maths
+</li><li> <b>Mentor</b>: <a href="http://wiki.worldforge.org/wiki/User:KaiBlin" title="User:KaiBlin"> Kai Blin</a>
+</li></ul>
+<h2> <span class="mw-headline" id="Ryzom_Core_Ideas"> Ryzom Core Ideas </span></h2>
+<h3> <span class="mw-headline" id="About_Ryzom_Core"> About Ryzom Core </span></h3>
+<p><a href="http://dev.ryzom.com/" class="external text" rel="nofollow">Ryzom Core</a>
+ is a framework built to encourage and facilitate the creation of 
+open-source MMORPG projects and worlds. It contains all of the essential
+ functionality needed for a mid-to-large scale MMO. All of the essential
+ 3D, sound (including spatial sound), physics, landscape/terrain, data 
+loading and core network services are available. Ryzom Core has a robust
+ pre-built shard framework ready for developers to build game logic upon
+ and ready to scale to whatever the developer needs. One Ryzom Core's 
+fundamental differences between most of its open-source competitors is 
+that Ryzom Core has been in development since 2001 and is the framework 
+behind the commercial MMORPG [www.ryzom.com Ryzom]. Ryzom Core is a 
+complete platform for MMORPG development and includes a vast array of 
+artistic assets, tools, services and a full featured client so that a 
+new project can sit down and begin creation on day one.
+</p>
+<h3> <span class="mw-headline" id="Contacting_Ryzom_Core"> Contacting Ryzom Core </span></h3>
+<p>You can find the Ryzom Core community through our IRC channel (irc.freenode.net / #ryzom) as well our <a href="http://dev.ryzom.com/projects/ryzom/boards" class="external text" rel="nofollow">forums</a>.
+</p>
+<h4> <span class="mw-headline" id="Mentor_Contact_Information"> Mentor Contact Information </span></h4>
+<ul><li> Matt Raykowski: IRC as 'sfb', <a href="mailto:matt.raykowski@gmail.com" class="external text" rel="nofollow">email</a>
+</li><li> Vianney Lecroart: IRC as 'ace', <a href="mailto:vl@ryzom.com" class="external text" rel="nofollow">email</a>
+</li><li> Nuno GonÃ§alves: IRC as 'ulukyn', <a href="mailto:ulukyn@ryzom.com" class="external text" rel="nofollow">email</a>
+</li></ul>
+<h3> <span class="mw-headline" id="Tools_Related_Ideas"> Tools Related Ideas </span></h3>
+<h4> <span class="mw-headline" id="OVQT_Translation_Plugin"> OVQT Translation Plugin </span></h4>
+<ul><li> <b>Summary</b>: Implemenent basic Translation Tool frontend in Object Viewer Qt
+</li><li> <b>Description</b>: This tool will be a GUI  replacement of 
+the existing translation_tool process. In addition to the  extraction, 
+diff and merge functionality the tools should also provide  basic <i>wk</i> worksheet editing capabilities. The tool should be able to  provide a map of phrases to other plugins.
+</li><li> <b>Technical Details</b>: This task will be using components 
+in NeL (NLMISC, STRING_MAPPER), reusing two existing tools (words_dic_qt
+ and translation_tool) and will be written as a plugin to Object Viewer 
+Qt.
+</li><li> <b>Specification</b>: <i>TBD</i>
+</li><li> <b>Difficulty</b>: Medium
+</li><li> <b>Required Skills</b>: C++, Qt
+</li><li> <b>Mentor</b>: Matt Raykowski (sfb)
+</li></ul>
+<h4> <span class="mw-headline" id="Web-Based_Translation_Tool"> Web-Based Translation Tool </span></h4>
+<ul><li> <b>Summary</b>: Implement a web-frontend for providing translations to Ryzom Core phrase files.
+</li><li> <b>Description</b>: This tool will provide a  web-based 
+frontend to the translation words dictionary (.uxt) and  phrases 
+(words_LN.txt). It should allow users to signup and provide  
+translations to a variety of languages as well as suggestions for better
+  translations on existing translations. It should provide admins with  
+the ability to push and pull changes from this to the .txt/uxt files and
+  vice versa. The desired language of development for this tool is PHP  
+but reasonable justifications can be made for other languages. The 
+ultimate goal is to provide an easy and secure way of 'crowd-sourcing' 
+translations for Ryzom Core based projects.
+</li><li> <b>Technical Details</b>: This task will require both a 
+frontend that provides an interface for users to edit/update 
+translations but also a backend that merges the approved translation 
+information into the actual phrase files. This backend process will also
+ need to pull diffs from the phrase files (see translation_tool) to know
+ what additional phrases need to be translated.
+</li><li> <b>Specification</b>: TBD
+</li><li> <b>Difficulty</b>: Medium
+</li><li> <b>Required Skills</b>: PHP
+</li><li> <b>Mentor</b>: Vianney Lecroart (acemtp)
+</li></ul>
+<h4> <span class="mw-headline" id="World_Editor_Conversion"> World Editor Conversion </span></h4>
+<ul><li> <b>Summary</b>: Convert the legacy World Editor to Qt as an Object Viewer Qt Plugin
+</li><li> <b>Description</b>: Our current World Editor tool is  
+developed using Microsoft's MFC framework for its GUI. The primary goal 
+ of this task is to convert the World Editor to Qt and load it into OVQT
+  as a plugin. In addition to the primary goal the various World Editor 
+ plugins should be converted to OVQT plugins as well.
+</li><li> <b>Technical Details</b>: The new World Editor UI will be 
+developed in Qt and loaded using OVQT's plugin architecture. World 
+Editor-specific configuration information should be available as a 
+separate page in the configuration settings dialog but should use global
+ configuration where possible (e.g. search paths.) 
+</li><li> <b>Specification</b>: TBD
+</li><li> <b>Difficulty</b>: Very Difficult
+</li><li> <b>Required Skills</b>: C++, Qt
+</li><li> <b>Mentor</b>: Matt Raykowski (sfb)
+</li></ul>
+<h4> <span class="mw-headline" id="BNP_Tools"> BNP Tools </span></h4>
+<ul><li> <b>Summary</b>: Implement tools for managing BNP files.
+</li><li> <b>Description</b>: Create a WinZip-style tool for managing BNP files. Optimally it would integrate into GNOME and Windows.
+</li><li> <b>Technical Details</b>: The tool must be written in Qt and 
+must contain the logic internally to accomplish this. It should be two 
+parts: an executable with shell extensions and a DLL/SO containing the 
+core logic and dialogs. The DLL/SO should also be able to be loaded as 
+an OVQT plugin and dock as normal.
+</li><li> <b>Specification</b>: TBD
+</li><li> <b>Difficulty</b>: Easy
+</li><li> <b>Required Skills</b>: C++, Qt
+</li><li> <b>Mentor</b>: Vianney Lecroart (acemtp)
+</li></ul>
+<h4> <span class="mw-headline" id="Ryzom_GUI_Editor"> Ryzom GUI Editor </span></h4>
+<ul><li> <b>Summary</b>: Create a GUI editor for Ryzom's Interface Library
+</li><li> <b>Description</b>: Ryzom Core has a robust GUI system which 
+is driven through XML files. This means that it is easy to layout new 
+dialogs and modify existing ones provided you understand the elements in
+ the XML dialogs. To make modifying and adding new dialogs easier we 
+want to add a GUI Editor plugin to OVQT. For examples you could look at 
+CEGUILayoutEditor or MyGUI Layout Editor.
+</li><li> <b>Technical Details</b>: The tool should be written as an 
+OVQT plugin. Before the actual editor is written the interface code 
+(interface_v3) will need to be modularized into a library that the 
+plugin can utilize independent of the client source code. This may also 
+mean modularizing the CDB system. The GUI Editor does not need the 
+ability to read the CDB system, the stand-in labels would be sufficient.
+</li><li> <b>Specification</b>: TBD
+</li><li> <b>Difficulty</b>: Very Difficult
+</li><li> <b>Required Skills</b>: C++, Qt
+</li><li> <b>Mentor</b>: Nuno GonÃ§alves (ulukyn)
+</li></ul>
+<h4> <span class="mw-headline" id="NeLNS_Qt_Displayer_and_Services_Dashboard"> NeLNS Qt Displayer and Services Dashboard </span></h4>
+<ul><li> <b>Summary</b>: Create a Qt UI for Ryzom Core Serivces and a Dashboard organizing all services.
+</li><li> <b>Description</b>: This task has two parts. The  first step 
+is to implement a Qt-based viewer that NLNET::IService can be  set to 
+use individually. This displayer should function equivalent to  the 
+existing Windows displayer for network services. The second step is  to 
+build a "services dashboard" application in which each NeL network  
+service displayer can be attached as a tab.
+</li><li> <b>Technical Details</b>: The application cannot be run in the
+ QApplication::run loop due to the fact that IService has its own main 
+loop. Optimally the design will allow each service to remain running as 
+an independent process and map into the dashboard through some other 
+mechanism such as IPC.
+</li><li> <b>Specification</b>: TODO
+</li><li> <b>Difficulty</b>: Medium
+</li><li> <b>Required Skills</b>: C++, Qt
+</li><li> <b>Mentor</b>: Vianney Lecroart (acemtp)
+</li></ul>
+<h4> <span class="mw-headline" id="Ryzom_Core_Blender_Exporter"> Ryzom Core Blender Exporter </span></h4>
+<ul><li> <b>Summary</b>: Create a GUI editor for Ryzom's Interface Library
+</li><li> <b>Description</b>: Ryzom Core has one fully  functional 
+exporter for its game data pipeline: 3DSMAX. We greatly wish  to enable 
+FOSS users to create content completely independent of  proprietary 
+tools. This exporter will need to be functionally identical  to the 
+3DSMAX exporter. This task may also require modifications to NeL  in 
+order to enable additional functionality (such as animation tracks  
+keyed with a different algorithm.) Finally the exporter should provide a
+  method for build_gamedata to procedurally execute the export functions
+  (see the 3DSMAX MAXScripts called to export shapes, etc.)
+</li><li> <b>Technical Details</b>: At a bare minimum we need the 
+ability to export shapes, animations, skeletons and other objects out 
+from Blender. The process should as closely match the 3DSMAX plugins 
+capabilities as possible so that object creation between the packages is
+ consistent and that the resulting exported data can uniformly be 
+processed by build_gamedata regardless of the modeling package. Liberty 
+can be taken on the presentation of the plugin information as is 
+appropriate with Blender. The NeL builder classes are all in C++ but 
+wrapping them in Python in order to use Blender Python API is 
+acceptable.
+</li><li> <b>Specification</b>: TBD
+</li><li> <b>Difficulty</b>: Medium
+</li><li> <b>Required Skills</b>: Python, C++, 3D Algorithms
+</li><li> <b>Mentor</b>: Matt Raykowski (sfb)
+</li></ul>
+<h4> <span class="mw-headline" id="Ryzom_Core_Landscape_Editor_Plugin"> Ryzom Core Landscape Editor Plugin </span></h4>
+<ul><li> <b>Summary</b>: Create a landscape editor plugin for Object Viewer Qt
+</li><li> <b>Description</b>: Landscape editing and painting is one of 
+the more sophisticated components of the 3DSMAX plugins. This plugin 
+will combine four major components: Tile Editor, Landscape Sculptor and 
+Landscape Painter, Ligoscape Editor. We envision the tool being 
+something similar to EasyGen or the Torque Terrain Editor.
+</li><li> <b>Technical Details</b>:  The Tile Editor plugin will need to
+ rewrite the Tile Edit Qt tool's presentation so that it is more 
+flexible (implemented as re-sizable and dock widgets.) The process will 
+also require the elimination of the PIC library - use CBitmap where 
+edges need to be saved into the tile bank and QBitmap or QPixmap 
+otherwise.
+</li></ul>
+<p>The Landscape Sculpting tool should use bezier patches as the 
+underlying topology (since that is the native topology of NeL landscape 
+zones.) A basic ability to edit sub-objects on the patch and to add 
+sub-objects (cut to add more segments and points) is an essential. The 
+ability to "sculpt" with brushes is the second task required. Finally an
+ option to deform the topology using a heightmap. This tool should 
+output a ".zone" file which is a binary serialization of CZone.
+</p><p>Landscape Painter should be based on the 3DSMAX Patch Painter 
+plugin (nel_patch_paint.) Nearly all of the underlying logic already 
+directly manipulated the NeL CZone object - only the 3DSAMX driven 
+presentation needs to be replaced.
+</p><p>The Ligoscape Editor will need to be able to define various zones
+ created by the previous modules as ligobricks and define their purposes
+ (ligozone, ligomat, ligotrans or special.) It will need to be able to 
+export all of this information in a form that is usable by World Editor.
+</p>
+<ul><li> <b>Specification</b>: TBD
+</li><li> <b>Difficulty</b>: Very Difficult
+</li><li> <b>Required Skills</b>: C++, Qt, 3D Algorithms
+</li><li> <b>Mentor</b>: Matt Raykowski (sfb)
+</li></ul>
+<h4> <span class="mw-headline" id="OVQT_Build_Gamedata_Frontend_Plugin"> OVQT Build Gamedata Frontend Plugin </span></h4>
+<ul><li> <b>Summary</b>: Create an OVQT plugin allowing execution and monitoring of build_gamedata.
+</li><li> <b>Description</b>: build_gamedata is a Python-based  tool 
+that automatically exports and builds gamedata. The purpose of  this 
+task is to create a plugin for Object Viewer Qt that provides a way  to 
+execute the various stages of the pipeline, to view the  
+logging/debugging and provide basic workflow status. In addition to this
+  the build_gamedata workflow should be represented in some form - 
+either  tree view or graphical - and allow certain stages to be run 
+directly.  This will require modifying the build_gamedata tool so both 
+C++ and  limited Python will be required.
+</li><li> <b>Technical Details</b>: TBD
+</li><li> <b>Specification</b>: TBD
+</li><li> <b>Difficulty</b>: Medium
+</li><li> <b>Required Skills</b>: C++, Qt, Python
+</li><li> <b>Mentor</b>: Nuno GonÃ§alves (ulukyn)
+</li></ul>
+<h3> <span class="mw-headline" id="Ryzom_Game_Functionality"> Ryzom Game Functionality </span></h3>
+<h4> <span class="mw-headline" id="Implement_Guild_Missions"> Implement Guild Missions </span></h4>
+<ul><li> <b>Summary</b>: Implement missions which can be accepted by specific guild roles and completed by any guild member.
+</li><li> <b>Description</b>: Ryzom Core current provides individual and
+ team missions. Guild missions will function similar to team missions: a
+ guild officer can approach a mission giver and accept missions on 
+behalf of the guild. Guild members may complete that guild mission. The 
+mission dialog box should differentiate between mission types (guild vs 
+individual.) At a minimum two additional mission actions will need to be
+ added to grant the guild money in reward for completing the mission or 
+mission step, rather than granting money to the individual and to remove
+ money from the guild as a penalty for failing a mission.
+</li><li> <b>Technical Details</b>: Much of the hard work is already 
+accomplished through the team/group missions. Looking at 
+CGuildMemberModule there's already a _pickMission_ method which is 
+defaulted to false (preventing any guild members from picking up 
+missions.) Implementing this in one of the higher grade classes such as 
+CGuildHighOfficerModule will allow that grade of officer to pick 
+missions. CMissionGuild already exists but is more or less a copy of 
+CMissionTeam and will need to be cleaned up, uncommented and updated for
+ guilds rather than teams. In order to demonstrate the new guild 
+missions and mission actions a new mission will have to be created for 
+Open Shard which requires a high officer to pick a guild mission from an
+ NPC and then some member to complete the mission in a given amount of 
+time. A thorough knowledge of mission_editor will not be required for 
+this task.
+</li><li> <b>Specification</b>: TBD
+</li><li> <b>Difficulty</b>: Medium
+</li><li> <b>Required Skills</b>: C++
+</li><li> <b>Mentor</b>: Nuno GonÃ§alves (ulukyn)
+</li></ul>
+<h4> <span class="mw-headline" id="Implement_Additional_Sound_Triggers"> Implement Additional Sound Triggers </span></h4>
+<ul><li> <b>Summary</b>: Implement additional sound triggers such as impulses and phrase mapping.
+</li><li> <b>Description</b>: We would like to add the ability to do 
+things such as  send "play sound" impulses from mission scripts and the 
+ability to map a phrases to a sound samples. The idea is to provide 
+mission creators more depth and control over their events and dialog.
+</li><li> <b>Technical Details</b>: The "play sound" impulse should be 
+fairly easy. We will need to implement a mission action similar to 
+CMissionActionPopupMsg which in simple terms uses the PlayerManager to 
+send a "USER:POPUP" impulse to the client. The phrase mapping will be 
+more difficult but could be done fairly simply by combining the locale 
+name (e.g. EN or FR) to the end of the phrase (e.g. WELCOME_TO_RYZOM) 
+creating a new sample named "WELCOME_TO_RYZOM_EN" - if such a sample 
+exists in the sample bank play the sound from a source located at the 
+speaker. This will allow us to have limited verbal dialog.
+</li><li> <b>Specification</b>: TBD
+</li><li> <b>Difficulty</b>: Medium
+</li><li> <b>Required Skills</b>: C++
+</li><li> <b>Mentor</b>: Matt Raykowski (sfb)
+</li></ul>
+<h2> <span class="mw-headline" id="Misc_hints"> Misc hints </span></h2>
+<p>You can find more ideas on the <a href="https://blueprints.launchpad.net/worldforge/" class="external text" rel="nofollow">WorldForge blueprints page</a>.
+If you have any questions or want to suggest your own project, please contact us, either directly to <a href="http://wiki.worldforge.org/wiki/User:Erik" title="User:Erik">Erik</a> for <a href="http://wiki.worldforge.org/wiki/Ember" title="Ember">Ember</a> projects, to <a href="http://wiki.worldforge.org/wiki/User:Alriddoch" title="User:Alriddoch">AlRiddoch</a> for <a href="http://wiki.worldforge.org/wiki/Cyphesis" title="Cyphesis">Cyphesis</a> projects, to <a href="http://wiki.worldforge.org/wiki/User:KaiBlin" title="User:KaiBlin">Kai</a> for <a href="http://wiki.worldforge.org/wiki/Wombat" title="Wombat">Wombat</a> projects or through one of our <a href="http://wiki.worldforge.org/wiki/Main_Page#Communication_Channels" title="Main Page">communication channels</a>.
+</p>
+<h1> <span class="mw-headline" id="For_accepted_students">For accepted students</span></h1>
+<p>There are a couple of things that we require of accepted students. 
+Failure to perform these could lead to students not getting a passing 
+grade (and thus no money from Google).
+</p>
+<h2> <span class="mw-headline" id="Community_related">Community related</span></h2>
+<ul><li> Provide a weekly report, sent to the general mailing list. The report shall be sent each Monday.
+</li><li> Try to participate as much as you can in the community. That 
+involves hanging around in irc, asking questions (or CCing mail) on the 
+mailing list (rather than only directly to a specific person).
+</li><li> We require that you provide your mentor with an way of 
+contacting a third person who knows you. This can be a sibling, parent, 
+friend, partner etc. It will serve as a backup in the event that you 
+would be unable to keep up the contact due to unforeseeable events such 
+as sickness, accidents, internet outages and so on.
+</li></ul>
+<h2> <span class="mw-headline" id="Code_related">Code related</span></h2>
+<ul><li> Follow the instructions regarding how to handle your <a href="http://wiki.worldforge.org/wiki/Using_Git#Git_for_GSoCers" title="Using Git">git clone repo</a>.
+</li><li> Only change code related to your task. Don't try to alter any 
+formatting. This makes it so much harder for us to merge your changes.
+</li><li> Regularly sync with the master branch. Preferably as often as 
+you can. This makes it easier for us to merge in your changes, and lets 
+you quickly find and resolve any conflicts.
+</li><li> Follow the instructions on how to use Git on the wiki. It's 
+imperative that you rebase on the master branch, so that your patches 
+always reside "on top" of the master.
+</li><li> When making commits be sure to follow the <a href="http://wiki.worldforge.org/wiki/Using_Git" title="Using Git">conventions</a>.
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 183/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key wikidb:pcache:idhash:1846-0!1!0!!en!2!edit=0 and timestamp 20110407221113 -->
+<div class="printfooter">
+Retrieved from "<a href="http://wiki.worldforge.org/wiki/Summer_of_Code">http://wiki.worldforge.org/wiki/Summer_of_Code</a>"</div>
+		<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks"><a href="http://wiki.worldforge.org/wiki/Special:Categories" title="Special:Categories">Category</a>: <span dir="ltr"><a href="http://wiki.worldforge.org/wiki/Category:GSoC" title="Category:GSoC">GSoC</a></span></div></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+				 <li id="ca-nstab-main" class="selected"><a href="http://wiki.worldforge.org/wiki/Summer_of_Code" title="View the content page [alt-shift-c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="http://wiki.worldforge.org/w/index.php?title=Talk:Summer_of_Code&amp;action=edit&amp;redlink=1" title="Discussion about the content page [alt-shift-t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="http://wiki.worldforge.org/w/index.php?title=Summer_of_Code&amp;action=edit" title="This page is protected.
+You can view its source [alt-shift-e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="http://wiki.worldforge.org/w/index.php?title=Summer_of_Code&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="http://wiki.worldforge.org/w/index.php?title=Special:UserLogin&amp;returnto=Summer_of_Code" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(&quot;/w/skins/common/images/wf-logo_wiki.png&quot;);" href="http://wiki.worldforge.org/wiki/Main_Page" title="Visit the main page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5>Navigation</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-mainpage-description"><a href="http://wiki.worldforge.org/wiki/Main_Page" title="Visit the main page [alt-shift-z]" accesskey="z">Main page</a></li>
+				<li id="n-portal"><a href="http://wiki.worldforge.org/wiki/WorldForgeWiki:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-currentevents"><a href="http://wiki.worldforge.org/wiki/WorldForgeWiki:Current_events" title="Find background information on current events">Current events</a></li>
+				<li id="n-recentchanges"><a href="http://wiki.worldforge.org/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="http://wiki.worldforge.org/wiki/Special:Random" title="Load a random page [alt-shift-x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="http://wiki.worldforge.org/wiki/Help:Contents" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/w/index.php" id="searchform">
+				<input name="title" value="Special:Search" type="hidden">
+				<input id="searchInput" title="Search WorldForgeWiki" accesskey="f" name="search" type="search">
+				<input name="go" class="searchButton" id="searchGoButton" value="Go" title="Go to a page with this exact name if exists" type="submit">&nbsp;
+				<input name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" type="submit">
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://wiki.worldforge.org/wiki/Special:WhatLinksHere/Summer_of_Code" title="List of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="http://wiki.worldforge.org/wiki/Special:RecentChangesLinked/Summer_of_Code" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="http://wiki.worldforge.org/wiki/Special:SpecialPages" title="List of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="http://wiki.worldforge.org/w/index.php?title=Summer_of_Code&amp;printable=yes" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="http://wiki.worldforge.org/w/index.php?title=Summer_of_Code&amp;oldid=5445" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer">
+	<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="WorldForge_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" height="31" width="88"></a></div>
+	<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="WorldForge_files/gnu-fdl.png" alt="GNU Free Documentation License 1.2" height="31" width="88"></a></div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 2 April 2011, at 20:30.</li>
+		<li id="viewcount">This page has been accessed 22,366 times.</li>
+		<li id="copyright">Content is available under <a href="http://www.gnu.org/copyleft/fdl.html" class="external ">GNU Free Documentation License 1.2</a>.</li>
+		<li id="privacy"><a href="http://wiki.worldforge.org/wiki/WorldForgeWiki:Privacy_policy" title="WorldForgeWiki:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="http://wiki.worldforge.org/wiki/WorldForgeWiki:About" title="WorldForgeWiki:About">About WorldForgeWiki</a></li>
+		<li id="disclaimer"><a href="http://wiki.worldforge.org/wiki/WorldForgeWiki:General_disclaimer" title="WorldForgeWiki:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+
+<script>if (window.runOnloadHook) runOnloadHook();</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="WorldForge_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-925252-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script><!-- Served in 0.323 secs. -->
+</body></html>

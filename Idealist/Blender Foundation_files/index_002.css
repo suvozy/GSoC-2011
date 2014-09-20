@@ -1,0 +1,132 @@
+
+
+
+
+
+
+
+
+
+/* <pre> */
+
+/* CSS placed here will be applied to all skins
+
+   Site-wide Custom CSS
+   This CSS is live
+   Please be nice.
+
+*/
+
+h1 {
+ margin-top: 36px;
+}
+
+h3 {
+ margin-top: 9px;
+}
+
+a.new {
+  color: #BB0011 !important;
+  /*#F39410;*/
+}
+
+.tableNormal {
+  background-color: #f9f9f9;
+  border: 1px #aaa solid;
+  margin-top:1em;
+  padding-left:1em;
+  padding-right:1em;
+  padding-bottom:1em;
+}
+
+.columnHalf {
+  width: 50%;
+  float: left;
+}
+
+.columnThird {
+  width: 33.3%;
+  float: left;
+}
+
+.clearBoth {
+  clear: both;
+} 
+
+/* for the hotkey templates */
+span.hotkeybg {
+  background-color: #EAEAEA;
+  padding: 2px 1px 2px 1px;
+  white-space: nowrap;
+}
+
+span.hotkey {
+  padding: 0px 3px 0px 3px;
+  background-color: #D8D8D8;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #f2f2f2 #a7a7a7 #838383 #e3e3e3;
+}
+/* to position the mouse icon properly in the hotkey template */
+span.hotkeybg img {
+ margin-bottom: 5px;
+ padding-right: 1px;
+ border: 0px;
+}
+
+div.refbox {
+ width: auto;
+ padding: 0px 8px 2px 8px;
+ background-color: #EDEDED;
+ border: 1px solid #D1D1D1;
+}
+div.refbox span.item {
+ font-weight: bold;
+ font-size: 1.2em;
+}
+
+li {
+ padding: 1px;
+}
+
+/* ---------------------- TABLES FORMATS ------------------------ */
+
+/* ------------------------ prettytable ------------------------- */
+
+table.prettytable {
+/*width="{{{1|100%}}}" border="2" cellpadding="4" cellspacing="0"*/
+margin: 1em 1em 1em 0; 
+/*border: 1px #aaa solid;*/ 
+border-collapse: collapse;
+width: 100%
+}
+
+.prettytable td, .prettytable th {
+border: 1px #aaa solid;
+margin: 0px;
+padding: 4px 2px 3px 5px;
+}
+
+/* ------------------------- TEMPLATES --------------------------- */
+
+/* ------------- Template:Languages/TranslatorNote --------------- */
+
+table.languages-translatornote {
+margin: 5px 2.5%;
+padding:0px 5px 0px 5px;
+border:1px solid #e1da95;
+background: #66655c;
+width:95%;
+}
+
+/* ------------------------- MATH (latex) ---------------------- */
+ 
+.tex {
+background-color: white;
+padding: 10px;
+}
+
+
+/* ------------------------------------------------------------- */
+
+/* </pre> */

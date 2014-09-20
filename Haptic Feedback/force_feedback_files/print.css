@@ -1,0 +1,13 @@
+@media print {
+
+#header_news, #player, #navbar, form#search, #sidenav, #search, #search2{
+	display: none;
+}
+
+#intro p, .style63, .style56 {
+	color: #000;
+}
+
+#header {
+	background: url(../images/header/header_one.jpg) no-repeat;
+}

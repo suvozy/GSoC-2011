@@ -1,0 +1,91 @@
+h1 {
+	font-size: 30px;
+	color: #fff;
+}
+
+h3 {
+	font-style: italic;
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+}
+
+.gray {
+	background: #111;
+}
+
+.myth h3 {
+	color: #930007;
+	font-weight: normal;
+}
+
+.myth {
+	padding: 10px 50px;
+	margin: 40px 0 0 0;
+}
+
+h3.fact {
+	color: #bdd1fe;
+}
+
+p {
+	color: #aaa;
+	font-size: 14px;
+	line-height: 1.6em;
+	margin: 20px 0;
+}
+
+table {
+	background: #000 url(../images/stars_bg.jpg) repeat-x;
+}
+
+
+#main tbody tr td table tbody tr td table tbody tr td {
+	padding: 60px 2em 2em 2em;
+}
+
+#dispell {
+	border-left: 1px solid #111;
+	border-right: 1px solid #111;
+	border-bottom: 1px solid #0c0c0c;
+	padding-top: 40px;
+	margin-top: 30px;
+	background: url(../images/gray_black_grad.gif) repeat-x;
+}
+
+#dispell h1 {
+	margin-left: 50px;
+}
+
+#myths p {
+	margin: .5em 0;
+}
+
+.quotes {
+width:550px;
+background-image: url(../images/quotes.gif);
+background-repeat: no-repeat;
+background-position: -180px top;
+margin:0 auto;
+position:relative;
+}
+
+.quote {
+width:320px;
+padding:30px 110px;
+background-image: url(../images/quotes.gif);
+background-repeat: no-repeat;
+background-position: 410px bottom;
+font-size:12pt;
+color:#aaa;
+font-style:italic;
+position:relative;
+}
+
+div.myth.gray .quotes {
+	background-image: url(../images/quotes_gray.gif);
+}
+
+div.myth.gray .quote {
+	background-image: url(../images/quotes_gray.gif);
+}

@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" lang="en"><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="generator" content="MediaWiki 1.16.2">
+<link rel="shortcut icon" href="http://wiki.blender.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.blender.org/opensearch_desc.php" title="BlenderWiki (en)">		<title>Dev:Ref/GoogleSummerOfCode/2011/Ideas - BlenderWiki</title>
+<script type="text/javascript" src="Blender%20Foundation_files/nifty.js"></script>
+<script type="text/javascript" src="Blender%20Foundation_files/jquery-1.js"></script>
+<script type="text/javascript" src="Blender%20Foundation_files/jquery.js"></script>
+<script type="text/javascript" src="Blender%20Foundation_files/jquery_004.js"></script>
+<script type="text/javascript" src="Blender%20Foundation_files/jquery_002.js"></script>
+<script type="text/javascript" src="Blender%20Foundation_files/jquery_005.js"></script>
+<script type="text/javascript" src="Blender%20Foundation_files/jquery_003.js"></script>
+
+<script type="text/javascript">
+/* 
+ * many thanks to Alessandro Fulciniti and his most excellent 'nifty corners' script:
+ * http://webdesign.html.it/articoli/leggi/528/more-nifty-corners/1/
+ */
+
+window.onload=function(){
+ if(!NiftyCheck())
+    return;
+ Rounded("div.nifty","tl","#232323","#3e4d5e","smooth");
+ Rounded("div#bottom","bl br","#000000","#292929","border #363636");
+}
+
+
+</script>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/skins/blender/main.css?270"; /*]]>*/</style>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/skins/blender/niftyCorners.css?270"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="Blender%20Foundation_files/commonPrint.css">
+
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/skins/blender/IE50Fixes.css?270";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/skins/blender/IE55Fixes.css?270";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/skins/blender/IE60Fixes.css?270";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/skins/blender/IE70Fixes.css?270";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?270"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		
+		<script type="text/javascript" src="Blender%20Foundation_files/wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="Blender%20Foundation_files/index.php"><!-- site js --></script>
+<link rel="stylesheet" type="text/css" href="Blender%20Foundation_files/index_002.css">
+<link rel="stylesheet" type="text/css" href="Blender%20Foundation_files/index.css">
+		<!-- Head Scripts -->
+<script src="Blender%20Foundation_files/ajax.js"></script>
+
+	</head>
+<body class="mediawiki  ltr ns-104 ns-subject page-Dev_Ref_GoogleSummerOfCode_2011_Ideas">
+
+<!-- top level nav -->
+   <div id="navcontainer" class="noprint"><a href="http://www.blender.org/"><img src="Blender%20Foundation_files/nav-home.png" alt="blender.org home page" title="blender.org home page" height="50" width="140"></a><a href="http://www.blender.org/features-gallery/"><img src="Blender%20Foundation_files/nav-features.png" alt="Features &amp; Gallery" title="Features &amp; Gallery" height="50" width="140"></a><a href="http://www.blender.org/download/get-blender/"><img src="Blender%20Foundation_files/nav-download.png" alt="Download" title="Download" height="50" width="140"></a><a href="http://www.blender.org/education-help/"><img src="Blender%20Foundation_files/nav-help.png" alt="Tutorials &amp; Help" title="Tutorials &amp; Help" height="50" width="140"></a><a href="http://www.blender.org/community/user-community/"><img src="Blender%20Foundation_files/nav-community.png" alt="Community" title="Community" height="50" width="140"></a><a href="http://www.blender.org/development/"><img src="Blender%20Foundation_files/nav-development-on.png" alt="Development" title="Development" height="50" width="140"></a><a href="http://www.blender3d.org/e-shop/"><img src="Blender%20Foundation_files/nav-eshop.png" alt="e-Shop" title="e-Shop" height="50" width="140"></a></div><!-- END top level nav -->
+
+<!-- main page container -->
+<div id="pagecontainer">
+
+	<!-- subsection header and subnav -->
+	<div id="pageheader"><h1 id="firstHeading" class="firstHeading">Dev:Ref/GoogleSummerOfCode/2011/Ideas</h1>
+</div>
+	<div class="subnav boxheader">
+
+		<div class="search">
+		<form method="get" action="http://www.blender.org/cgi-bin/search.cgi" style="display: inline;">
+			<input name="ul" value="" type="hidden">
+			<input name="ps" value="10" type="hidden">
+
+			<input name="q" value="(search)" onfocus="this.value='';" class="search" id="search" size="8" type="text">
+		</form>
+		</div>
+		
+   <ul class="noprint"><li><a href="http://www.blender.org/development/coding-guides/">Coding Guides</a></li><li>•</li><li><a href="http://www.blender.org/development/report-a-bug/">Report a Bug</a></li><li>•</li><li><a href="http://wiki.blender.org/index.php/Dev:Doc/Hackers_Guide/Patches">Submit a Patch</a></li><li>•</li><li><a href="http://www.blender.org/development/release-logs/">Release Logs</a></li><li>•</li><li><a href="http://www.blender.org/development/current-projects/">Current Projects</a></li><li>•</li><li><a href="http://www.blender.org/development/architecture/">Architecture</a></li><li>•</li><li><a href="http://www.blender.org/development/building-blender/">Building Blender</a></li><li>•</li><li><a href="http://www.blender.org/documentation/250PythonDoc/contents.html">PyAPI</a></li><li>•</li><li class="subnav-active"><a href="http://wiki.blender.org/index.php/Dev:Contents">Wiki</a></li></ul>	</div>
+        <div id="p-cactions" class="subnav sublevel2">
+			<ul>
+   <li id="ca-nstab-dev" class="selected"><a href="http://wiki.blender.org/index.php/Dev:Ref/GoogleSummerOfCode/2011/Ideas">Developer Reference page</a></li>
+					          <li>•</li><li id="ca-talk"><a href="http://wiki.blender.org/index.php/Dev_talk:Ref/GoogleSummerOfCode/2011/Ideas">Discussion</a></li>
+					          <li>•</li><li id="ca-viewsource"><a href="http://wiki.blender.org/index.php?title=Dev:Ref/GoogleSummerOfCode/2011/Ideas&amp;action=edit">View source</a></li>
+					          <li>•</li><li id="ca-history"><a href="http://wiki.blender.org/index.php?title=Dev:Ref/GoogleSummerOfCode/2011/Ideas&amp;action=history">History</a></li>
+					       			</ul>
+	</div>
+
+        <!-- END subsection header and subnav -->
+        <div id="donation-wrapper">
+		<div style="background-image: url(&quot;/skins/blender/images/fundraising-banners/donations_banner_04.png&quot;);" id="donation-banner">
+			<h2><a class="donation-title" id="donation-title" href="http://wiki.blender.org/index.php/Meta:BlenderWiki_Fundraising">BlenderWiki Fundraising</a></h2>
+			<p class="donation-text">
+			<a href="http://wiki.blender.org/index.php/Meta:BlenderWiki_Fundraising">We are improving our documentation system. Check out our targets and please donate to help us making it real!</a><strong>Now hosted on a brand <a href="http://www.blender.org/blenderorg/blender-foundation/servers/">new server</a>!</strong></p>
+			<a class="banner-toggle hide" href="#">hide this</a>
+			<a class="banner-toggle show" href="#">show banner</a>
+		</div>
+	</div>
+<!--
+                <script>
+                        $("#new-feature-text").load('http://wiki.blender.org/index.php/Meta:BlenderWiki_Fundraising/Latest_Feature&action=raw&ctype=text/css');
+                </script>
+-->
+	<div id="globalWrapper">
+
+		<div id="col-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<div id="bodyContent">
+			<h3 id="siteSub">From BlenderWiki</h3>
+			<div id="contentSub"><span class="subpages">&lt; <a href="http://wiki.blender.org/index.php/Dev:Ref" title="Dev:Ref">Dev:Ref</a> | <a href="http://wiki.blender.org/index.php/Dev:Ref/GoogleSummerOfCode" title="Dev:Ref/GoogleSummerOfCode">GoogleSummerOfCode</a> | <a href="http://wiki.blender.org/index.php/Dev:Ref/GoogleSummerOfCode/2011" title="Dev:Ref/GoogleSummerOfCode/2011">2011</a></span></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<script>if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<h1> <span class="mw-headline" id="Contacting_US"> Contacting US </span></h1>
+<p>You can contact either the individual running GSoC for us this year (Tom M. aka LetterRip  - LetterRip AT GMAIL DOT COM )
+Or via our developers mailing list
+</p><p><a href="http://projects.blender.org/mailman/listinfo/bf-committers" class="external free" rel="nofollow">http://projects.blender.org/mailman/listinfo/bf-committers</a>
+</p><p>Or via IRC
+</p><p>irc.freenode.net #blendercoders
+</p>
+<h1> <span class="mw-headline" id="GSoC_Project_Ideas_2011"> GSoC Project Ideas 2011 </span></h1>
+<p>The following list provides some ideas for projects that 
+</p><p>1) a student coder can complete in the time frame given (hopefully not too easy, and not too hard); and 
+</p><p>2) either implement a coveted feature request from our user community, or improve upon existing code. 
+</p><p>Each project has multiple potential mentors (we usually have at 
+least 3 individuals as potential mentors for each project).  So if you 
+are interested in feedback or discussion of an idea please email our 
+development discussion list bf-committers or visit or irc channel 
+#blendercoders .
+</p><p>Applicants are also welcome to choose a project of their own design that implements a feature they wish Blender had. 
+</p>
+<div class="tableNormal">
+<b>We especially invite students to contribute based on their past 
+experience and competences, or based on their current research, so that 
+they can efficiently bring in new development directions for blender.</b> </div>
+<p>Note that some areas of the code are scheduled for dramatic 
+architectural changes and are beyond the scope of a Summer of Code 
+project. With this in mind, it may be prudent for an applicant to pass 
+ideas around on the developer's mailinglist before investing a lot of 
+time on a proposal (see links above). 
+</p><p>Additional project ideas may be added to this list, so you may want to check this page later as the application deadline looms. 
+</p><p>Please note that proposals that have been merely cut and paste 
+from this list of project ideas with little value added will be swiftly 
+discarded.
+</p>
+<h1> <span class="mw-headline" id="Ideas"> Ideas </span></h1>
+<p>(don't add to this list unless you are a developer who could potentially mentor the project)
+</p>
+<h2> <span class="mw-headline" id="Modeling_Retopology"> Modeling Retopology </span></h2>
+<ul><li> Improve the <b>Retopology Tools</b>.  Retopology tools allow an
+ artist to start with a 'messy mesh' perhaps from sculpting, or from a 
+model that was created without thought about topology; or perhaps from 
+scanned data - and create a new mesh over the top of the original mesh 
+with the same form, but with a new structure that is better suited for 
+animation and other purposes.
+</li></ul>
+<p>Ideas include for improving retopology tools include (pick one or 
+more to provide enough things to occupy your entire time for gsoc)-
+</p><p><b>Slice tool</b> for quickly adding loops - blender already has 
+code for drawing on top of an existing mesh so it is primarily just the 
+algorith for generating the new mesh: <a href="http://www.3d-coat.com/uploads/pics/rtp_slices.gif" class="external free" rel="nofollow">http://www.3d-coat.com/uploads/pics/rtp_slices.gif</a>
+</p><p><b>pen tool</b> to quickly draw polygons without the need to fill faces manually. An example can be seen in Modo's Pen tool here: <a href="http://www.luxology.com/common/qt/LuxQT.aspx?u=http://video.luxology.com/modo/301/video/PenTool.mov&amp;w=1280&amp;h=780" class="external free" rel="nofollow">http://www.luxology.com/common/qt/LuxQT.aspx?u=http://video.luxology.com/modo/301/video/PenTool.mov&amp;w=1280&amp;h=780</a> and another in Topogun via the SimpleCreate tool: <a href="http://www.topogun.com/media/videos.htm" class="external free" rel="nofollow">http://www.topogun.com/media/videos.htm</a>
+</p><p><b>Paint Stroke tool</b> for adding faces based on intersecting strokes: <a href="http://www.3d-coat.com/uploads/pics/rtp_strokes.gif" class="external free" rel="nofollow">http://www.3d-coat.com/uploads/pics/rtp_strokes.gif</a>
+</p><p><b>quad from nearest points</b> - which creates a quad based on 
+the four nearest vertices or vertex and edge combination to the cursor 
+in screen space;  improve visualization so that with xray on the 
+backfacing faces are culled; similarly backface culling for wireframe 
+see videos for clarification of the problem - <a href="http://www.vimeo.com/8790166" class="external text" rel="nofollow">video1</a> <a href="http://www.3d-coat.com/retopology/" class="external text" rel="nofollow">video2</a> <a href="http://www.topogun.com/media/videos.htm" class="external text" rel="nofollow">video3</a>
+</p>
+<h2> <span class="mw-headline" id="Modeling_Sculpting"> Modeling Sculpting </span></h2>
+<ul><li> Improve <b>sculpting tools</b>
+</li></ul>
+<p>Ideas for improving sculpting include ((pick one or more to provide enough things to occupy your entire time for gsoc)-
+</p><p><b>Faster smooth brush</b> - the performance of the smooth brush 
+for sculpting is significantly slower than other sculpting brushes.  
+This will possibly need some clever algorithms.
+</p><p><b>sculpting layers</b> - sculpting layers is an idea that is 
+conceptually similar to layers in image painting programs, where layers 
+can be hidden/revealed, overlayed and combined with eacy other, but 
+instead of mixing image data it mixes geometric data.  Mudbox sculpt 
+layers - <a href="http://www.youtube.com/watch?v=BnSZKZjsLKE" class="external free" rel="nofollow">http://www.youtube.com/watch?v=BnSZKZjsLKE</a> ZBrush layzers can be seen in this video - <a href="http://www.youtube.com/watch?v=-q-u4EvUIZw" class="external free" rel="nofollow">http://www.youtube.com/watch?v=-q-u4EvUIZw</a>
+</p><p><b>resymmetrization</b> - when sculpting often times you want a 
+perfectly symmetrical mesh, but sometimes something happens that results
+ in slight assymetry - resymmetrize would copy one side so that it 
+exactly matches the other either from left to right or right to left.  
+See this video for how it is implemented in zbrush - <a href="http://www.youtube.com/watch?v=tGBS5gmGc_I" class="external free" rel="nofollow">http://www.youtube.com/watch?v=tGBS5gmGc_I</a>
+</p><p><b>viewport speed with glsl shading</b> - currently sculpt mode 
+is not accellerated when in the glsl drawing mode.  Thus viewing 
+materials (matcaps) on your sculpt model in real time is quite slow 
+relative to other sculpting performance.
+</p><p><b>improve mesh baking performance</b> - reduce memory consumption/slowness when baking to normal maps and other baking of sculpt detail.   <a href="http://www.blendercookie.com/2010/06/30/normal_maps_blender_2_5/" class="external free" rel="nofollow">http://www.blendercookie.com/2010/06/30/normal_maps_blender_2_5/</a>
+</p><p><b>apply lower for multires modifier</b> - make it so so that all
+ levels below the current display level of a multires modifier can be 
+applied to a mesh while maintaining the higher levels of the modifer as a
+ modifier still.  This used to work in 2.49b so is likely not too 
+difficult.
+</p><p><b>improve editing of multires base mesh</b> - the 
+multiresolution modifier allows an artist to work at different levels of
+ detail on a mesh and have those changes propogated to higher/lower 
+levels of detail.  The 'base' (lowest level) of the mesh is editable so 
+that a new topology can be created and then the higher levels of detail 
+are projected onto that detail.  Unfortunately the reprojection doesn't 
+work well currently.
+</p>
+<h2> <span class="mw-headline" id="Modeling_Modifiers"> Modeling Modifiers </span></h2>
+<ul><li> Implement <b>mesh quilting</b>, the wrapping of a 3D mesh pattern repeatedly over the surface of a model.  <a href="http://research.microsoft.com/en-us/people/bainguo/p690-zhou.pdf" class="external text" rel="nofollow">This research paper</a>
+ presents an algorithm for "stitching" together duplicated 3D texture 
+patches into one continuous mesh, while correcting for deformation 
+introduced by the curvature extremes of the object being wrapped.  
+Representing textures as independent 3D surfaces (as opposed to 2D 
+pixmaps wrapped onto 3D objects) allows for greater levels of detail and
+ a more straightforward animation process.  Quilting functionality could
+ potentially be used to model chain mail, weaving or bark; the patching 
+algorithm could also be guided to produce strands of ivy, for instance.
+</li></ul>
+<h2> <span class="mw-headline" id="UV_Unwrapping">UV Unwrapping</span></h2>
+<ul><li> <b>UV Unwrap Polishing</b> - there are a large number of small tool and workflow improvements that could be made to the uv unwrapping tools.
+</li></ul>
+<p>Some ideas include (pick one or more to provide enough things to occupy your entire time for gsoc)
+</p><p><b>symmetrical seam marking</b> - when a seam is marked for 
+unwrapping on one side of a model the mirror seam could be marked on the
+ mirror image of the model.  Note that blender already has algorithms 
+for finding topological and geometric symmetrical geometry so it should 
+be fairly simple to hook up the algorithms to do this.
+<a href="http://www.headus.com.au/doc/uvlayout-demos/videos/UVLayout-Symmetry-Find-1.mov" class="external text" rel="nofollow">symmetry video</a>
+</p><p><b>symmetrical layout/constraining of symmetrical geometry</b> - 
+often you wish to peform operations on generated UVs in a symmetric 
+manner.  This would port the topological/geometric mirroring algorithms 
+from the mesh tools to the uv tools.
+</p><p><b>symmetrical selection in the UV editor</b> basically the same as the above but for selection tools.
+</p><p><b>select vertex path for uvs</b> this would be porting the select vertex path algorith from the mesh tools to the uv tools.
+</p><p><b>stacking of symmetrical geometry</b> - often times geometry 
+that is exactly the same we will want to use the same image/texture data
+ to save memory however, aligning the uv islands so they exactly overlap
+ can be tedious.  This would allow automatic alignment of UV islands for
+ mirrored/symmetrical geometry. <a href="http://www.headus.com.au/doc/uvlayout-expert/videos/UVLayout-Stack-and-Pack.mov" class="external text" rel="nofollow">stacking</a>
+</p><p><b>improved stitching and ripping operations</b>
+</p><p><b>smooth brush</b> in the sculpting tools the smooth brush 
+'relaxes' the mesh so that the length of each edge tends towards the 
+mean length.  A similar tool for UVs is desired.  <a href="http://www.youtube.com/watch?v=sM0xZ5wDUhQ" class="external free" rel="nofollow">http://www.youtube.com/watch?v=sM0xZ5wDUhQ</a>
+</p><p><br>
+<b>scaling along a custom axis</b> often times a UV island you might 
+want to scale it along dimensions other than the standard x/y 
+directions.  It would be desireable to be able to scale the UV island 
+based on a direction defined by the mouse angle to the center of the UV 
+island when scaling begins.
+</p><p>See these videos for additional ideas: <a href="http://www.uvlayout.com/index.php?option=com_wrapper&amp;Itemid=67" class="external text" rel="nofollow">video1</a> <a href="http://www.polygonal-design.fr/e_unfold/jvideotutorials1.php" class="external text" rel="nofollow">video2</a> <a href="http://www.uvmapper.com/features.html" class="external text" rel="nofollow">video3</a>
+</p>
+<ul><li> <b>Automatic seam creation</b> for UV unwrapping. This would 
+take into account generating islands with little distortion, using as 
+few seams as possible, and putting them in places where they are least 
+noticeable, and preserving symmetry. Various papers have been written on
+ this, a recent one is <a href="http://alice.loria.fr/publications/papers/2009/wysiwyg_tr/wysiwyg.pdf" class="external text" rel="nofollow">what you seam is what you get</a>.
+</li></ul>
+<h2> <span class="mw-headline" id="Texturing">Texturing </span></h2>
+<ul><li> Improve <b>texture painting</b> - there are a large variety of 
+improvements that can be made to texture painting tools in terms of 
+selection, masking, and brushes
+</li></ul>
+<h2> <span class="mw-headline" id="Animation">Animation</span></h2>
+<ul><li> <b>Skinning/Weight</b> painting polishing - while the automatic
+ skinning is amazing, the tools for tweaking and adjusting final weights
+ are still clunky, and a number of small niceties are missing.
+</li></ul>
+<p>Some ideas are
+</p><p><b>relax</b> option where you select vertices of a mesh in an 
+extreme pose and the are reweighted so that they 'relax' towards a 
+smoother relationship with neighbor vertexes.
+</p><p><b>blend between two geometric selections</b> - interpolate weights between the selection of two loops.
+</p><p>See additional videos for inspiration of other tools that might be useful such as ideas from <a href="http://www.youtube.com/watch?v=cw9_apwkyQs&amp;feature=player_embedded#t=47" class="external text" rel="nofollow">this video</a> might be of use  there is also this <a href="http://www.snolan.net/2008/12/07/nudge/" class="external text" rel="nofollow">nudge tool</a> and I'm sure one can find other useful ideas from Maya, Max, XSI, Houdini, Cinema4D and lightwave.
+</p>
+<ul><li> Improve blender for dealing with <b>motion capture data</b> (for example imported from BVH files).<br>Goals for this project could include...
+<ul><li> Rig Re-targeting one rigs animation onto another rig.
+</li><li> Animation curve simplification
+</li><li> Turn repetitive motion capture animations into loops.
+</li></ul>
+</li></ul>
+<h2> <span class="mw-headline" id="Video_Editing_and_Compositing"> Video Editing and Compositing </span></h2>
+<ul><li> <b>Camera tracking integration</b> Improve Blender for working 
+with live footage (compositing of digital props, characters, and effects
+ into film recordings).  There is an existing library <a href="http://code.google.com/p/libmv/" class="external text" rel="nofollow">libmv</a>
+ that provides tracking capabilities.  The Blender side would be 
+implementing exchange of information with libmv (ie video footage, 
+marker and tracker location data, etc.), and interfaces for interacting 
+with libmv. A commercial program that provide similar functionality and 
+interfaces might be <a href="http://www.thepixelfarm.co.uk/product.php?productId=8" class="external text" rel="nofollow">PFMatchit</a>
+ (see the tutorials for details) which provides a node based interface 
+for defining data flow; an image editor interface for selection and 
+removal of markers and for masking operations; fcurve editor for 
+checking the quality of the motion generated and for doing smoothing and
+ other operations to improve the tracking.  A 3d view for visualizing 
+the tracking points and the camera and object solving curves; and other 
+functionality.
+</li></ul>
+<ul><li> <b>Compositing Improvements</b> Improve a collection of nodes and tools that currently lack in quality like:
+<ul><li> Dilate/Erode node: Quickly turns smooth edges into blocky edges
+</li><li> Vector Blur: See improvements proposed here <a href="http://www.sparkde.com/blog/?p=600" class="external free" rel="nofollow">http://www.sparkde.com/blog/?p=600</a> and here <a href="http://www.sparkde.com/blog/?p=660" class="external free" rel="nofollow">http://www.sparkde.com/blog/?p=660</a>
+</li><li> Double Edge masking: There is currently no solution for 
+complex double edge masking needed for rotoscopying un-even feather 
+edges like in motion blur
+</li></ul>
+</li></ul>
+<p><a href="http://images04.olx.com.py/ui/5/30/71/1269613937_83782971_3-BUSHI-DOJO-OFRECE-MUAY-THAI-KICK-BOXING-JIU-JITSU-Otros-Servicios.jpg" class="external free" rel="nofollow">http://images04.olx.com.py/ui/5/30/71/1269613937_83782971_3-BUSHI-DOJO-OFRECE-MUAY-THAI-KICK-BOXING-JIU-JITSU-Otros-Servicios.jpg</a>
+</p><p>dof
+<a href="http://www.uruloki.org/felipeblog/imagesflickr6/20090702-hit-girl-en-kick-ass.jpg" class="external free" rel="nofollow">http://www.uruloki.org/felipeblog/imagesflickr6/20090702-hit-girl-en-kick-ass.jpg</a>
+</p><p>Example of a double edge mask: <a href="http://homepage.mac.com/juhatak/TEMP/blender/shake_roto.png" class="external free" rel="nofollow">http://homepage.mac.com/juhatak/TEMP/blender/shake_roto.png</a>
+</p><p>Hacky implementation with mesh and vertex colors:
+<a href="http://zanqdo.com/tmp/DoubleEdgeMask.blend" class="external free" rel="nofollow">http://zanqdo.com/tmp/DoubleEdgeMask.blend</a>
+</p>
+<h2> <span class="mw-headline" id="Fluid_Sim"> Fluid Sim </span></h2>
+<ul><li> <b> Extend elbeem fluid sim with thin fluid features</b>
+</li></ul>
+<p>See: <a href="http://www.youtube.com/watch?v=GyfB_vQHMAo" class="external free" rel="nofollow">http://www.youtube.com/watch?v=GyfB_vQHMAo</a>
+and: <a href="http://www.youtube.com/watch?v=7Who8EpbvCY" class="external free" rel="nofollow">http://www.youtube.com/watch?v=7Who8EpbvCY</a>
+</p>
+<h2> <span class="mw-headline" id="Game_Engine">Game Engine</span></h2>
+<ul><li> Nodify game logic - there is a <a href="http://wiki.blender.org/index.php/Dev:Source/GameEngine/NodalLogic" class="external text" rel="nofollow">proposal for a node interface</a> for blenders game logic
+</li></ul>
+<h2> <span class="mw-headline" id="Import.2FExport">Import/Export</span></h2>
+<ul><li> Improve Collada Import and Export - There are numerous 
+improvements that could be made to our collada I/O especially in 
+handling of animation data. (C/C++)
+</li><li> We don't have FBX import yet, export is working OK now. (Python)
+</li><li> Get the ZLIB licensed Bullet .blend read/write library, bring 
+it back to 100% Blender compliancy, and implement a basic (Mesh + UV + 
+objects) import/export via a commercial SDK (for example maya, 3ds, 
+zbrush). This library then can be offered on blender.org for researches,
+ simulation coders, game engines, or studios for pipeline integration.
+</li></ul>
+<h2> <span class="mw-headline" id="Misc">Misc</span></h2>
+<ul><li> Blender still needs good support for international texts in the
+ UI, an accessible translation system and support for UTF text drawing. 
+Requires someone who understands requirements for translated UIs and 
+i8n.
+</li></ul>
+<ul><li> Increase <b>Viewport Speed and Eliminate OpenGL cruft</b> - 
+right now we use some older opengl stuff that is quite slow, (opengl 
+version 1 even!) so eliminating these instances and switching to more 
+modern apis could give large viewport increases. (Suggestion: more 
+compliancy to OpenGL ES for future tablet ports). Particularly 
+interested in sculpt for matcap.
+</li></ul>
+<ul><li> Complete <b>Vector Texture</b> Support - The idea is to load 
+SVG files as standard textures, rendered on demand to match the 
+resolution needed by each textured pixel, and cached in a set of tiles. A
+ basic proof of concept exists (as an old plugin at <a href="http://code.google.com/p/vectex/" class="external free" rel="nofollow">http://code.google.com/p/vectex/</a>
+ and also as some unreleased test patches against 2.5), however much 
+work needs to be done for SVG drawings to function like standard images.
+ The rendering itself can be done by an add-on library (AGG), but most 
+of the work is to implement a good caching mechanism (which could use 
+the tile cache recently added to Blender), a decent integration with the
+ image filtering support already in place and maybe some enhancement to 
+the SVG features supported. See <b>discussion</b> for more details.
+</li></ul>
+<ul><li> <b>Relationship Editor</b>: The OOPS editor is being removed 
+from Blender 2.5. A good relationship visualizer and editor is still a 
+useful feature however. A new editor would try to solve the presenting 
+the data with nicer graph layouts that does not look like a big mess, 
+and based on 2.5 technologies it can allow much more powerful editing 
+than the OOPS editor. (Note: we actually need a new depencency graph 
+system first)
+</li></ul>
+<h1> <span class="mw-headline" id="Important_Links"> Important Links  </span></h1>
+<h2> <span class="mw-headline" id="Application_Template">Application Template</span></h2>
+<p><a href="http://wiki.blender.org/index.php/Dev:Ref/GoogleSummerOfCode/2011/Application_Template" class="external free" rel="nofollow">http://wiki.blender.org/index.php/Dev:Ref/GoogleSummerOfCode/2011/Application_Template</a>
+</p>
+<h2> <span class="mw-headline" id="Project_page">Project page</span></h2>
+<pre> <a href="http://www.blender.org/" class="external free" rel="nofollow">http://www.blender.org</a>
+</pre>
+<h2> <span class="mw-headline" id="A_guide_for_new_developers">A guide for new developers</span></h2>
+<pre> <a href="http://wiki.blender.org/index.php/BlenderDev/New_Dev_Info" class="external free" rel="nofollow">http://wiki.blender.org/index.php/BlenderDev/New_Dev_Info</a>
+</pre>
+<h2> <span class="mw-headline" id="Google_Summer_of_Code_FAQ.27s">Google Summer of Code FAQ's</span></h2>
+<pre> <a href="http://socghop.appspot.com/document/show/gsoc_program/google/gsoc2010/faqs" class="external free" rel="nofollow">http://socghop.appspot.com/document/show/gsoc_program/google/gsoc2010/faqs</a>
+</pre>
+<h2> <span class="mw-headline" id="An_example_of_a_successful_proposal_from_2005">An example of a successful proposal from 2005</span></h2>
+<pre> <a href="http://wiki.blender.org/index.php/BlenderDev/SoCIKProposal" class="external free" rel="nofollow">http://wiki.blender.org/index.php/BlenderDev/SoCIKProposal</a>
+</pre>
+<h2> <span class="mw-headline" id="Previous_summer_of_code_projects">Previous summer of code projects</span></h2>
+<pre> <a href="http://wiki.blender.org/index.php/BlenderDev/SummerOfCode2005" class="external free" rel="nofollow">http://wiki.blender.org/index.php/BlenderDev/SummerOfCode2005</a>
+ <a href="http://wiki.blender.org/index.php/BlenderDev/SummerOfCode2006" class="external free" rel="nofollow">http://wiki.blender.org/index.php/BlenderDev/SummerOfCode2006</a>
+ <a href="http://wiki.blender.org/index.php/BlenderDev/SummerOfCode2007" class="external free" rel="nofollow">http://wiki.blender.org/index.php/BlenderDev/SummerOfCode2007</a>
+ <a href="http://wiki.blender.org/index.php/BlenderDev/SummerOfCode2008" class="external free" rel="nofollow">http://wiki.blender.org/index.php/BlenderDev/SummerOfCode2008</a>
+ <a href="http://wiki.blender.org/index.php/Dev:Ref/GoogleSummerOfCode/2009" class="external free" rel="nofollow">http://wiki.blender.org/index.php/Dev:Ref/GoogleSummerOfCode/2009</a>
+ <a href="http://wiki.blender.org/index.php/Dev:Ref/GoogleSummerOfCode/2010/Proposals" class="external free" rel="nofollow">http://wiki.blender.org/index.php/Dev:Ref/GoogleSummerOfCode/2010/Proposals</a>
+</pre>
+<h2> <span class="mw-headline" id="Thread_on_forum_about_2011_ideas">Thread on forum about 2011 ideas</span></h2>
+<pre> <a href="http://blenderartists.org/forum/showthread.php?212017-Blender-accepted-into-GSOC-2011" class="external free" rel="nofollow">http://blenderartists.org/forum/showthread.php?212017-Blender-accepted-into-GSOC-2011</a>
+</pre>
+<p><b>Page Siblings</b>
+</p>
+<ul><li><a href="http://wiki.blender.org/index.php/Dev:Ref/GoogleSummerOfCode/2011/Application_Template" title="Dev:Ref/GoogleSummerOfCode/2011/Application Template">Dev:Ref/GoogleSummerOfCode/2011/Application Template</a>
+</li><li><a href="http://wiki.blender.org/index.php/Dev:Ref/GoogleSummerOfCode/2011/Info" title="Dev:Ref/GoogleSummerOfCode/2011/Info">Dev:Ref/GoogleSummerOfCode/2011/Info</a>
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 332/1000000
+Post-expand include size: 607/2097152 bytes
+Template argument size: 1496/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<div class="printfooter">
+Retrieved from "<a href="http://wiki.blender.org/index.php/Dev:Ref/GoogleSummerOfCode/2011/Ideas">http://wiki.blender.org/index.php/Dev:Ref/GoogleSummerOfCode/2011/Ideas</a>"</div>
+			<div id="catlinks"><div id="catlinks" class="catlinks catlinks-allhidden"></div></div>			<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+			<div class="" id="col-one-wrapper">
+        <div style="padding-top: 0pt;" class="nifty col-right-header boxheader" id="col-one-header"><b style="background-color: rgb(35, 35, 35);" class="artop"><b style="background-color: rgb(62, 77, 94); border-color: rgb(48, 56, 64);" class="ral1"></b><b style="background-color: rgb(62, 77, 94); border-color: rgb(48, 56, 64);" class="ral2"></b><b style="background-color: rgb(62, 77, 94); border-color: rgb(48, 56, 64);" class="ral3"></b><b style="background-color: rgb(62, 77, 94); border-color: rgb(48, 56, 64);" class="ral4"></b></b>
+
+   <div class="navi-toggle" id="acc">&nbsp;</div><div class="username" id="p-idcard">
+
+<a href="http://wiki.blender.org/index.php?title=Special:UserLogin&amp;returnto=Dev:Ref/GoogleSummerOfCode/2011/Ideas">Log in / create account</a>
+      </div>
+
+      </div>
+      <div id="col-one-body">
+	<div style="display: none;" class="port" id="p-navi">
+	<div class="col-right-section bgcolor2">
+
+		<div class="c1" id="p-navigation">
+			<ul>
+				<li id="n-mainpage"><a href="http://wiki.blender.org/index.php/Main_Page">Main Page</a></li>
+				<li id="n-2.4-User-Manual"><a href="http://wiki.blender.org/index.php/Doc:Manual">2.4 User Manual</a></li>
+				<li id="n-2.5-User-Manual"><a href="http://wiki.blender.org/index.php/Doc:2.5/Manual">2.5 User Manual</a></li>
+				<li id="n-Tutorials"><a href="http://wiki.blender.org/index.php/Doc:Tutorials">Tutorials</a></li>
+				<li id="n-2.4-Scripts-Catalog"><a href="http://wiki.blender.org/index.php/Extensions:2.4/Py/Scripts">2.4 Scripts Catalog</a></li>
+				<li id="n-2.5-Scripts-Catalog"><a href="http://wiki.blender.org/index.php/Extensions:2.5/Py/Scripts">2.5 Scripts Catalog</a></li>
+				<li id="n-Python-API"><a href="http://www.blender.org/documentation/blender_python_api_2_56_0">Python API</a></li>
+				<li id="n-Development"><a href="http://wiki.blender.org/index.php/Dev:Contents">Development</a></li>
+				<li id="n-Wiki-Guidelines"><a href="http://wiki.blender.org/index.php/Meta:Guides/Writer_Guide">Wiki Guidelines</a></li>
+				<li id="n-recentchanges"><a href="http://wiki.blender.org/index.php/Special:RecentChanges">Recent changes</a></li>
+				<li id="n-Categories"><a href="http://wiki.blender.org/index.php/Special:Categories">Categories</a></li>
+				<li id="n-portal"><a href="http://wiki.blender.org/index.php/BlenderWiki:Community_portal">Community portal</a></li>
+				<li id="n-currentevents"><a href="http://wiki.blender.org/index.php/BlenderWiki:Current_events">Current events</a></li>
+			</ul>
+	</div>
+		<div class="visualClear"></div>
+        </div>
+         
+        <div class="col-right-section" id="p-search">
+			<form action="/index.php/Special:Search" id="searchform"><div id="p-search-div">
+				<input id="searchInput" name="search" type="text">
+<p>
+				<input name="go" class="searchButton" id="searchGoButton" value="Go" type="submit">&nbsp;
+				<input name="fulltext" class="searchButton" id="mw-searchButton" value="Search" type="submit">
+			
+</p>
+</div></form>
+	</div>
+	<div class="col-right-section bgcolor3">
+
+        <div class="c1 bgcolor3" id="p-tb">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://wiki.blender.org/index.php/Special:WhatLinksHere/Dev:Ref/GoogleSummerOfCode/2011/Ideas">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="http://wiki.blender.org/index.php/Special:RecentChangesLinked/Dev:Ref/GoogleSummerOfCode/2011/Ideas">Related changes</a></li>
+<li id="t-specialpages"><a href="http://wiki.blender.org/index.php/Special:SpecialPages">Special pages</a></li>
+				<li id="t-permalink"><a href="http://wiki.blender.org/index.php?title=Dev:Ref/GoogleSummerOfCode/2011/Ideas&amp;oldid=133924">Permanent link</a></li>			</ul>
+
+	    </div>
+
+		<div class="c2" id="p-extras">
+			<ul>
+				<li id="n-New-files"><a href="http://wiki.blender.org/index.php/Special:NewFiles">New files</a></li>
+				<li id="n-New-pages"><a href="http://wiki.blender.org/index.php/Special:NewPages">New pages</a></li>
+				<li id="n-Popular-pages"><a href="http://wiki.blender.org/index.php/Special:PopularPages">Popular pages</a></li>
+				<li id="n-View-as-Monobook"><a href="http://wiki.blender.org/index.php?title=Dev:Ref/GoogleSummerOfCode/2011/Ideas&amp;useskin=monobook">View as Monobook</a></li>
+				<li id="n-PDF-Manual-.28NEW.21.29"><a href="http://pdf.letworyinteractive.com/">PDF Manual (NEW!)</a></li>
+				<li id="n-help"><a href="http://wiki.blender.org/index.php/Help:Contents">Help</a></li>
+				<li id="n-sitesupport"><a href="http://wiki.blender.org/index.php/Sitesupport-url">sitesupport</a></li>
+			</ul>
+	</div>
+   	    <div class="visualClear"></div>
+
+            </div>
+   
+        </div>
+        <p class="vspacer bgcolor0"></p>
+  	<div style="padding-top: 0pt;" class="port nifty bgcolor1" id="p-toc"><b style="background-color: rgb(35, 35, 35);" class="artop"><b style="background-color: rgb(62, 77, 94); border-color: rgb(48, 56, 64);" class="ral1"></b><b style="background-color: rgb(62, 77, 94); border-color: rgb(48, 56, 64);" class="ral2"></b><b style="background-color: rgb(62, 77, 94); border-color: rgb(48, 56, 64);" class="ral3"></b><b style="background-color: rgb(62, 77, 94); border-color: rgb(48, 56, 64);" class="ral4"></b></b>
+	<div class="col-right-section wikicontents bgcolor1" id="toc">
+			    <div id="toctitle"><h2>Contents</h2></div>
+<ul id="toc-ul">
+<li class="toclevel-1 tocsection-1"><a href="#Contacting_US"><span class="tocnumber">1</span> <span class="toctext">Contacting US</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#GSoC_Project_Ideas_2011"><span class="tocnumber">2</span> <span class="toctext">GSoC Project Ideas 2011</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Ideas"><span class="tocnumber">3</span> <span class="toctext">Ideas</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Modeling_Retopology"><span class="tocnumber">3.1</span> <span class="toctext">Modeling Retopology</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Modeling_Sculpting"><span class="tocnumber">3.2</span> <span class="toctext">Modeling Sculpting</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Modeling_Modifiers"><span class="tocnumber">3.3</span> <span class="toctext">Modeling Modifiers</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#UV_Unwrapping"><span class="tocnumber">3.4</span> <span class="toctext">UV Unwrapping</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Texturing"><span class="tocnumber">3.5</span> <span class="toctext">Texturing</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Animation"><span class="tocnumber">3.6</span> <span class="toctext">Animation</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Video_Editing_and_Compositing"><span class="tocnumber">3.7</span> <span class="toctext">Video Editing and Compositing</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Fluid_Sim"><span class="tocnumber">3.8</span> <span class="toctext">Fluid Sim</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Game_Engine"><span class="tocnumber">3.9</span> <span class="toctext">Game Engine</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Import.2FExport"><span class="tocnumber">3.10</span> <span class="toctext">Import/Export</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Misc"><span class="tocnumber">3.11</span> <span class="toctext">Misc</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#Important_Links"><span class="tocnumber">4</span> <span class="toctext">Important Links</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a href="#Application_Template"><span class="tocnumber">4.1</span> <span class="toctext">Application Template</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Project_page"><span class="tocnumber">4.2</span> <span class="toctext">Project page</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#A_guide_for_new_developers"><span class="tocnumber">4.3</span> <span class="toctext">A guide for new developers</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Google_Summer_of_Code_FAQ.27s"><span class="tocnumber">4.4</span> <span class="toctext">Google Summer of Code FAQ's</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#An_example_of_a_successful_proposal_from_2005"><span class="tocnumber">4.5</span> <span class="toctext">An example of a successful proposal from 2005</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Previous_summer_of_code_projects"><span class="tocnumber">4.6</span> <span class="toctext">Previous summer of code projects</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Thread_on_forum_about_2011_ideas"><span class="tocnumber">4.7</span> <span class="toctext">Thread on forum about 2011 ideas</span></a></li>
+</ul>
+</li>
+</ul>
+        <p></p>
+   	    <div class="visualClear"></div>
+	</div>
+
+        </div>
+							
+</div>
+
+		</div>
+
+
+</div>
+</div>
+<div class="visualClear"></div>
+<div id="footer" class="boxbg">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="Blender%20Foundation_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" height="31" width="88"></a></div>
+			<ul id="f-list">
+				<li id="lastmod"> This page was last modified on 2 April 2011, at 21:29.</li>
+				<li id="viewcount">This page has been accessed 15,139 times.</li>
+				<li id="privacy"><a href="http://wiki.blender.org/index.php/BlenderWiki:Privacy_policy" title="BlenderWiki:Privacy policy">Privacy policy</a></li>
+				<li id="about"><a href="http://wiki.blender.org/index.php/BlenderWiki:About" title="BlenderWiki:About">About BlenderWiki</a></li>
+				<li id="disclaimer"><a href="http://wiki.blender.org/index.php/BlenderWiki:General_disclaimer" title="BlenderWiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+         			    
+   	    <div class="visualClear"></div>
+		</div>
+	 <div style="padding-bottom: 0pt;" id="bottom" class="boxbg"><b style="background-color: rgb(0, 0, 0);" class="artop"><b style="background-color: rgb(41, 41, 41); border-color: rgb(54, 54, 54);" class="re4"></b><b style="background-color: rgb(41, 41, 41); border-color: rgb(54, 54, 54);" class="re3"></b><b style="background-color: rgb(41, 41, 41); border-color: rgb(54, 54, 54);" class="re2"></b><b style="background-color: rgb(41, 41, 41); border-color: rgb(54, 54, 54);" class="re1"></b></b></div>
+		
+	
+<script>if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served in 0.304 secs. -->
+</body></html>

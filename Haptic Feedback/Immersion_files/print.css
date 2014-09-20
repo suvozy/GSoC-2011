@@ -1,0 +1,43 @@
+/* Remove unwanted elements */
+#topnav, #search, #footernav, #nav, #gnav, #leftcol, #sidebarone, .noprint {
+	display: none;
+}
+
+/* logo */
+#logo { display:block !important; }
+
+
+/* Ensure the content spans the full width */
+#wrapper, #content, #main {
+	width: 100%;
+	margin: 0;
+	float: none;
+	font-size: 13px;
+	font-family:Arial,Helvetica,sans-serif;
+}
+
+
+/* Remove image border */
+img { border:0; }
+
+/* Unhide tabs */
+.edit-quickcontent { display:block !important; }
+
+/* Change text colour to black (useful for light text on a dark background) */
+.lighttext, .readmore { color: #000;}
+
+/* Improve colour contrast of links */
+a:link, a:visited { color: #781351;}
+
+/* Ensure that headers are styled in absense of sIFR*/
+h1, h2, h3, h4, h5, h6 { font-family: Arial, Helvetica, sans-serif;}
+h1 {font-size: 25px;}
+h2 {font-size: 20px;}
+h3 {font-size: 18px;}
+h4 {font-size: 14px;}
+h5 {font-size: 11px;}
+
+.columns .column{
+	float:left;
+	overflow:hidden;
+}

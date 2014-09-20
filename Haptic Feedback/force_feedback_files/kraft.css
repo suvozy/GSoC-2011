@@ -1,0 +1,768 @@
+@import url("navbar_shadow.css");
+
+/* @override 
+	http://192.168.2.9/css/kraft.css
+	http://krafttelerobotics.com/css/kraft.css
+*/
+
+
+
+.clear {
+	clear: both;
+}
+
+body {
+	background: #000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#main {
+	width: 848px;
+		border: 5px solid #fff;
+}
+
+/* @group Text
+ */
+ 
+.section_title {
+	color: #666;
+	margin: 15px 0 10px 20px;
+}
+ 
+h2.headline {
+	font-size: 16px; font-weight: bold; 	font-family: Arial, Helvetica, sans-serif; margin-left: 20px; font-style: italic; color: #666; 
+	margin: 0 10px 0 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.headline a {
+	color: #666;
+	text-decoration: none;
+}
+
+.headline a:hover {
+	color: #333;
+}
+
+.article {
+	padding: 0 3em 0 0;
+	margin-bottom: 30px;
+}
+
+.leader:first-letter {
+	padding-right:1px ;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1em;
+}
+
+p {
+	margin-left: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: black;
+	margin-top: 10px;
+	padding-right: 1em;
+	font-weight: 400;
+}
+
+hr {
+	color: #000000;
+}
+
+a.one:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: #333333;
+	padding: 5px 5px 5px 20px;
+	width: 100%;
+	text-decoration: none;
+	height: auto;
+	font-weight: 400;
+	font-style: normal;
+	border-top: thin none #FFFFFF;
+	border-right: thin none #FFFFFF;
+	border-bottom: thin solid #FFFFFF;
+	border-left: thin none #FFFFFF;
+	background-color: #999999;
+}
+
+a.one:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 22px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 5px 5px 5px 20px;
+	width: 140px;
+	height: auto;
+	border: thin none #FFFFFF;
+	font-weight: bolder;
+}
+
+h1 {	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 20px;
+}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+
+}
+strong {
+	font-weight: bold;
+}
+/* @group intro */
+
+#intro p {
+	color: #fff;
+	word-spacing: 0;
+	letter-spacing: 1px;
+}
+
+#intro p.leader a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#intro p.leader a:hover {
+	text-decoration: underline;
+}
+
+#intro h1 {
+	color: #FFFFFF;
+	font: italic bold 17px Arial, Helvetica, sans-serif;
+	padding-left: 20px;
+	padding-top: 8px;
+}
+
+p#grips_cap {
+	position: relative;
+	top: 40px;
+	right: 10px;
+}
+
+p#grips_cap2 {
+	position: relative;
+	left: 190px;
+	width: 250px;
+	top: -80px;
+	margin: ;
+}
+
+/* @end */
+
+
+
+/* @end */
+
+/* @group stuff from index */
+.style30 {
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #000000;
+}
+.style40 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin-left: 20px;
+}
+.style51 {font-size: 14px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; margin-left: 20px; font-style: italic; color: #666666; }
+.style53 {font-size: 16px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; margin-left: 20px; font-style: italic; color: #666666; margin-top: 20px; }
+.style54 {
+	line-height: 1em;
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	color: #FFFFFF;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	width: 352px;
+	padding-top: 5px;
+}
+.style55 {font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #FFFFFF; font-size: 15px; margin-top: 20px; margin-bottom: 10px; margin-left: 23px;}
+.style58 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	color: #666;}
+.style51 a {
+	color: #666;
+}
+.style51 a:hover {
+	
+}
+
+div#kraftvideolink {
+	float: right;
+	right: 20px;
+	position: relative;
+	top: 14.5em;
+	width:140px;
+}
+
+div#kraftvideolink a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	padding-bottom: 3px;
+}
+
+div#kraftvideolink a:hover {
+	border-bottom: 1px solid #fff;
+}
+
+#kraftvideolink img {
+	position: relative;
+	top: 2px;
+	border: none;
+}
+
+
+/* @end */
+
+#homelink {
+	float: left;
+	display: block;
+	height: 91px;
+	width: 80px;
+	padding: 0;
+	text-decoration: none;
+	margin: 0 0 0 10px;
+}
+
+#homelink img{
+	border: none;
+}
+
+/* @group search */
+
+#search2 {
+	display: none;
+	float: right;
+	top: 70px;
+	padding: 0px;
+	width: 175px;
+	position: relative;
+	top: 70px;
+	height: 24px;
+	z-index: 50;
+}
+
+#search input {
+	font-size: 12px;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: #505050;
+}
+
+#search2 form {
+	margin:0px
+}
+
+#search {
+	width: 175px;
+	position: relative;
+	top: 130px;
+	left: 674px;
+	display: none;
+	height: 24px;
+	padding: 4px;
+	z-index: 50;
+}
+
+
+
+/* @end */
+
+#horrule {
+	display: block;
+	background: #808080;
+	width: 856px;
+	margin-top: 17.5em;
+	_margin-top: -50px;
+	margin-bottom: 0px;
+	height: 42px;
+	padding: 0;
+	position: relative;
+}
+
+embed#Intro {
+	height: 275px;
+	width: 448px;
+}
+
+/* @group top nav bar */
+
+#navbar {
+	height: 27px;
+	width: 857px;
+	background: #808080;
+	color: white;
+	font: 11px Arial, Helvetica, Geneva, sans-serif;
+	z-index: 100;
+}
+
+#navbar a {
+	display: block;
+	height: 30px;
+	background: #777 url(../images/nav_grad.png) repeat-x;
+	padding-top: 7px;
+	padding-bottom: 8px;
+	text-align: center;
+	z-index: 100;
+}
+
+#navbar a:hover {
+	background: #003466 url(../images/nav_grad_hov.png) repeat-x;
+	z-index: 100;
+}
+
+#navbar ul {
+
+
+/* all lists */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+
+#navbar li {
+	float: left;
+	position: relative;
+	width: 10em;
+	width: 142px;
+	border-bottom: 5px solid white;
+}
+
+
+#navbar li ul {
+/* second-level lists */
+	display: none;
+	position: absolute;
+	top: 1em;
+	left: 0;
+	z-index: 100;
+	margin-top: 4px;
+
+}
+
+#navbar li ul li {
+/* second-level lists */
+	top: 1px;
+	_top:19px;
+	border-right: 1px solid #999;
+	border-left: 1px solid #777;
+	border-bottom:1px solid #666;
+	z-index: 100;
+	left: -1px;
+}
+
+#navbar li ul li:hover {
+	border-left-color: #072347;
+	border-right: 1px solid #0c407c;
+	display: none;
+}
+
+
+
+#navbar li ul li a{
+	background: #888 url(../images/nav_grad_sec.png) repeat-x;
+	
+}
+
+
+#navbar li>ul {
+/* to override top and left in browsers other than IE, which will position to the top right of the containing li, rather than bottom left */
+	top: auto;
+	left: auto;
+}
+
+#navbar li:hover ul, #navbar li.over ul {/* lists nested under hovered list items */
+	/*display: block;*/
+}
+
+.over {
+	z-index: 100;
+	background: #003366;
+}
+
+.sfhover {
+	background: url(../images/nav_grad_hover.png) repeat-x;
+}
+
+#navbar a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.border_right {
+	border-right: 1px solid white;
+}
+
+/* @end */
+
+/* @group classes */
+
+.photoboxes {
+	border: 1px solid #000000;
+	margin-left: 10px;
+}
+
+.pho
+
+ine {
+	border-top: 10px solid #999999;
+}
+
+.photoboxesCopy {
+	margin-left: 20px;
+	border: 1px solid #000000;
+}
+
+.table {
+	margin-left: 10px;
+}
+
+.unnamed1 {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #000000;
+}
+
+.hrlinehoriz {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #000000;
+}
+
+.photoflash {
+	border: 1px solid #000000;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.rulelinebottom {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	border-bottom-style: solid;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #CCCCCC;
+	margin-bottom: 2px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+}
+
+.background {
+	background: #4974dc url(../images/background_gradient2.png) repeat-x;
+}
+
+.unnamed2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+	color: #FFFFFF;
+	text-decoration: underline;
+	margin-left: 10px;
+}
+
+.unnamed3 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #003399;
+}
+
+.pho
+
+.photoboxes2 {
+	border: 1px solid #000000;
+	margin-left: 25px;
+}
+.rulelinewhite {
+
+	border-top: 1px solid #FFFFFF;
+}
+
+/* @end */
+
+
+#horrule2 {
+	display: block;
+	height: 5px;
+	background: #808080;
+	width: 100%;
+	margin-top: 0px;
+	_margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* @group layout */
+
+#player embed {
+	margin: 8px 0 0 0;
+}
+
+#player p {
+	margin: -5px 0 5px 0;
+	text-align: center;
+}
+
+#voyage {
+	margin-left: 15px;
+}
+
+#introduction {
+	width: 448px;
+	height: 275px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#header2 {
+	width: 800px;
+	height: 102px;
+	margin: 0;
+	padding: 0;
+	background: url(../images/header_secondary.jpg) no-repeat;
+}
+
+#header {
+	width: 800px;
+	height: 168px;
+	margin: 0;
+	padding: 0;
+
+}
+
+#industries {
+	margin-left: 20px;
+}
+
+
+
+#toflash1 {
+	border: 1px solid #FFFFFF;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+div#intro_flash {
+	position: relative;
+	right: 2px;
+	display: block;
+	width: 448px;
+	height: 275px;
+	padding: 0;
+	margin: 0;
+	float: right;
+	border-bottom: 5px solid white;
+}
+
+
+#intro {
+	width: 400px;
+	height: 17.2em;
+	float: left;
+	border-right: 5px solid white;
+	border-bottom: 5px solid white;
+	padding: 0px;
+	margin: 0px;
+}
+
+#scout {
+	display: block;
+	padding: 200px 0 0 0;
+	margin: 0 auto;
+	width: 827px;
+	height: 540px;
+	background: url(../images/scout/scout_bro-wide.jpg) no-repeat;
+}
+
+#scout p{
+	padding-left: 10px;
+	font-size: 13px;
+	width: 300px;
+	color: #333;
+	margin-left: 430px;
+}
+
+.map {
+	margin: 0 20px;
+	width: 480px;
+	height: 300px;
+}
+
+.bordertop {
+	border-top: 2px ridge;
+}
+
+img#viper-front-page-pose {
+	margin: 20px 0 0 0;
+}
+.pad25 {
+	padding: 0 20px;
+}
+.h200 {
+	min-height: 155px;
+}
+/* @end */
+
+/* @group specs */
+
+div.specs table{
+		font-size: 10pt;
+}
+
+
+ul.specs li {
+	padding: .2em;
+}
+ul.specs h4 {
+	font-style: normal;
+	font-weight: bold;
+	margin-top: 1em;
+}
+#scout_specs h3 {
+	margin: 20px 0 10px 0 ;
+	background-color: #036;
+	color: #fff;
+	padding: .4em;
+}
+
+div.features {
+	margin: 10px auto;
+	width: 320px;
+	float: right;
+}
+
+div.features h2, .h2large {
+	font-size: 1.5em;
+}
+.h2large {
+	margin: 20px 0;
+}
+div.features h3 {
+	font-size: 1em;
+	margin-top: .6em;
+	font-weight: bold;
+}
+
+.features h3, .features h2 {
+	margin: 0;
+}
+
+.features p {
+	padding: .3em 0;
+	margin: 0;
+}
+
+#scout_specs {
+	display: block;
+	font-size: 10pt;
+	margin: 20px auto 20px auto;
+	margin-top: 50px;
+	background: #e8e8e8;
+	padding: 10px 20px;
+	width: 790px;
+	font-style: italic;
+}
+
+#scout_specs table {
+	width: 800px;
+	padding: 10px 10px;
+}
+
+
+/* @end */
+
+
+form#translate {
+	margin: 10px 0;
+}
+
+form#translate input {
+	margin: 0 1px;
+}
+
+/* @group Viper */
+
+tr#viper-feat {
+	z-index: 0;
+}
+
+td.viper-right {
+	background:#ddd url(../images/viper/ridge-bg.png) repeat-y;
+	text-align: right;
+
+}
+.aligntop {
+	vertical-align: top;
+}
+
+td#viper-left div.pad25.h200 ul li {
+	padding: .3em 0;
+	font-size: .8em;
+	list-style-type: square;
+	list-style-position: outside;
+}
+
+td#viper-feat-left {
+	padding: 5px 0 0 0;
+	background: transparent url(../images/viper/homepage-spot-wide.jpg) no-repeat 0 5px;
+	height: 255px;
+	z-index: 0;
+}
+td#viper-feat-left a {
+	display: block;
+	width: 200px;
+	height: 35px;
+	float: right;
+	margin-top: 210px;
+	text-indent: -999em;
+}
+
+td#viper-feat-left #hidden {
+	position: absolute;
+	margin-left: -999em;
+}
+/* @end */
+
+#header h1 {
+	text-indent: -999em;
+	position: absolute;
+}

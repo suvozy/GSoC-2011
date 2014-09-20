@@ -1,0 +1,86 @@
+/*
+# ------------------------------------------------------------------------
+# JA Teline III template for Joomla 1.5
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+
+a {
+	color: #1f72ac;
+}
+
+a:hover, a:active, a:focus {
+	color: #1f72ac;
+}
+
+ul.pagination a:hover, ul.pagination a:active, ul.pagination a:focus {
+	border: 1px solid #145077;
+	background: #145077;
+}
+
+#jasdl-mainnav li.active a,/*dropline*/
+#jasdl-mainnav li.active a:hover,
+#jasdl-mainnav li.active a:active,
+#jasdl-mainnav li.active a:focus, 
+#ja-splitmenu li.active a,/*split*/
+#ja-splitmenu li.active a:hover,
+#ja-splitmenu li.active a:active,
+#ja-splitmenu li.active a:focus,
+#ja-cssmenu li a.active,/*split + moo*/
+#ja-cssmenu li a.active:hover,
+#ja-cssmenu li a.active:active,
+#ja-cssmenu li a.active:focus {
+	background: url(../../images/deepblue/mainnav-active.gif) repeat-x top #145077;
+}
+
+#ja-subnav ul li ul li a.active {
+	color: #145077 !important;
+}
+
+#ja-subnav ul.active {
+	background: #145077;
+}
+
+#ja-subnav ul.active li {
+	border-left: 1px solid #598DAF;
+}
+
+#ja-subnav ul.active li:first-child {
+	border-left: 0;
+}
+
+/*add cgw */
+ul.menu_cgw-horimenu li.active a{
+	color:#333;
+	background:transparent url(../../images/nav_gamming.jpg) no-repeat bottom center;
+}
+
+
+ul.menu_cgw-mod-menu li#current a,ul.menu_cgw-mod-menu li.active a{
+	display: block;
+	background-color:#d4d4d4;
+	border-right: 1px solid #1f72ac;
+	width:138px;
+}
+
+ul.menu_cgw-mod-menu li li#current a{
+	display: block;
+	background-color:#d4d4d4;
+	border-right: 1px solid #1f72ac;
+	width:143px;
+}
+
+ul.menu_cgw-mod-menu li li li#current a{
+	display: block;
+	background-color:#d4d4d4;
+	border-right: 1px solid #1f72ac;
+	width:135px;
+}

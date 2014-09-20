@@ -1,0 +1,5 @@
+http://www.hiit.fi/
+
+https://list.it.hiit.fi/mailman/listinfo/gsoc-2011	hiit.fi
+
+IRCnet #gsoc-hiit

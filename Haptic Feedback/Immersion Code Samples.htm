@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb"><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Immersion, mobile, development, developer, SDK">
+  <meta name="title" content="Code Samples">
+  <meta name="author" content="Robert Lacroix">
+  <meta name="description" content="Immersion Developer Zone">
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management">
+  <title>Code Samples</title>
+  <link href="http://www2.immersion.com/developers/templates/ceynocta-jtemp/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="Immersion%20Code%20Samples_files/style.css" type="text/css">
+  <link rel="stylesheet" href="Immersion%20Code%20Samples_files/phocadownload.css" type="text/css">
+  <link rel="stylesheet" href="Immersion%20Code%20Samples_files/ja.css" type="text/css">
+  <script type="text/javascript" src="Immersion%20Code%20Samples_files/mootools.js"></script>
+  <script type="text/javascript" src="Immersion%20Code%20Samples_files/caption.js"></script>
+  <script type="text/javascript" src="Immersion%20Code%20Samples_files/ja_002.js"></script>
+  <script type="text/javascript" src="Immersion%20Code%20Samples_files/script.js" charset="utf-8"></script>
+<script type="text/javascript">var jaUserSetting; window.addEvent( 'domready', function() {
+							jaUserSetting = new JAUserSetting();
+						}); </script>
+
+
+<script>
+
+/*
+cgw
+*/
+
+var myimages=new Array()
+function preloadimages(){
+for (i=0;i<preloadimages.arguments.length;i++){
+myimages[i]=new Image()
+myimages[i].src=preloadimages.arguments[i]
+}
+}
+
+
+//Enter path of images to be preloaded inside parenthesis. Extend list as desired.
+preloadimages("http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/anroid-home.jpg","http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/anroid-home-ho.jpg","http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/other-mobi-home.jpg","http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/other-mobi-home-ho.jpg","http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/pcgaming-home.jpg","http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/pcgaming-home-ho.jpg","http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/top_nav_over_states.png","http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/top_nav_default_states.png","http://www2.immersion.com/developers/templates/ceynocta-jtemp/images/top_nav_on_states.png")
+
+</script>
+
+
+<link rel="stylesheet" href="Immersion%20Code%20Samples_files/system.css" type="text/css">
+<link rel="stylesheet" href="Immersion%20Code%20Samples_files/general.css" type="text/css">
+<link rel="stylesheet" href="Immersion%20Code%20Samples_files/addons.css" type="text/css">
+<link rel="stylesheet" href="Immersion%20Code%20Samples_files/layout.css" type="text/css">
+<link rel="stylesheet" href="Immersion%20Code%20Samples_files/template.css" type="text/css">
+<link rel="stylesheet" href="Immersion%20Code%20Samples_files/typo.css" type="text/css">
+
+<!--[if IE]>
+<link rel="stylesheet" href="http://www2.immersion.com/developers/templates/ceynocta-jtemp/css/ie.css" type="text/css" />
+<![endif]-->
+
+<!--[if lt IE 7.0]>
+<link rel="stylesheet" href="http://www2.immersion.com/developers/templates/ceynocta-jtemp/css/ie7minus.css" type="text/css" />
+<![endif]-->
+
+<!--[if IE 7.0]>
+<style>
+.clearfix {
+	display: inline-block; /* IE7xhtml*/
+}
+</style>
+<![endif]-->
+
+<script type="text/javascript">
+var siteurl='http://www2.immersion.com/developers/';
+var tmplurl='http://www2.immersion.com/developers/templates/ceynocta-jtemp';
+</script>
+
+<script language="javascript" type="text/javascript" src="Immersion%20Code%20Samples_files/ja_003.js"></script>
+<script language="javascript" type="text/javascript" src="Immersion%20Code%20Samples_files/ja.js"></script><style type="text/css">.ja-movable-container{visibility: hidden;}</style>
+
+
+<link href="Immersion%20Code%20Samples_files/css.css" rel="stylesheet" type="text/css"><script src="Immersion%20Code%20Samples_files/css.js" language="javascript" type="text/javascript"></script>
+<link href="Immersion%20Code%20Samples_files/theme-green.css" rel="stylesheet" type="text/css">
+
+
+<script type="text/javascript">var CurrentFontSize=parseInt('3');</script>
+</head>
+
+<body id="bd" class="fs3 FF">
+
+<div id="ja-wrapper">
+	<a name="Top" id="Top"></a>
+
+	<!-- HEADER -->
+	<div id="ja-header" class="wrap">
+<div class="main">
+<div class="inner clearfix">
+
+		<h1 class="logo">
+		<a href="http://www2.immersion.com/developers/index.php" title="immersion"><span>immersion</span></a>
+	</h1>
+		
+		<div id="ja-search">
+		
+<form action="/developers/index.php?option=com_search#content" method="post" class="search">
+	<label for="mod_search_searchword">
+		Search	</label>
+	<input name="searchword" id="mod_search_searchword" class="inputbox" size="20" value="Search" onfocus="if(this.value=='Search') this.value='';" type="text">	<input name="option" value="com_search" type="hidden">
+	<input name="task" value="search" type="hidden">
+    <!-- add cgw -->
+    <input name="limit" value="5" type="hidden">
+</form>
+
+	</div>
+	   <!-- add cgw -->
+   	 
+   		<div class="main-title"><p><img src="Immersion%20Code%20Samples_files/title_anroid.jpg" border="0"></p></div>
+	        
+</div>
+
+<div class="ja-topbar clearfix">
+	
+    <!-- cgw comment -->
+	    
+    <!-- // cgw comment -->
+
+    
+		
+		
+	<div id="ja-topnav" class="clearfix">
+	    <ul class="menu"><li class="parent active item468"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=110&amp;Itemid=503"><span>Android Developers</span></a></li><li class="parent item469"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=section&amp;layout=blog&amp;id=17&amp;Itemid=504"><span>Other Mobile Developers</span></a></li><li class="parent item470"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=109&amp;Itemid=505"><span>PC Gaming Developers</span></a></li></ul>
+</div>
+
+</div>
+</div>
+</div>
+	<!-- //HEADER -->
+
+	<!-- MAIN NAVIGATION -->      
+    <div id="cgw_nav_outer">
+	        <div id="cgw_main-nav-wrap">
+        <div id="ja-mainnav">
+<ul class="menu_cgw-horimenu"><li class="item475"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=110&amp;Itemid=503"><span>Home</span></a></li><li class="item476"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=119&amp;Itemid=592"><span>SDK</span></a></li><li class="item477"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=article&amp;id=513&amp;Itemid=498"><span>DEVELOPER GUIDE</span></a></li><li class="item478"><a href="http://www2.immersion.com/developers/index.php?option=com_wrapper&amp;view=wrapper&amp;Itemid=765"><span>REFERENCE</span></a></li><li id="current" class="active item480"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=article&amp;id=545&amp;Itemid=501"><span>RESOURCES</span></a></li><li class="item479"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=article&amp;id=510&amp;Itemid=840"><span>FEATURED APPS</span></a></li><li class=" last item481"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=127&amp;Itemid=759"><span>HANDSETS</span></a></li></ul>
+</div>
+<!--</div>-->
+        <!-- //MAIN NAVIGATION -->
+        </div>
+        </div>
+    
+	
+	<!-- MAIN CONTAINER -->
+	<div id="ja-container" class="wrap ja-l1">
+	<div class="main"><div class="main-inner clearfix">
+
+		<div id="ja-mainbody" style="width:100%">
+			<!-- CONTENT -->
+<div id="ja-main" style="width:80%">
+<div class="inner clearfix">
+	
+	
+
+	
+	<div id="ja-contentwrap" class="">
+				<div id="ja-content" class="column" style="width:100%">
+
+			<div id="ja-current-content" class="column" style="width:100%">
+								
+								<div class="ja-content-main clearfix">
+					
+
+
+<h2 class="contentheading clearfix">
+		<a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=article&amp;id=544:code-samples&amp;catid=132:resources-sample-code&amp;Itemid=659" class="contentpagetitle">
+		Code Samples	</a>
+	</h2>
+
+
+
+
+<div class="article-content">
+<p>These code samples require the MOTIV SDK UHL component&nbsp;in order 
+to be compiled and executed. &nbsp;The samples do not include nor 
+install the UHL itself. Please see <a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=article&amp;id=495&amp;Itemid=812"><span style="color: #4682b4;">Installing the UHL&nbsp;package for Eclipse</span></a> for details on obtaining and installing the UHL.</p>
+<p>&nbsp;</p>
+<h2>My First App with Haptics</h2>
+<p><a href="http://www2.immersion.com/developers/images/direct-download-no-license/android-UHL-samples/myfirsthapticapp.zip"><span style="color: #4682b4;">Download My First App sample code</span></a></p>
+<p>This application demonstrates how to use&nbsp;the UHL's built-in effects to great good haptics very easily.&nbsp; See <a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=article&amp;id=498&amp;Itemid=818"><span style="color: #4682b4;">My First App with Haptics</span></a> in the Developer Guide section for additional details.</p>
+<p>&nbsp;</p>
+<h2>Bouncing Ball Demo</h2>
+<p><a href="http://www2.immersion.com/developers/images/direct-download-no-license/android-UHL-samples/bouncingballsample.zip"><span style="color: #4682b4;">Download Bouncing Ball sample code</span></a></p>
+<p>This sample demonstrates the use of built-in haptic effects for a 
+simple bouncing ball simulation with variable strength collisions.</p>
+<p>&nbsp;</p>
+<h2>Using Custom Effects</h2>
+<p><a href="http://www2.immersion.com/developers/images/direct-download-no-license/android-UHL-samples/usingcustomeffects.zip"><span style="color: #4682b4;">Download Custom Effects sample code</span></a></p>
+<p>This is the code that accompanies the Developer Guide article titled <a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=article&amp;id=506&amp;Itemid=833"><span style="color: #4682b4;">Creating and Using Effects with MOTIV Studio</span></a>.</p>
+
+</div>
+
+
+
+				</div>
+				
+							</div>
+
+			
+		</div>
+		
+			</div>
+
+	
+</div>
+</div>
+<!-- //CONTENT -->			<!-- LEFT COLUMN--> 
+<div id="ja-left" class="column sidebar" style="width:20%">
+
+		
+		<div class="ja-colswrap clearfix ja-l1">
+			<div class="ja-col  column">
+				
+    <div class="ja-moduletable moduletable_menu  clearfix" id="Mod162">
+    <div class="cgw-mod-top"></div>
+						<div class="ja-box-ct clearfix">
+		<ul class="menu_cgw-mod-menu"><li class="item652"><a href="http://www2.immersion.com/developers/index.php?option=com_kunena&amp;view=entrypage&amp;Itemid=672"><span>Forum</span></a></li><li id="current" class=" last active item653"><a href="http://www2.immersion.com/developers/index.php?option=com_content&amp;view=article&amp;id=544&amp;Itemid=659"><span>Sample Code</span></a></li></ul>		</div>
+    <div class="cgw-mod-bottom"></div>
+    </div>
+	
+		</div>
+			</div>
+		
+	
+</div>
+<!-- //LEFT COLUMN--> 
+		</div>
+
+				
+	</div>
+	</div>
+	</div>
+	<!-- //MAIN CONTAINER -->
+
+	
+	<!-- FOOTER -->
+	<div id="ja-footer" class="wrap">
+<div class="main">
+
+<div class="ja-footnav clearfix">
+	<p>Copyright 2011 Immersion Corporation</p><ul id="mainlevel-nav"><li class="ja-firstitem"><a href="http://www.immersion.com/about/legal.html" class="mainlevel-nav">Terms of Use</a></li><li><a href="http://www.immersion.com/about/privacy.html" class="mainlevel-nav">Privacy Policy</a></li><li><a href="http://www.immersion.com/about/trademark.html" class="mainlevel-nav">Brand Guidelines</a></li></ul>
+	</div>
+	
+<div class="inner">
+	<div id="ja-poweredby">
+		<!--<a id="t3-logo" href="http://t3.joomlart.com" title="Powered By T3 Framework" target="_blank">Powered By T3 Framework</a>-->
+	</div>
+	
+	<div class="ja-copyright">
+		
+	</div>
+</div>
+
+</div>
+</div>
+
+	<!-- //FOOTER -->
+
+</div>
+
+
+
+
+
+
+
+</body></html>
